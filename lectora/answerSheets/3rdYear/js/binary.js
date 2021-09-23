@@ -1,5 +1,5 @@
 
-
+ 
 const hamIcon = document.getElementById("hamIcon");
 hamIcon.addEventListener('click', openNav);
 function openNav() {
@@ -23,7 +23,7 @@ function showSections(){
     for(i=0; i<section_array.length; i++){
         section_array[i].style.display = 'block'; 
     }
-    setTimeout(closeNav, 1000);
+    // setTimeout(closeNav, 1000);
 }
 completeLesson.addEventListener('click', showSections);
 
@@ -38,7 +38,7 @@ const onClick = (event) => {
     console.log(section);
     section.style.display = 'block';
 
-    setTimeout(closeNav, 1000);
+    // setTimeout(closeNav, 1000);
 }
 const nav = document.getElementsByClassName('nav');
 for(i=0; i<nav.length; i++){

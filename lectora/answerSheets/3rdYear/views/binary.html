@@ -16,8 +16,8 @@
     <main>
     <div id="binarySidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span id="x_symbol">&times;</span></a>
+        <h5>Navigation</h5>
         <a id="completeLesson" href="#">Complete Lesson</a>
-        <br>
         <a class="nav" id="whatsBinWhyCare" href="#">What is Binary, Why do I Care?</a>
         <a class="nav" id="whatsBit" href="#">What's a Bit?</a>
         <a class="nav" id="whatsByte" href="#">What's a Byte</a>
@@ -31,7 +31,6 @@
         <a class="nav" id="BinIpAddresses" href="#">Binary and IP Addresses</a>
         <a class="nav" id="BinDevAddresses" href="#">Binary and Device Addresses</a>
         <a class="nav" id="setDipSwitches" href="#">Setting Dip Switches</a>
-        <br>
         <a class="nav" id="binAssess" href="#">Binary Assessment</a>
     </div>
     
@@ -54,6 +53,9 @@
         <h2>What is Binary, Why do I Care?</h2>
         <div class="imgDiv">
             <img class="page" src="../images/3_CompStupid.png" alt="Computers are stupid">
+            
+        </div>
+        <div class="imgDiv">
             <img class="page" src="../images/3_CompStupid2.png" alt="Computers are stupid 2">
         </div>
     </section>
@@ -63,17 +65,23 @@
         <div class="imgDiv">
             <img class="page" src="../images/4_WhatsBit.png" alt="What's a bit?">
         </div>
-        <div class="imgDiv">
-            <img class="page" src="../images/4_WhatsBit2.png" alt="What's a bit? 2">
-        </div>
-        <div class="infoDiv">
-            <div class="headerContainer">
-                <h4 class="whatsBitInfo_header">Textbook Reference</h4>
-                <h4 class="whatsBitInfo_header">Answer</h4>
-                <h4 class="whatsBitInfo_header">Student Actions</h4>
+        <div class="slideWinfo">
+            <div class="imgDiv">
+                <img class="page" src="../images/4_WhatsBit2.png" alt="What's a bit? 2">
             </div>
-            <div class="infoResult" id="whatsBitInfo_result"></div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="whatsBitInfo_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 6 - The Bits of an IP Address (page 117)</p>
+                    <h4 class="whatsBitInfo_header">Answer</h4>
+                    <p class="displayInfo">4</p>
+                    <h4 class="whatsBitInfo_header">Student Actions</h4>
+                    <p class="displayInfo">Enter answer as a number and click submit</p>
+                </div>
+                <div class="infoResult" id="whatsBitInfo_result"></div>
+            </div>
         </div>
+        
         <div class="imgDiv">
             <img class="page" src="../images/4_WhatsBit3.png" alt="What's a bit? 3">
         </div>
@@ -90,8 +98,11 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="whatsByteInfo_header">Textbook Reference</h4>
+                <p class="displayInfo">Chapter 6 - The Bits of an IP Address (page 117)</p>
                 <h4 class="whatsByteInfo_header">Answer</h4>
+                <p class="displayInfo">3</p>
                 <h4 class="whatsByteInfo_header">Student Actions</h4>
+                <p class="displayInfo">Enter answer a number and click submit</p>
             </div>
             <div class="infoResult" id="whatsByteInfo_result"></div>
         </div>
@@ -135,6 +146,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="convertBinDecInfo_header">Student Actions</h4>
+                <p class="displayInfo">Student should click on the <q>1</q> bits that are indicated as <q>ON</q></p>
             </div>
             <div class="infoResult" id="convertBinDecInfo_result"></div>
         </div>
@@ -151,8 +163,11 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="practiceConvBinDec_header">Textbook Reference</h4>
+                <p class="displayInfo">Chapter 6 - The Bits of an IP Address (page 118, Figure 6-9)</p>
                 <h4 class="practiceConvBinDec_header">Answer</h4>
+                <p class="displayInfo">168</p>
                 <h4 class="practiceConvBinDec_header">Student Actions</h4>
+                <p class="displayInfo">Enter answer as a number and click submit</p>
             </div>
             <div class="infoResult" id="practiceConvBinDecInfo_result"></div>
         </div>
@@ -172,6 +187,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="convertDecBin_header">Student Actions</h4>
+                <p class="displayInfo">Student should click on the <q>0</q> bit with value of 64 to change it to a <q>1</q></p>
             </div>
             <div class="infoResult" id="convertDecBinInfo_result"></div>
         </div>
@@ -192,6 +208,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="convertDecBinRemainder_header">Student Actions</h4>
+                <p class="displayInfo">Student should click on the <q>0</q> bit with value of 64 to change it to a <q>1</q></p>
             </div>
             <div class="infoResult" id="convertDecBinRemainderInfo1_result"></div>
         </div>
@@ -202,6 +219,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="convertDecBinRemainder_header">Student Actions</h4>
+                <p class="displayInfo">Student should click on the <q>0</q> bit with value of 32 to change it to a <q>1</q></p>
             </div>
             <div class="infoResult" id="convertDecBinRemainderInfo2_result"></div>
         </div>
@@ -212,6 +230,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="convertDecBinRemainder_header">Student Actions</h4>
+                <p class="displayInfo">Student should click on the <q>0</q> bit with value of 16 to change it to a <q>1</q></p>
             </div>
             <div class="infoResult" id="convertDecBinRemainderInfo3_result"></div>
         </div>
@@ -222,6 +241,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="convertDecBinRemainder_header">Student Actions</h4>
+                <p class="displayInfo">Student should click on the <q>0</q> bit with value of 4 to change it to a <q>1</q></p>
             </div>
             <div class="infoResult" id="convertDecBinRemainderInfo4_result"></div>
         </div>
@@ -232,6 +252,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="convertDecBinRemainder_header">Student Actions</h4>
+                <p class="displayInfo">Student should click on the <q>0</q> bit with value of 1 to change it to a <q>1</q></p>
             </div>
             <div class="infoResult" id="convertDecBinRemainderInfo5_result"></div>
         </div>
@@ -251,6 +272,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="binIpAddress_header">Textbook Reference</h4>
+                <p class="displayInfo">Chapter 6 - The Bytes of an IP Address (page 118-119)</p>
             </div>
             <div class="infoResult" id="binIpAddress_result"></div>
         </div>
@@ -283,6 +305,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="setDipSwitch_header">Answer</h4>
+                <p class="displayInfo">Dip switch 2 and 3 set to <q>ON</q></p>
             </div>
             <div class="infoResult" id="setDipSwitchInfo_result"></div>
         </div>
@@ -313,6 +336,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="binaryAssessment_header">Answer</h4>
+                <p class="displayInfo">Bit</p>
             </div>
             <div class="infoResult" id="binaryAssessmentQ1Info_result"></div>
         </div>
@@ -323,6 +347,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="binaryAssessment_header">Answer</h4>
+                <p class="displayInfo">8</p>
             </div>
             <div class="infoResult" id="binaryAssessmentQ2Info_result"></div>
         </div>
@@ -333,6 +358,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="binaryAssessment_header">Answer</h4>
+                <p class="displayInfo">10101010</p>
             </div>
             <div class="infoResult" id="binaryAssessmentQ3Info_result"></div>
         </div>
@@ -343,6 +369,7 @@
         <div class="infoDiv">
             <div class="headerContainer">
                 <h4 class="binaryAssessment_header">Answer</h4>
+                <p class="displayInfo">Set addresses on components and devices</p>
             </div>
             <div class="infoResult" id="binaryAssessmentQ4Info_result"></div>
         </div>
