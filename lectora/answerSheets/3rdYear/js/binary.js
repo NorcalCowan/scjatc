@@ -3,7 +3,7 @@
 const hamIcon = document.getElementById("hamIcon");
 hamIcon.addEventListener('click', openNav);
 function openNav() {
-    document.getElementById("binarySidenav").style.width = "250px";
+    document.getElementById("binarySidenav").style.width = "50%";
 }
   
 /* Set the width of the side navigation to 0 */
