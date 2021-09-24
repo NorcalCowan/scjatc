@@ -218,8 +218,8 @@ h5{
 
   @media screen and (min-width: 1366px){
     .sidenav{
-        font-size: 1.5vw;
         width: 25%;
+        font-size: 1.5vw;
     } 
 
     h5{
