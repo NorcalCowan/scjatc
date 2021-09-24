@@ -46,12 +46,6 @@ for(i=0; i<nav.length; i++){
 }
 
 
-
-
-
-
-
-
 /*** What's a Bit ***/
 const whatsBitInfo_header = document.getElementsByClassName('whatsBitInfo_header');
 const whatsBitInfo_result = document.getElementById('whatsBitInfo_result');
