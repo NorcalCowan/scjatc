@@ -3,12 +3,12 @@
 const hamIcon = document.getElementById("hamIcon");
 hamIcon.addEventListener('click', openNav);
 function openNav() {
-    document.getElementById("binarySidenav").style.width = "50%";
+    document.getElementById("Sidenav").style.width = "50%";
 }
   
 /* Set the width of the side navigation to 0 */
 function closeNav() {
-document.getElementById("binarySidenav").style.width = "0";
+document.getElementById("Sidenav").style.width = "0";
 }
 
 

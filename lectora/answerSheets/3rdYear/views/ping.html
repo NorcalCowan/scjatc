@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking - Ping</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <header>
+        <div class="titleContainer">
+            <div>
+                <h1>Networking Exercise</h1>
+                <h3>Ping</h3>
+            </div>
+            
+            <div id="hamIconDiv">
+                <img id="hamIcon" src="../images/hamIconWht.png" alt="hamburger icon">
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div id="Sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><span id="x_symbol">&times;</span></a>
+            <h5>Navigation</h5>
+            <a id="completeLesson" href="#">Complete Lesson</a>
+            <a class="nav" id="pingLocalhost" href="#">Ping Localhost</a>
+            <a class="nav" id="pingHostname" href="#">Ping Hostname</a>
+            <a class="nav" id="pingIpAddress" href="#">Ping IP Address</a>
+            <a class="nav" id="pingIpv4Address" href="#">Ping - IPv4 Address</a>
+            <a class="nav" id="pingHostUnreachable" href="#">Ping - Host Unreachable</a>
+        </div>
+        
+        <section id="letsGo">
+            <h2>Let's Go</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/1_letsGo.png" alt="Let's Go">
+            </div>
+        </section>
+        
+        <section id="section_instructions">
+            <h2>Instructions</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/2_instructions.png" alt="Instructions">
+            </div>
+        </section>
+
+        <!-- PING LOCALHOST -->
+        <section id="section_pingLocalhost">
+            <h2>Ping Localhost</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/3_pingLocalhost.png" alt="Ping the localhost">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="pingLocalhostInfo_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - Connectivity Troubleshooting with Ping (page 270)</p>
+                    <h4 class="pingLocalhostInfo_header">Answer</h4>
+                    <p class="displayInfo">ping localhost</p>
+                    <h4 class="pingLocalhostInfo_header">Student Actions</h4>
+                    <p class="displayInfo">After accessing the command prompt, student should enter the command "ping localhost" which will
+                        ping the laptop they are using. This will provide them with the "name" of their laptop.
+                    </p>
+                </div>
+                <div class="infoResult" id="pingLocalhostInfo1_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/4_pingLocalhost2.png" alt="Missing result from ping">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="pingLocalhostInfo_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - Connectivity Troubleshooting with Ping (page 269)</p>
+                    <h4 class="pingLocalhostInfo_header">Answer</h4>
+                    <p class="displayInfo">mobilelab[-#] (should be the same as the label on their laptop)</p>
+                    <h4 class="pingLocalhostInfo_header">Student Actions</h4>
+                    <p class="displayInfo">Locate the information by referencing their ping result. <br>
+                    <strong>Instructor Note: </strong>Since each person has a different number laptop, the only entry required for a correct
+                    result is "mobilelab"</p>
+                </div>
+                <div class="infoResult" id="pingLocalhostInfo2_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/5_pingLocalhost3.png" alt="What's a bit?">
+            </div>
+        </section>
+
+        <!-- PING HOSTNAME -->
+        <section id="section_pingHostname">
+            <h2>Ping Hostname</h2>
+            
+            <div class="slideWinfo">
+                <div class="imgDiv">
+                    <img class="page" src="../images/ping/6_pingHostname.png" alt="Ping computer on same network">
+                </div>
+                <div class="imgDiv">
+                    <img class="page" src="../images/ping/7_pingHostname2.png" alt="What's a bit? 3">
+                </div>
+                <div class="infoDiv">
+                    <div class="headerContainer">
+                        <h4 class="pingHostnameInfo_header">Textbook Reference</h4>
+                        <p class="displayInfo">Chapter 14 - Connectivity Troubleshooting with Ping (page 269)</p>
+                        <h4 class="pingHostnameInfo_header">Answer</h4>
+                        <p class="displayInfo">ping mobilelab-16</p>
+                        <h4 class="pingHostnameInfo_header">Student Actions</h4>
+                        <p class="displayInfo">Enter answer and click "enter". <br>
+                            <strong>Instructor Note: </strong>Answer is not case sensitive, but there SHOULD NOT be a space between "mobilelab"
+                            and the hypenated number.
+                        </p>
+                    </div>
+                    <div class="infoResult" id="pingHostnameInfo_result"></div>
+                </div>
+                <div class="imgDiv">
+                    <img class="page" src="../images/ping/8_pingHostname3.png" alt="That's interesting">
+                </div>
+            </div>
+        </section>
+
+        <!-- PING IP Address -->
+        <section id="section_pingIpAddress">
+            <h2>Ping IP Address</h2>
+            
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/9_pingIpAddress.png" alt="Ping IP Address">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="pingIpAddressInfo_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - Connectivity Troubleshooting with Ping (page 269)</p>
+                    <h4 class="pingIpAddressInfo_header">Answer</h4>
+                    <p class="displayInfo">IPv6 Address</p>
+                </div>
+                <div class="infoResult" id="pingIpAddressInfo_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/10_pingIpAddress2.png" alt="Ping IP Address - Correct Answer">
+            </div>
+        </section>
+
+        <!-- PING IPv4 Address -->
+        <section id="section_pingIpv4Address">
+            <h2>Ping - IPv4 Address</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/11_pingIp4Address.png" alt="Figure out IPv4">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="pingIpv4AddressInfo_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - Connectivity Troubleshooting with Ping (page 270, 271)</p>
+                    <h4 class="pingIpv4AddressInfo_header">Student Actions</h4>
+                    <p class="displayInfo">Student should reference the textbook on page 270 to locate the switch command "-4" 
+                        that forces the IPv4 address instead of IPv6.
+                    </p>
+                </div>
+                <div class="infoResult" id="pingIpv4AddressInfo1_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/12_pingIp4Address2.png" alt="Enter answer at command prompt">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="pingIpv4AddressInfo_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - Connectivity Troubleshooting with Ping (page 270, 271)</p>
+                    <h4 class="pingIpv4AddressInfo_header">Answer</h4>
+                    <p class="displayInfo">ping mobilelab-16 -4</p>
+                    <h4 class="pingIpv4AddressInfo_header">Student Actions</h4>
+                    <p class="displayInfo">Enter answer and click "Submit Answer". <br>
+                        <strong>Instructor Note: </strong>Answer is not case sensitive, but there SHOULD NOT be a space between "mobilelab"
+                        and the hypenated number, but there SHOULD be a space before the "-4" switch.
+                    </p>
+                </div>
+                <div class="infoResult" id="pingIpv4AddressInfo2_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/13_pingIp4Address3.png" alt="Ping IPv4 Address - Correct Answer">
+            </div>
+        </section>
+        
+        <!-- PING - HOST UNREACHABLE -->
+        <section id="section_pingHostUnreachable">
+            <h2>Ping - Host Unreachable</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/14_pingHostUnreachable_1.png" alt="Ping - Host Unreachable">
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/15_pingHostUnreachable_1-2.png" alt="Ping - Host Unreachable 2">
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/16_pingHostUnreachable_1-3.png" alt="Ping - Host Unreachable 3">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="pingHostUnreachable_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - Connectivity Troubleshooting with Ping (page 270)</p>
+                    <h4 class="pingHostUnreachable_header">Answer</h4>
+                    <p class="displayInfo">routing</p>
+                </div>
+                <div class="infoResult" id="pingHostUnreachableQ1_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/17_pingHostUnreachable_2.png" alt="Ping - Host Unreachable (question 2)">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="pingHostUnreachable_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - Connectivity Troubleshooting with Ping (page 270)</p>
+                    <h4 class="pingHostUnreachable_header">Answer</h4>
+                    <p class="displayInfo">default gateway</p>
+                </div>
+                <div class="infoResult" id="pingHostUnreachableQ2_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/18_pingHostUnreachable_3.png" alt="Ping - Host Unreachable (question 3)">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="pingHostUnreachable_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - Connectivity Troubleshooting with Ping (page 270)</p>
+                    <h4 class="pingHostUnreachable_header">Answer</h4>
+                    <p class="displayInfo">router</p>
+                </div>
+                <div class="infoResult" id="pingHostUnreachableQ3_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/19_pingHostUnreachable_3-2.png" alt="Ping - Host Unreachable (Correct)">
+            </div>
+        </section>
+
+        <!-- LAST TEST PAGE -->
+        <section>
+            <h2>Last Test Page</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/20_lastTestPage.png" alt="Last test page">
+            </div>
+        </section>
+
+        <section>
+            <h2>Result</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/ping/21_result.png" alt="">
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer>
+        
+    </footer>
+
+    <script src="../js/ping.js"></script>
+</body>
+</html>
