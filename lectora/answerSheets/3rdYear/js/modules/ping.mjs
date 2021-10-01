@@ -1,58 +1,10 @@
 
- 
-const hamIcon = document.getElementById("hamIcon");
-hamIcon.addEventListener('click', openNav);
-function openNav() {
-    document.getElementById("Sidenav").style.width = "50%";
-}
-  
-/* Set the width of the side navigation to 0 */
-const x_symbol = document.getElementById("x_symbol");
-x_symbol.addEventListener('click', closeNav);
-function closeNav() {
-document.getElementById("Sidenav").style.width = "0";
-}
-
-
-const completeLesson = document.getElementById('completeLesson');
-const section_array = document.getElementsByTagName('section');
-function hideSections(){
-    for(let i=0; i<section_array.length; i++){
-        section_array[i].style.display = 'none'; 
-    }
-}
-function showSections(){
-    for(let i=0; i<section_array.length; i++){
-        section_array[i].style.display = 'block'; 
-    }
-    // setTimeout(closeNav, 1000);
-}
-completeLesson.addEventListener('click', showSections);
-
-
-const onClick = (event) => {
-    console.log(event.srcElement.id);
-    let clickedID = event.srcElement.id;
-    console.log(clickedID);
-    hideSections();
-
-    let section = document.querySelector('#section_' + clickedID);
-    console.log(section);
-    section.style.display = 'block';
-
-    // setTimeout(closeNav, 1000);
-}
-const nav = document.getElementsByClassName('nav');
-for(let i=0; i<nav.length; i++){
-    nav[i].addEventListener('click', onClick);
-}
-
 /*** Ping Localhost ***/
-const pingLocalhostInfo_header = document.getElementsByClassName('pingLocalhostInfo_header');
-const pingLocalhostInfo1_result = document.getElementById('pingLocalhostInfo1_result');
-const pingLocalhostInfo2_result = document.getElementById('pingLocalhostInfo2_result');
+export const pingLocalhostInfo_header = document.getElementsByClassName('pingLocalhostInfo_header');
+export const pingLocalhostInfo1_result = document.getElementById('pingLocalhostInfo1_result');
+export const pingLocalhostInfo2_result = document.getElementById('pingLocalhostInfo2_result');
 
-const pingLocalhostInfo_array = [
+export const pingLocalhostInfo_array = [
     // Ping localhost
     "Chapter 14 - Connectivity Troubleshooting with Ping (page 270)",
     "ping localhost",
@@ -63,7 +15,7 @@ const pingLocalhostInfo_array = [
     "Locate the information by referencing their ping result.<br><strong>Instructor Note: </strong>Since each person has a different number laptop, the only entry required for a correct result is \"mobilelab\""
 ];
 // Localhost Page 1 textbook info
-function show_pingLocalHostTextInfo_1(){
+export function show_pingLocalHostTextInfo_1(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -80,10 +32,9 @@ function show_pingLocalHostTextInfo_1(){
     }
     
 }
-pingLocalhostInfo_header[0].addEventListener('click', show_pingLocalHostTextInfo_1);
 
 // Localhost Page 1 answer info
-function show_pingLocalHostAnswerInfo_1(){
+export function show_pingLocalHostAnswerInfo_1(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -99,10 +50,9 @@ function show_pingLocalHostAnswerInfo_1(){
         } 
     }
 }
-pingLocalhostInfo_header[1].addEventListener('click', show_pingLocalHostAnswerInfo_1);
 
 // Localhost Page 1 student action info
-function show_pingLocalHostStudentInfo_1(){
+export function show_pingLocalHostStudentInfo_1(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -118,11 +68,9 @@ function show_pingLocalHostStudentInfo_1(){
         } 
     }
 }
-pingLocalhostInfo_header[2].addEventListener('click', show_pingLocalHostStudentInfo_1);
-
 
 // Localhost Page 2 textbook info
-function show_pingLocalHostTextInfo_2(){
+export function show_pingLocalHostTextInfo_2(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -138,10 +86,9 @@ function show_pingLocalHostTextInfo_2(){
         } 
     }
 }
-pingLocalhostInfo_header[3].addEventListener('click', show_pingLocalHostTextInfo_2);
 
 // Localhost Page 2 answer info
-function show_pingLocalHostAnswerInfo_2(){
+export function show_pingLocalHostAnswerInfo_2(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -157,10 +104,9 @@ function show_pingLocalHostAnswerInfo_2(){
         } 
     }
 }
-pingLocalhostInfo_header[4].addEventListener('click', show_pingLocalHostAnswerInfo_2);
 
 // Localhost Page 2 student action info
-function show_pingLocalHostStudentInfo_2(){
+export function show_pingLocalHostStudentInfo_2(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -176,19 +122,18 @@ function show_pingLocalHostStudentInfo_2(){
         } 
     }
 }
-pingLocalhostInfo_header[5].addEventListener('click', show_pingLocalHostStudentInfo_2);
 
 /*** Ping Hostname ***/
-const pingHostnameInfo_header = document.getElementsByClassName('pingHostnameInfo_header');
-const pingHostnameInfo_result = document.getElementById('pingHostnameInfo_result');
+export const pingHostnameInfo_header = document.getElementsByClassName('pingHostnameInfo_header');
+export const pingHostnameInfo_result = document.getElementById('pingHostnameInfo_result');
 
-const pingHostnameInfo_array = [
+export const pingHostnameInfo_array = [
     "Chapter 14 - Connectivity Troubleshooting with Ping (page 269)",
     "ping mobilelab-16",
     "Enter answer and click \"enter\". <br><strong>Instructor Note: </strong>Answer is not case sensitive, but there SHOULD NOT be a space between \"mobilelab\" and the hypenated number."
 ];
 
-function show_pingHostnameTextInfo(){
+export function show_pingHostnameTextInfo(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -204,9 +149,8 @@ function show_pingHostnameTextInfo(){
         } 
     }
 }
-pingHostnameInfo_header[0].addEventListener('click', show_pingHostnameTextInfo);
 
-function show_pingHostnameAnswerInfo(){
+export function show_pingHostnameAnswerInfo(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -222,9 +166,8 @@ function show_pingHostnameAnswerInfo(){
         } 
     }
 }
-pingHostnameInfo_header[1].addEventListener('click', show_pingHostnameAnswerInfo);
 
-function show_pingHostnameStudentInfo(){
+export function show_pingHostnameStudentInfo(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -240,18 +183,17 @@ function show_pingHostnameStudentInfo(){
         }
     } 
 }
-pingHostnameInfo_header[2].addEventListener('click', show_pingHostnameStudentInfo);
 
 /*** Ping IP Address ***/
-const pingIpAddressInfo_header = document.getElementsByClassName('pingIpAddressInfo_header');
-const pingIpAddressInfo_result = document.getElementById('pingIpAddressInfo_result');
+export const pingIpAddressInfo_header = document.getElementsByClassName('pingIpAddressInfo_header');
+export const pingIpAddressInfo_result = document.getElementById('pingIpAddressInfo_result');
 
-const pingIpAddressInfo_array = [
+export const pingIpAddressInfo_array = [
     "Chapter 14 - Connectivity Troubleshooting with Ping (page 269)",
     "IPv6 Address"
 ];
 
-function show_pingIpAddressTextInfo(){
+export function show_pingIpAddressTextInfo(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -266,9 +208,8 @@ function show_pingIpAddressTextInfo(){
         } 
     }
 }
-pingIpAddressInfo_header[0].addEventListener('click', show_pingIpAddressTextInfo);
 
-function show_pingIpAddressAnswerInfo(){
+export function show_pingIpAddressAnswerInfo(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -283,15 +224,13 @@ function show_pingIpAddressAnswerInfo(){
         }
     } 
 }
-pingIpAddressInfo_header[1].addEventListener('click', show_pingIpAddressAnswerInfo);
-
 
 /*** Ping IPv4 Address ***/
-const pingIpv4AddressInfo_header = document.getElementsByClassName('pingIpv4AddressInfo_header');
-const pingIpv4AddressInfo1_result = document.getElementById('pingIpv4AddressInfo1_result');
-const pingIpv4AddressInfo2_result = document.getElementById('pingIpv4AddressInfo2_result');
+export const pingIpv4AddressInfo_header = document.getElementsByClassName('pingIpv4AddressInfo_header');
+export const pingIpv4AddressInfo1_result = document.getElementById('pingIpv4AddressInfo1_result');
+export const pingIpv4AddressInfo2_result = document.getElementById('pingIpv4AddressInfo2_result');
 
-const pingIpv4AddressInfo_array = [
+export const pingIpv4AddressInfo_array = [
     // Ping IPv4 address
     "Chapter 14 - Connectivity Troubleshooting with Ping (page 270, 271)",
     "Student should reference the textbook on page 270 to locate the switch command \"-4\" that forces the IPv4 address instead of IPv6.",
@@ -301,7 +240,7 @@ const pingIpv4AddressInfo_array = [
     "Enter answer and click \"Submit Answer\". <br><strong>Instructor Note: </strong>Answer is not case sensitive, but there SHOULD NOT be a space between \"mobilelab\" and the hypenated number, but there SHOULD be a space before the \"-4\" switch."
 ];
 // Localhost Page 1 textbook info
-function show_pingIpv4AddressTextInfo_1(){
+export function show_pingIpv4AddressTextInfo_1(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -316,10 +255,9 @@ function show_pingIpv4AddressTextInfo_1(){
         } 
     }
 }
-pingIpv4AddressInfo_header[0].addEventListener('click', show_pingIpv4AddressTextInfo_1);
 
 // Localhost Page 1 student action info
-function show_pingIpv4AddressStudentInfo_1(){
+export function show_pingIpv4AddressStudentInfo_1(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -333,11 +271,9 @@ function show_pingIpv4AddressStudentInfo_1(){
         }
     } 
 }
-pingIpv4AddressInfo_header[1].addEventListener('click', show_pingIpv4AddressStudentInfo_1);
-
 
 // Localhost Page 2 textbook info
-function show_pingIpv4AddressTextInfo_2(){
+export function show_pingIpv4AddressTextInfo_2(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -353,10 +289,9 @@ function show_pingIpv4AddressTextInfo_2(){
         }
     } 
 }
-pingIpv4AddressInfo_header[2].addEventListener('click', show_pingIpv4AddressTextInfo_2);
 
 // Localhost Page 2 answer info
-function show_pingIpv4AddressAnswerInfo(){
+export function show_pingIpv4AddressAnswerInfo(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -372,10 +307,9 @@ function show_pingIpv4AddressAnswerInfo(){
         }
     } 
 }
-pingIpv4AddressInfo_header[3].addEventListener('click', show_pingIpv4AddressAnswerInfo);
 
 // Localhost Page 2 student action info
-function show_pingIpv4AddressStudentInfo_2(){
+export function show_pingIpv4AddressStudentInfo_2(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -391,15 +325,14 @@ function show_pingIpv4AddressStudentInfo_2(){
         }
     } 
 }
-pingIpv4AddressInfo_header[4].addEventListener('click', show_pingIpv4AddressStudentInfo_2);
 
 /*** Ping - Host Unreachable ***/
-const pingHostUnreachable_header = document.getElementsByClassName('pingHostUnreachable_header');
-const pingHostUnreachableQ1_result = document.getElementById('pingHostUnreachableQ1_result');
-const pingHostUnreachableQ2_result = document.getElementById('pingHostUnreachableQ2_result');
-const pingHostUnreachableQ3_result = document.getElementById('pingHostUnreachableQ3_result');
+export const pingHostUnreachable_header = document.getElementsByClassName('pingHostUnreachable_header');
+export const pingHostUnreachableQ1_result = document.getElementById('pingHostUnreachableQ1_result');
+export const pingHostUnreachableQ2_result = document.getElementById('pingHostUnreachableQ2_result');
+export const pingHostUnreachableQ3_result = document.getElementById('pingHostUnreachableQ3_result');
 
-const pingHostUnreachableInfo_array = [
+export const pingHostUnreachableInfo_array = [
     "Chapter 14 - Connectivity Troubleshooting with Ping (page 270)",
     // Question 1 Answer
     "routing",
@@ -409,7 +342,7 @@ const pingHostUnreachableInfo_array = [
     "router"
 ];
 // Ping host unreachable Question 1 textbook info
-function show_pingHostUnreachableTextInfo_1(){
+export function show_pingHostUnreachableTextInfo_1(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -424,10 +357,9 @@ function show_pingHostUnreachableTextInfo_1(){
         }
     } 
 }
-pingHostUnreachable_header[0].addEventListener('click', show_pingHostUnreachableTextInfo_1);
 
 // Ping host unreachable Question 1 answer info
-function show_pingHostUnreachableAnswerInfo_1(){
+export function show_pingHostUnreachableAnswerInfo_1(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -442,11 +374,10 @@ function show_pingHostUnreachableAnswerInfo_1(){
         } 
     }
 }
-pingHostUnreachable_header[1].addEventListener('click', show_pingHostUnreachableAnswerInfo_1);
 
 
 // Ping host unreachable Question 2 textbook info
-function show_pingHostUnreachableTextInfo_2(){
+export function show_pingHostUnreachableTextInfo_2(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -461,10 +392,9 @@ function show_pingHostUnreachableTextInfo_2(){
         }
     } 
 }
-pingHostUnreachable_header[2].addEventListener('click', show_pingHostUnreachableTextInfo_2);
 
 // Ping host unreachable Question 2 answer info
-function show_pingHostUnreachableAnswerInfo_2(){
+export function show_pingHostUnreachableAnswerInfo_2(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -479,11 +409,9 @@ function show_pingHostUnreachableAnswerInfo_2(){
         } 
     }
 }
-pingHostUnreachable_header[3].addEventListener('click', show_pingHostUnreachableAnswerInfo_2);
-
 
 // Ping host unreachable Question 3 textbook info
-function show_pingHostUnreachableTextInfo_3(){
+export function show_pingHostUnreachableTextInfo_3(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -498,10 +426,9 @@ function show_pingHostUnreachableTextInfo_3(){
         }
     } 
 }
-pingHostUnreachable_header[4].addEventListener('click', show_pingHostUnreachableTextInfo_3);
 
 // Ping host unreachable Question 3 answer info
-function show_pingHostUnreachableAnswerInfo_3(){
+export function show_pingHostUnreachableAnswerInfo_3(){
     let windowWidth = window.innerWidth;
     console.log(windowWidth);
     if(windowWidth < 1024) {
@@ -516,5 +443,3 @@ function show_pingHostUnreachableAnswerInfo_3(){
         } 
     }
 }
-pingHostUnreachable_header[5].addEventListener('click', show_pingHostUnreachableAnswerInfo_3);
-

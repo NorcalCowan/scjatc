@@ -150,7 +150,6 @@ h5{
   }
 
 
-
   /***** iPad Vertical - 768px wide *****/
   @media screen and (min-width: 768px){
     h4, .infoResult{
@@ -197,13 +196,21 @@ h5{
         display: block;
     }
 
+    h4{
+        font-size: 1.5vw;
+        margin-bottom: 0.5%;
+    }
+    h4:hover{
+        color: black;
+    }
+
     .displayInfo{
         display: block;
         margin-left: 10px;
         margin-right: 100px;
-        margin-bottom: 40px;
+        margin-bottom: 4%;
         margin-top: 0;
-        font-size: 2vw;
+        font-size: 1.5vw;
     }
 
     .infoDiv{
@@ -226,11 +233,13 @@ h5{
     }
 
     .displayInfo{
-        font-size: 1.5vw;
+        /* font-size: 1.25vw; */
+        font-size: 16px;
     }
 
     .headerContainer h4{
-        font-size: 1.5vw;
+        /* font-size: 1.5vw; */
+        font-size: 20px;
     }
 
     .infoDiv{

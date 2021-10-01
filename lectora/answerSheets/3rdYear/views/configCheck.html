@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Networking - Configuration Check</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body> 
+    <header>
+        <div class="titleContainer">
+            <div>
+                <h1>Networking Exercise</h1>
+                <h3>Configuration Check</h3>
+            </div>
+            
+            <div id="hamIconDiv">
+                <img id="hamIcon" src="../images/hamIconWht.png" alt="hamburger icon">
+            </div>
+        </div>
+        
+    </header>
+
+    <main>
+        <div id="Sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn"><span id="x_symbol">&times;</span></a>
+            <h5>Navigation</h5>
+            <a id="completeLesson" href="#">Complete Lesson</a>
+            <a class="nav" id="ipconfigAll" href="#">ipconfig / all</a>
+            <a class="nav" id="netIntAdapt" href="#">Network Interface Adapter</a>
+            <a class="nav" id="macAddress" href="#">MAC Address</a>
+            <a class="nav" id="NetIdItems" href="#">Network ID Items</a>
+            <a class="nav" id="NetIdCreation" href="#">Network ID Creation</a>
+        </div>
+        
+        <section id="letsGo">
+            <h2>Let's Go</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/1_letsGo.png" alt="Let's Go">
+            </div>
+        </section>
+        
+        <section id="section_instructions">
+            <h2>Instructions</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/2_instructions.png" alt="Instructions">
+            </div>
+        </section>
+
+        <!-- ipconfig / all -->
+        <section id="section_ipconfigAll">
+            <h2>ipconfig / all</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/3_ipconfigAll.png" alt="ipconfig / all">
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/4_ipconfigAll2.png" alt="ipconfig / all">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="ipconfigAllInfo_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - TCP/IP Configuration Check with IPCONFIG (page 265)</p>
+                    <h4 class="ipconfigAllInfo_header">Answer</h4>
+                    <p class="displayInfo">mobilelab-#</p>
+                    <h4 class="ipconfigAllInfo_header">Student Actions</h4>
+                    <p class="displayInfo">Refer to the ipconfig/all result to find the host name of their laptop. <br>
+                        <strong>Instructor Note: </strong>Each apprentice will have a different number, but all will start with <q>mobilelab</q>.
+                    </p>
+                </div>
+                <div class="infoResult" id="ipconfigAllInfo_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/5_ipconfigAll3.png" alt="ipconfig / all">
+            </div> 
+        </section>
+
+        <!-- Network Interface Adapter -->
+        <section id="section_netIntAdapt">
+            <h2>Network Interface Adapter</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/6_netIntAdapt.png" alt="Configuration Check">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="netIntAdaptInfo_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - TCP/IP Configuration Check with IPCONFIG (page 266, figure 14-3)</p>
+                    <h4 class="netIntAdaptInfo_header">Answer</h4>
+                    <p class="displayInfo">Wireless LAN Adapter Wi-Fi</p>
+                    <h4 class="netIntAdaptInfo_header">Student Actions</h4>
+                    <p class="displayInfo">Refer to the ipconfig /all result to identifty the network interface adapter being used. <br>
+                        <strong>Instructor Note: </strong>Answer is not case sensitive, but should be entered as it appears in the ipconfig /all result.
+                    </p>
+                </div>
+                <div class="infoResult" id="netIntAdaptInfo_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/7_netIntAdapt2.png" alt="Configuration Check">
+            </div>
+        </section>
+
+        <!-- MAC Address -->
+        <section id="section_macAddress">
+            <h2>MAC Address</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/8_macAddress.png" alt="MAC Address">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="macAddressInfo_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - TCP/IP Configuration Check with IPCONFIG (page 266, figure 14-3)</p>
+                    <h4 class="macAddressInfo_header">Answer</h4>
+                    <p class="displayInfo">A0-AF-BD-65-8C-54</p>
+                </div>
+                <div class="infoResult" id="macAddressInfo_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/9_macAddress2.png" alt="MAC Address">
+            </div>
+        </section>
+
+        <!-- Network ID Items -->
+        <section id="section_NetIdItems">
+            <h2>Network ID Items</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/10_netIdItems.png" alt="Network ID Items">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="netIdItemsInfo_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - TCP/IP Configuration Check with IPCONFIG (page 266)</p>
+                    <h4 class="netIdItemsInfo_header">Answer</h4>
+                    <p class="displayInfo">IPv4 Address - 172.16.1.13 &#38 Subnet Mask - 255.255.252.0</p>
+                </div>
+                <div class="infoResult" id="netIdItemsInfo_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/11_netIdItems2.png" alt="Network ID Items">
+            </div>
+        </section>
+        
+        <!-- Network ID Creation -->
+        <section id="section_NetIdCreation">
+            <h2>Network ID Creation</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/12_netIdCreation.png" alt="Network ID Creation">
+            </div>
+            <div class="infoDiv">
+                <div class="headerContainer">
+                    <h4 class="netIdCreationInfo_header">Textbook Reference</h4>
+                    <p class="displayInfo">Chapter 14 - TCP/IP Configuration Check with IPCONFIG (page 266)</p>
+                    <h4 class="netIdCreationInfo_header">Answer</h4>
+                    <p class="displayInfo">172.16.1.0</p>
+                    <h4 class="netIdCreationInfo_header">Student Actions</h4>
+                    <p class="displayInfo">Student creates the network ID by dragging the numbers from the IPv4 Address and Subnet Mask address into the blue spaces
+                        below. Some of the spaces will not contain a number.
+                    </p>
+                </div>
+                <div class="infoResult" id="netIdCreationInfo_result"></div>
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/13_netIdCreation2.png" alt="Network ID Creation">
+            </div>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/14_netIdCreation3.png" alt="Network ID Creation">
+            </div>
+        </section>
+
+        <!-- LAST TEST PAGE -->
+        <section>
+            <h2>Last Test Page</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/15_lastTestPage.png" alt="Last test page">
+            </div>
+        </section>
+
+        <section>
+            <h2>Result</h2>
+            <div class="imgDiv">
+                <img class="page" src="../images/configCheck/16_result.png" alt="Result">
+            </div>
+        </section>
+    </main>
+    
+    
+    <footer>
+        
+    </footer>
+
+    <script src="../js/configCheck.js"></script>
+</body>
+</html>

@@ -1,49 +1,4 @@
 
- 
-const hamIcon = document.getElementById("hamIcon");
-hamIcon.addEventListener('click', openNav);
-function openNav() {
-    document.getElementById("Sidenav").style.width = "50%";
-}
-  
-/* Set the width of the side navigation to 0 */
-function closeNav() {
-document.getElementById("Sidenav").style.width = "0";
-}
-
-
-const completeLesson = document.getElementById('completeLesson');
-const section_array = document.getElementsByTagName('section');
-function hideSections(){
-    for(let i=0; i<section_array.length; i++){
-        section_array[i].style.display = 'none'; 
-    }
-}
-function showSections(){
-    for(let i=0; i<section_array.length; i++){
-        section_array[i].style.display = 'block'; 
-    }
-    // setTimeout(closeNav, 1000);
-}
-completeLesson.addEventListener('click', showSections);
-
-
-const onClick = (event) => {
-    console.log(event.srcElement.id);
-    let clickedID = event.srcElement.id;
-    console.log(clickedID);
-    hideSections();
-
-    let section = document.querySelector('#section_' + clickedID);
-    console.log(section);
-    section.style.display = 'block';
-
-    // setTimeout(closeNav, 1000);
-}
-const nav = document.getElementsByClassName('nav');
-for(let i=0; i<nav.length; i++){
-    nav[i].addEventListener('click', onClick);
-}
 
 /*** What's a Bit ***/
 const whatsBitInfo_header = document.getElementsByClassName('whatsBitInfo_header');
@@ -67,7 +22,6 @@ function show_WhatsBitTextInfo(){
         whatsBitInfo_header[2].style.color = "black";
     } 
 }
-whatsBitInfo_header[0].addEventListener('click', show_WhatsBitTextInfo);
 
 function show_WhatsBitAnswerInfo(){
     if(whatsBitInfo_result.innerHTML === whatsBitInfo_array[1]){
@@ -81,7 +35,6 @@ function show_WhatsBitAnswerInfo(){
         whatsBitInfo_header[2].style.color = "black";
     } 
 }
-whatsBitInfo_header[1].addEventListener('click', show_WhatsBitAnswerInfo);
 
 function show_WhatsBitStudentInfo(){
     if(whatsBitInfo_result.innerHTML === whatsBitInfo_array[2]){
@@ -95,7 +48,6 @@ function show_WhatsBitStudentInfo(){
         whatsBitInfo_header[1].style.color = "black";
     } 
 }
-whatsBitInfo_header[2].addEventListener('click', show_WhatsBitStudentInfo);
 
 /*** What's a Byte ***/
 const whatsByteInfo_header = document.getElementsByClassName('whatsByteInfo_header');
@@ -119,7 +71,6 @@ function show_WhatsByteTextInfo(){
         whatsByteInfo_header[2].style.color = "black";
     } 
 }
-whatsByteInfo_header[0].addEventListener('click', show_WhatsByteTextInfo);
 
 function show_WhatsByteAnswerInfo(){
     if(whatsByteInfo_result.innerHTML === whatsByteInfo_array[1]){
@@ -133,7 +84,6 @@ function show_WhatsByteAnswerInfo(){
         whatsByteInfo_header[2].style.color = "black";
     } 
 }
-whatsByteInfo_header[1].addEventListener('click', show_WhatsByteAnswerInfo);
 
 function show_WhatsByteStudentInfo(){
     if(whatsByteInfo_result.innerHTML === whatsByteInfo_array[2]){
@@ -147,7 +97,6 @@ function show_WhatsByteStudentInfo(){
         whatsByteInfo_header[1].style.color = "black";
     } 
 }
-whatsByteInfo_header[2].addEventListener('click', show_WhatsByteStudentInfo);
 
 /*** Converting Binary to Decimal ***/
 const convertBinDecInfo_header = document.getElementsByClassName('convertBinDecInfo_header');
@@ -166,7 +115,6 @@ function show_ConvertBinDecStudentInfo(){
         convertBinDecInfo_header[0].style.color = "blue";
     } 
 }
-convertBinDecInfo_header[0].addEventListener('click', show_ConvertBinDecStudentInfo);
 
 /*** PRACTICE: Convert Binary to Decimal ***/
 const practiceConvBinDec_header = document.getElementsByClassName('practiceConvBinDec_header');
@@ -190,7 +138,6 @@ function show_PracticeConvBinDecTextInfo(){
         practiceConvBinDec_header[2].style.color = "black";
     } 
 }
-practiceConvBinDec_header[0].addEventListener('click', show_PracticeConvBinDecTextInfo);
 
 function show_PracticeConvBinDecAnswerInfo(){
     if(practiceConvBinDecInfo_result.innerHTML === practiceConvBinDecInfo_array[1]){
@@ -204,7 +151,6 @@ function show_PracticeConvBinDecAnswerInfo(){
         practiceConvBinDec_header[2].style.color = "black";
     } 
 }
-practiceConvBinDec_header[1].addEventListener('click', show_PracticeConvBinDecAnswerInfo);
 
 function show_PracticeConvBinDecStudentInfo(){
     if(practiceConvBinDecInfo_result.innerHTML === practiceConvBinDecInfo_array[2]){
@@ -218,7 +164,6 @@ function show_PracticeConvBinDecStudentInfo(){
         practiceConvBinDec_header[1].style.color = "black";
     } 
 }
-practiceConvBinDec_header[2].addEventListener('click', show_PracticeConvBinDecStudentInfo);
 
 /*** Converting Decimal to Binary ***/
 const convertDecBin_header = document.getElementsByClassName('convertDecBin_header');
@@ -237,7 +182,6 @@ function show_ConvertDecBinStudentInfo(){
         convertDecBin_header[0].style.color = "blue";
     } 
 }
-convertDecBin_header[0].addEventListener('click', show_ConvertDecBinStudentInfo);
 
 /*** Converting Decimal to Binary (Remainder) ***/
 const convertDecBinRemainder_header = document.getElementsByClassName('convertDecBinRemainder_header');
@@ -268,7 +212,6 @@ function show_ConvertDecBinRemainderStudentInfo_1(){
         convertDecBinRemainder_header[0].style.color = "blue";
     } 
 }
-convertDecBinRemainder_header[0].addEventListener('click', show_ConvertDecBinRemainderStudentInfo_1);
 
 // Step 2 info
 function show_ConvertDecBinRemainderStudentInfo_2(){
@@ -280,7 +223,6 @@ function show_ConvertDecBinRemainderStudentInfo_2(){
         convertDecBinRemainder_header[1].style.color = "blue";
     } 
 }
-convertDecBinRemainder_header[1].addEventListener('click', show_ConvertDecBinRemainderStudentInfo_2);
 
 // Step 3 info
 function show_ConvertDecBinRemainderStudentInfo_3(){
@@ -292,7 +234,6 @@ function show_ConvertDecBinRemainderStudentInfo_3(){
         convertDecBinRemainder_header[2].style.color = "blue";
     } 
 }
-convertDecBinRemainder_header[2].addEventListener('click', show_ConvertDecBinRemainderStudentInfo_3);
 
 // Step 4 info
 function show_ConvertDecBinRemainderStudentInfo_4(){
@@ -304,7 +245,6 @@ function show_ConvertDecBinRemainderStudentInfo_4(){
         convertDecBinRemainder_header[3].style.color = "blue";
     } 
 }
-convertDecBinRemainder_header[3].addEventListener('click', show_ConvertDecBinRemainderStudentInfo_4);
 
 // Step 5 info
 function show_ConvertDecBinRemainderStudentInfo_5(){
@@ -316,7 +256,6 @@ function show_ConvertDecBinRemainderStudentInfo_5(){
         convertDecBinRemainder_header[4].style.color = "blue";
     } 
 }
-convertDecBinRemainder_header[4].addEventListener('click', show_ConvertDecBinRemainderStudentInfo_5);
 
 /*** Binary and IP Addresses ***/
 const binIpAddress_header = document.getElementsByClassName('binIpAddress_header');
@@ -335,7 +274,6 @@ function show_binIpAddressTextInfo(){
         binIpAddress_header[0].style.color = "blue";
     } 
 }
-binIpAddress_header[0].addEventListener('click', show_binIpAddressTextInfo);
 
 /*** Setting Dip Switches ***/
 const setDipSwitch_header = document.getElementsByClassName('setDipSwitch_header');
@@ -354,7 +292,6 @@ function show_setDipSwitchAnswerInfo(){
         setDipSwitch_header[0].style.color = "blue";
     } 
 }
-setDipSwitch_header[0].addEventListener('click', show_setDipSwitchAnswerInfo);
 
 /*** Binary Assessment ***/
 const binaryAssessment_header = document.getElementsByClassName('binaryAssessment_header');
@@ -379,7 +316,6 @@ function show_binAssQ1AnswerInfo(){
         binaryAssessment_header[0].style.color = "blue";
     } 
 }
-binaryAssessment_header[0].addEventListener('click', show_binAssQ1AnswerInfo);
 
 function show_binAssQ2AnswerInfo(){
     if(binaryAssessmentQ2Info_result.innerHTML === binAssInfo_array[1]){
@@ -390,7 +326,6 @@ function show_binAssQ2AnswerInfo(){
         binaryAssessment_header[1].style.color = "blue";
     } 
 }
-binaryAssessment_header[1].addEventListener('click', show_binAssQ2AnswerInfo);
 
 function show_binAssQ3AnswerInfo(){
     if(binaryAssessmentQ3Info_result.innerHTML === binAssInfo_array[2]){
@@ -401,7 +336,6 @@ function show_binAssQ3AnswerInfo(){
         binaryAssessment_header[2].style.color = "blue";
     } 
 }
-binaryAssessment_header[2].addEventListener('click', show_binAssQ3AnswerInfo);
 
 function show_binAssQ4AnswerInfo(){
     if(binaryAssessmentQ4Info_result.innerHTML === binAssInfo_array[3]){
@@ -412,7 +346,6 @@ function show_binAssQ4AnswerInfo(){
         binaryAssessment_header[3].style.color = "blue";
     } 
 }
-binaryAssessment_header[3].addEventListener('click', show_binAssQ4AnswerInfo);
 
 /*** Exported variables/functions ***/
 
@@ -478,4 +411,8 @@ export{
     binaryAssessmentQ3Info_result, 
     binaryAssessmentQ4Info_result, 
     binAssInfo_array,
+    show_binAssQ1AnswerInfo,
+    show_binAssQ2AnswerInfo,
+    show_binAssQ3AnswerInfo,
+    show_binAssQ4AnswerInfo
 }
