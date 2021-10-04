@@ -41,6 +41,10 @@ header{
     text-align: center;
 }
 
+#section_binary:active, #section_cmdPrompt:active, #section_configCheck:active, #section_ping:active{
+    border: 3px solid rgb(0, 158, 15)
+}
+
 #hamIconDiv{
     margin-right: 40px;
     margin-top: 16px;
