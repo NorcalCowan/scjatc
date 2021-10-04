@@ -2,7 +2,7 @@
 
 const binary = document.getElementById('section_binary');
 function gotoBinary(){
-    location.href = "binary.html";
+    location.href = "https://norcalcowan.github.io/scjatc/lectora/answerSheets/3rdYear/views/binary.html";
 }
 binary.addEventListener('click', gotoBinary);
 
