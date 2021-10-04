@@ -47,6 +47,13 @@ for(let i=0; i<nav.length; i++){
     nav[i].addEventListener('click', onClick);
 }
 
+
+const homeIcon = document.getElementById('homeIcon');
+function goHome(){
+    location.href = "home.html";
+}
+homeIcon.addEventListener('click', goHome);
+
 /*** EXPORT VARIABLES AND FUNCTIONS ***/
 export{
     hamIcon,
@@ -58,5 +65,7 @@ export{
     hideSections,
     showSections,
     onClick,
-    nav
+    nav,
+    homeIcon,
+    goHome
 }
