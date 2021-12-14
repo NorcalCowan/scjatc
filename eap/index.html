@@ -14,11 +14,12 @@
 <body>
     <header class="flex-container flex-header">
         <img src="images/tranparent-logo.png" alt="JATC Logo" class="logo">
-        <svg height="50" width="50">
+        <svg id="hamIcon" height="50" width="50">
             <line x1="0" y1="10" x2="50" y2="10" class="menu-icon_line"/>
             <line x1="0" y1="25" x2="50" y2="25" class="menu-icon_line"/>
             <line x1="0" y1="40" x2="50" y2="40" class="menu-icon_line"/>
         </svg>
+        <!-- <button class="btn btn-outline-danger plan-btn">View Full Plan</button> -->
     </header>
 
     <body>
@@ -26,8 +27,19 @@
             <h2 class="title">NorCal SCJATC</h2>
             <h1 class="title">Emergency Action Plan</h1>
         </div>
-        
-        
+
+        <div id="Sidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn"><span id="x_symbol">&times;</span></a>
+            <h5>Table of Contents</h5>
+            <a id="completePlan" href="#">View Full Plan</a>
+            <a class="nav" id="whatsBinWhyCare" href="#">Evacuation Locations</a>
+            <a class="nav" id="whatsByte" href="#">Gas Shut-Off Procedure</a>
+            <a class="nav" id="whatsBinary" href="#">Information Resources</a>
+            <a class="nav" id="binaryOnsOffs" href="#">First Aid Team</a>
+            <a class="nav" id="bitsDecNumbers" href="#">Response Team Lead</a>
+            <a class="nav" id="convBinDec" href="#">Search and Site Assessment Team</a>
+            <a class="nav" id="practiceConvBinDec" href="#">Student and Staff Liasion</a>
+        </div>
         
         <div id="procedures-container" class="procedures-container">
             <h2 class="procedures-title">Emergency Procedures</h2>
@@ -52,7 +64,7 @@
             <div id="evacuation-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Evacuation</h3>
-                    <button id="evacText" class="btn btn-outline-success text-btn" onclick="window.location.href='sms://open?addresses=+14088827767,14083908048;?&body=Attention%20please%2E%20We%20need%20to%20institute%20an%20EVACUATION%20of%20the%20building%2E%20Staff%20is%20to%20take%20their%20students%20to%20their%20designated%20Assembly%20Area%2E%20Students%20please%20remain%20with%20your%20Instructor%2E';">
+                    <button id="evacText" class="btn btn-outline-success text-btn" onclick="sendEvacText()">
                         Send Evacuation Text
                     </button>
                 </div>
@@ -60,7 +72,7 @@
                 <h4>Primary (on-site) Location</h4>
                 <ol>
                     <li>Initiate evacuation announcement</li>
-                    <li>Notify appropriate</li>
+                    <li>Notify appropriate first responders</li>
                     <li>Acquire JATC Response Tool Box and student rosters</li>
                     <li>Using evacuation routes, escort building occupants to assembly location</li>
                     <li>Take attendance and report to site administrator</li>
@@ -85,7 +97,7 @@
             <div id="fire-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Fire</h3>
-                    <button class="btn btn-outline-success text-btn">Send Evacuation Text</button>
+                    <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
                 </div>
                 <hr>
                 <h4>Inside Building</h4>
@@ -110,7 +122,7 @@
             <div id="earthquake-info" class="procedures-info-container procedure-info_animate hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Earthquake</h3>
-                    <button class="btn btn-outline-success text-btn">Send Evacuation Text</button>
+                    <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
                 </div>
                 <hr>
                 <ol>
@@ -127,7 +139,7 @@
             <div id="intruder-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Active Intruder</h3>
-                    <button class="btn btn-outline-success text-btn">Send Lockdown Text</button>
+                    <button class="btn btn-outline-success text-btn" onclick="sendLockdownText()">Send Lockdown Text</button>
                 </div>
                 <hr>
                 <h4>Initial Actions</h4>

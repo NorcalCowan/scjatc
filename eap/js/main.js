@@ -1,33 +1,14 @@
 'use strict';
-
-const evacuationBtn = document.getElementById('evacuation-btn');
+ 
 const evacuationInfo = document.getElementById('evacuation-info');
-
-const fireBtn = document.getElementById('fire-btn');
 const fireInfo = document.getElementById('fire-info');
-
-const earthquakeBtn = document.getElementById('earthquake-btn');
 const earthquakeInfo = document.getElementById('earthquake-info');
-
-const intruderBtn = document.getElementById('intruder-btn');
 const intruderInfo = document.getElementById('intruder-info');
-
-const bombBtn = document.getElementById('bomb-btn');
 const bombInfo = document.getElementById('bomb-info');
-
-const dropCoverBtn = document.getElementById('dropCover-btn');
 const dropCoverInfo = document.getElementById('dropCover-info');
-
-const lockdownBtn = document.getElementById('lockdown-btn');
 const lockdownInfo = document.getElementById('lockdown-info');
-
-const crashBtn = document.getElementById('crash-btn');
 const crashInfo = document.getElementById('crash-info');
-
-const weatherBtn = document.getElementById('weather-btn');
 const weatherInfo = document.getElementById('weather-info');
-
-const shelterBtn = document.getElementById('shelter-btn');
 const shelterInfo = document.getElementById('shelter-info');
 
 const emergInfo_array = [
@@ -57,3 +38,80 @@ function showInfo(event){
     emergInfo.classList.toggle("hideInfo");
 }
 proceduresContainer.addEventListener('click', function(){ showInfo(event); });
+
+//Function and variables for text messages
+const evacuateText = "ATTENTION PLEASE! We need to institute an EVACUATION of the building. Staff is to take their students to their designated Assembly Area. Students please remain with your Instructor.";
+function sendEvacText(){
+    let encodedText = encodeURIComponent(evacuateText);
+    window.location.href=`sms://open?addresses=+14088827767,14083908048;?&body=${encodedText}`;
+}
+
+const lockdownText = "ATTENTION PLEASE! LOCKDOWN…LOCKDOWN…LOCKDOWN.  Additional information will follow.";
+function sendLockdownText(){
+    let encodedText = encodeURIComponent(lockdownText);
+    window.location.href=`sms://open?addresses=+14088827767,14083908048;?&body=${encodedText}`;
+}
+
+
+
+
+
+
+const hamIcon = document.getElementById("hamIcon");
+hamIcon.addEventListener('click', openNav);
+function openNav() {
+    document.getElementById("Sidenav").style.width = "70%";
+}
+  
+/* Set the width of the side navigation to 0 */
+const x_symbol = document.getElementById("x_symbol");
+x_symbol.addEventListener('click', closeNav);
+function closeNav() {
+document.getElementById("Sidenav").style.width = "0";
+}
+
+ 
+const completeLesson = document.getElementById('completeLesson');
+const section_array = document.getElementsByTagName('section');
+function hideSections(){
+    for(let i=0; i<section_array.length; i++){
+        section_array[i].style.display = 'none'; 
+    }
+}
+function showSections(){
+    for(let i=0; i<section_array.length; i++){
+        section_array[i].style.display = 'block'; 
+    }
+    // setTimeout(closeNav, 1000);
+}
+completeLesson.addEventListener('click', showSections);
+
+
+const onClick = (event) => {
+    console.log(event.srcElement.id);
+    let clickedID = event.srcElement.id;
+    console.log(clickedID);
+    hideSections();
+
+    let section = document.querySelector('#section_' + clickedID);
+    console.log(section);
+    section.style.display = 'block';
+
+    // setTimeout(closeNav, 1000);
+}
+const nav = document.getElementsByClassName('nav');
+for(let i=0; i<nav.length; i++){
+    nav[i].addEventListener('click', onClick);
+}
+
+
+// const homeIcon = document.getElementById('homeIcon');
+// function goHome(){
+//     location.href = "home.html";
+// }
+// homeIcon.addEventListener('click', goHome);
+
+// Event listeners for Nav functions
+hamIcon.addEventListener('click', openNav);
+x_symbol.addEventListener('click', closeNav);
+completeLesson.addEventListener('click', showSections);
