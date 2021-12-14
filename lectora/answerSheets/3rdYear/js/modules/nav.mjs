@@ -13,7 +13,7 @@ function closeNav() {
 document.getElementById("Sidenav").style.width = "0";
 }
 
-
+ 
 const completeLesson = document.getElementById('completeLesson');
 const section_array = document.getElementsByTagName('section');
 function hideSections(){

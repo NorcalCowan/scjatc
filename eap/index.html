@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emergency Action Plan</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Bootstrap mini-CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="flex-container flex-header">
+        <img src="images/tranparent-logo.png" alt="JATC Logo" class="logo">
+        <svg height="50" width="50">
+            <line x1="0" y1="10" x2="50" y2="10" class="menu-icon_line"/>
+            <line x1="0" y1="25" x2="50" y2="25" class="menu-icon_line"/>
+            <line x1="0" y1="40" x2="50" y2="40" class="menu-icon_line"/>
+        </svg>
+    </header>
+
+    <body>
+        <div class="title-container">
+            <h2 class="title">NorCal SCJATC</h2>
+            <h1 class="title">Emergency Action Plan</h1>
+        </div>
+        
+        
+        
+        <div id="procedures-container" class="procedures-container">
+            <h2 class="procedures-title">Emergency Procedures</h2>
+            <hr>
+            <div class="grid-container">
+                <button id="evacuation" class="grid-item emerg-btn">Evacuation</button>
+                <button id="fire" class="grid-item emerg-btn">Fire</button>
+                <button id="earthquake" class="grid-item emerg-btn">Earthquake</button>
+                <button id="intruder" class="grid-item emerg-btn">Active Intruder</button>
+                <button id="bomb" class="grid-item emerg-btn">Bomb Threat</button>
+                <button id="dropCover" class="grid-item emerg-btn">Drop, Cover, Hold</button>
+                <button id="lockdown" class="grid-item emerg-btn">Lockdown</button>
+                <button id="crash" class="grid-item emerg-btn">Aircraft Crash</button>
+                <button id="weather" class="grid-item emerg-btn">Severe Weather</button>
+                <button id="shelter" class="grid-item emerg-btn">Shelter in Place</button>
+            </div>
+        </div>
+      
+
+        <div id="procedure-info_dispay" class="flex-container  flex-procedures-info" >
+
+            <div id="evacuation-info" class="procedures-info-container hideInfo">
+                <div class="flex-container flex-text">
+                    <h3 class="procedure-info_title">Evacuation</h3>
+                    <button id="evacText" class="btn btn-outline-success text-btn" onclick="window.location.href='sms://open?addresses=+14088827767,14083908048;?&body=Attention%20please%2E%20We%20need%20to%20institute%20an%20EVACUATION%20of%20the%20building%2E%20Staff%20is%20to%20take%20their%20students%20to%20their%20designated%20Assembly%20Area%2E%20Students%20please%20remain%20with%20your%20Instructor%2E';">
+                        Send Evacuation Text
+                    </button>
+                </div>
+                <hr>
+                <h4>Primary (on-site) Location</h4>
+                <ol>
+                    <li>Initiate evacuation announcement</li>
+                    <li>Notify appropriate</li>
+                    <li>Acquire JATC Response Tool Box and student rosters</li>
+                    <li>Using evacuation routes, escort building occupants to assembly location</li>
+                    <li>Take attendance and report to site administrator</li>
+                    <li>Remain in assembly area until further instructions are received</li>
+                    <li>Do not re-enter building until "All Clear" is provided</li>
+                    <li>Take additional action as needed</li>
+                </ol>
+                <h4>Secondary (off-site) Location</h4>
+                <ol>
+                    <li>Initiate off-site evacuation announcement</li>
+                    <li>Notify appropriate first responders</li>
+                    <li>Acquire JATC Response Tool Box and student rosters</li>
+                    <li>Using evacuation routes, escort building occupants to assembly location</li>
+                    <li>Take attendance and prior to leaving the site</li>
+                    <li>Proceed to secondary (off-site) location</li>
+                    <li>Take attendance and report to site administrator</li>
+                    <li>Remain in assembly area until further instructions are received</li>
+                    <li>Do not re-enter building until "All Clear" is provided</li>
+                </ol>
+            </div>
+
+            <div id="fire-info" class="procedures-info-container hideInfo">
+                <div class="flex-container flex-text">
+                    <h3 class="procedure-info_title">Fire</h3>
+                    <button class="btn btn-outline-success text-btn">Send Evacuation Text</button>
+                </div>
+                <hr>
+                <h4>Inside Building</h4>
+                <ol>
+                    <li>Activate fire alarm / emergency communications system</li>
+                    <li>Evacuate building</li>
+                    <li>Shut off gas to building</li>
+                    <li>Prevent re-entry into building</li>
+                    <li>Evaluate the situation</li>
+                    <li>Take additional action as needed</li>
+                </ol>
+                <h4>Outside / Adjacent Building</h4>
+                <ol>
+                    <li>Determine if evacuation is necessary</li>
+                    <li>If necessary, evacuate to secondary (off-site) location</li>
+                    <li>Ensure all occupants have left the building</li>
+                    <li>Post a notice stating "Building closed due to local emergency"</li>
+                    <li>Follow guidance provided by first responders</li>
+                </ol>
+            </div>
+
+            <div id="earthquake-info" class="procedures-info-container procedure-info_animate hideInfo">
+                <div class="flex-container flex-text">
+                    <h3 class="procedure-info_title">Earthquake</h3>
+                    <button class="btn btn-outline-success text-btn">Send Evacuation Text</button>
+                </div>
+                <hr>
+                <ol>
+                    <li>Drop, Cover, and Hold On</li>
+                    <li>When shaking stops, remain in place for 20 seconds</li>
+                    <li>Evacuate Building</li>
+                    <li>Shut off gas to building</li>
+                    <li>Prevent re-entry to building</li>
+                    <li>Evaluate the situation</li>
+                    <li>Take additional action as needed</li>
+                </ol>
+            </div>
+
+            <div id="intruder-info" class="procedures-info-container hideInfo">
+                <div class="flex-container flex-text">
+                    <h3 class="procedure-info_title">Active Intruder</h3>
+                    <button class="btn btn-outline-success text-btn">Send Lockdown Text</button>
+                </div>
+                <hr>
+                <h4>Initial Actions</h4>
+                <ol>
+                    <li>If appropriate, initiate lockdown (extreme act of violence)</li>
+                    <li>Call 911 - provide details of situation (i.e. lockdown)</li>
+                    <li>If safe, clear hallways and open areas to direct occupants to safety</li>
+                    <li>Shut off gas to building</li>
+                    <li>Prevent re-entry into building</li>
+                    <li>Evaluate the situation</li>
+                    <li>Take additional action as needed</li>
+                </ol>
+                <h4>During Active Intruder Event</h4>
+                <ol>
+                    <li>Remain calm and quiet in a secured area away from doors and windows</li>
+                    <li>If lockdown is initiated, do not open doors once they are locked</li>
+                    <li>If safe, clear hallways and open areas to direct occupants to safety</li>
+                </ol>
+                <h4>After Active Intruder Event</h4>
+                <ol>
+                    <li>Evacuate to secondary (off-site) location</li>
+                    <li>Provide liaison for family members of injured occupants and staff</li>
+                    <li>Assist law enforcement - provide information about incident</li>
+                    <li>Arrange crisis counseling for occcupants and staff</li>
+                </ol>
+            </div>
+
+            <div id="bomb-info" class="procedures-info-container hideInfo">
+                <div class="flex-container flex-text">
+                    <h3 class="procedure-info_title">Bomb Threat</h3>
+                    <button class="btn btn-outline-success text-btn">Send Evacuation Text</button>
+                </div>
+                <hr>
+                <ol>
+                    <li>Call 911</li>
+                    <li>Turn off cellular phones and 2-way radios</li>
+                    <li>Do not examine or investigate suspicious objects</li>
+                    <li>If necessary, evacuate to secondary (off-site) location</li>
+                    <li>Account for building occupants</li>
+                    <li>Do not re-enter building until authorities provide clearance</li>
+                </ol>
+            </div>
+
+            <div id="dropCover-info" class="procedures-info-container hideInfo">
+                <div class="flex-container flex-text">
+                    <h3 class="procedure-info_title">Drop, Cover, Hold</h3>
+                    <button class="btn btn-outline-success text-btn">Send Evacuation Text</button>
+                </div>
+                <hr>
+                <ol>
+                    <li>Drop to floor under desks, chairs, or tables</li>
+                    <li>Put your back towards windows</li>
+                    <li>Place head between knees</li>
+                    <li>Hold onto table leg with one hand, cover back of neck with the other</li>
+                    <li>When shaking stops, remain in place for 20 seconds</li>
+                    <li>Evaluate the situation</li>
+                    <li>Take additional action as needed</li>
+                </ol>
+            </div>
+
+            <div id="lockdown-info" class="procedures-info-container hideInfo">
+                <div class="flex-container flex-text">
+                    <h3 class="procedure-info_title">Lockdown</h3>
+                    <button class="btn btn-outline-success text-btn">Send Lockdown Text</button>
+                </div>
+                <hr>
+                <ol>
+                    <li>Initiate lockdown announcement</li>
+                    <li>Move quickly and quietly to closest safe office or classroom</li>
+                    <li>Lock doors and remain in office or classroom</li>
+                    <li>Close blinds or shades in room and turn off lights</li>
+                    <li>Call 911</li>
+                    <li>Remain quiet and calm</li>
+                    <li>Wait for authorized staff or law enforcement to open the door</li>
+                </ol>
+            </div>
+
+            <div id="crash-info" class="procedures-info-container hideInfo">
+                <div class="flex-container flex-text">
+                    <h3 class="procedure-info_title">Aircraft Crash</h3>
+                    <button class="btn btn-outline-success text-btn">Send Evacuation Text</button>
+                </div>
+                <hr>
+                <ol>
+                    <li>Call 911</li>
+                    <li>If necessary, evacuate building</li>
+                    <li>If necessary administer first aid and removal of injured from building</li>
+                    <li>Ensure students and staff remain at a safe distance</li>
+                    <li>Account for building occupants</li>
+                    <li>Do not re-enter building until authorities provide clearance</li>
+                </ol>
+            </div>
+
+            <div id="weather-info" class="procedures-info-container hideInfo">
+                <div class="flex-container flex-text">
+                    <h3 class="procedure-info_title">Severe Weather</h3>
+                </div>
+                <hr>
+                <ol>
+                    <li>Monitor weather forecasts and storm information</li>
+                    <li>Report to site by 6 a.m. to check for power outages, flooding, etc.</li>
+                    <li>Notify utility companies of suspected breaks in utilities</li>
+                    <li>Determine if site will be closed or remain open</li>
+                    <li>Contact staff and students if site will be closed</li>
+                    <li>Post site status on website</li>
+                    <li>Take appropriate action to safeguard site property</li>
+                </ol>
+                <h4>Windstorm</h4>
+                <ol>
+                    <li>Evacuate to 1st floor away from spaces bearing full force of wind</li>
+                    <li>Initiate TAKE COVER and stay away from windows</li>
+                    <li>Close all blinds and curtains</li>
+                    <li>Take attendance and report to Site Administrator</li>
+                </ol>
+            </div>
+
+            <div id="shelter-info" class="procedures-info-container hideInfo">
+                <div class="flex-container flex-text">
+                    <h3 class="procedure-info_title">Shelter in Place</h3>
+                </div>
+                <hr>
+                <ol>
+                    <li>Initiate shelter in place announcement</li>
+                    <li>If necessary, shut down HVAC</li>
+                    <li>Clear occupants from halls and open areas</li>
+                    <li>Secure offices and classrooms</li>
+                    <li>Report attendance</li>
+                    <li>Utilize information gathering resources</li>
+                    <li>When safe, initiate "All clear" announcement</li>
+                </ol>
+            </div>
+
+            
+
+        </div>
+       
+    </body>
+
+    <footer>
+        <div class="flex-container flex-footer footer-icon-container">
+            <a href="callto://+15105602032"><img src="images/fire.png" alt="Fire Icon" class="emerg-call-icon"></a>
+            <a href="callto://+15105602032"><img src="images/police-badge.png" alt="Police Icon" class="emerg-call-icon"></a>
+            <a href="callto://+15105602032"><img src="images/pge-icon.png" alt="PG&E Icon" class="emerg-call-icon"></a>
+            <button class="btn btn-danger">911</button>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

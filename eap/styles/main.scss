@@ -1,0 +1,154 @@
+$header-bg-color: black;
+$footer-bg-color: black;
+$menu-icon-width: 50px;
+$menu-icon-height: 50px;
+$menu-icon-line-color: white;
+$menu-icon-line-width: 3;
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    letter-spacing: 1px;
+}
+
+.flex-container{
+    display: flex;
+}
+
+.grid-container{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 2vw;
+    margin: 2vw;
+}
+
+.grid-item{
+    padding: 1vw;
+    font-size: 1.5em;
+}
+
+#evacuation{
+    grid-column-start: 1;
+    grid-column-end: 4;
+}
+
+.flex-header{
+    justify-content: space-between;
+}
+
+
+header{
+    background-color: $header-bg-color;
+    padding: 2vw;
+    margin-bottom: 5vw;
+}
+
+.logo{
+    width: 100px;
+}
+
+.menu-icon{
+    width: $menu-icon-width;
+    height: $menu-icon-height;
+}
+
+.menu-icon_line{
+    stroke: $menu-icon-line-color;
+    stroke-width: $menu-icon-line-width;
+}
+
+.title{
+    text-align: center;
+}
+
+.title-container{
+    margin-bottom: 10vw;
+}
+
+.procedures-title{
+    margin-left: 2vw;
+}
+
+.procedures-container{
+    margin-bottom: 10vw;
+}
+
+.procedures-container hr{
+    margin: 0 2vw;
+}
+
+.emerg-btn{
+    background-color: rgb(218,56,73);
+    color: white;
+    box-shadow: 2px 2px 2px black;
+    letter-spacing: 1px;
+    border-radius: 10px;
+}
+
+.procedures-info-container{
+    width: 96vw;
+    margin-bottom: 2vw;
+    // border: 2px rgb(218,56,73) solid;
+    // box-shadow: 0px 2px 2px 2px lightgray;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    padding: 2vw 2vw 15vw 2vw;
+    // overflow-x: hidden;
+    // overflow-y: auto;
+}
+
+.procedure-info_title{
+    font-size: 1.5rem;
+}
+
+.flex-procedures-info{
+    justify-content: center;
+}
+
+.text-btn{
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+
+.flex-text{
+    justify-content: space-between;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 7%;
+    background-color: $footer-bg-color;
+    padding: 2vw; 
+}
+
+// .call911-container{
+//     justify-content: center;
+//     margin-bottom: 2vw;
+// }
+
+.call911{
+    // width: 100%;
+    // font-size: 1.5rem;
+    letter-spacing: 1px;
+}
+
+.footer-icon-container{
+    margin: 0 5vw;
+}
+
+.emerg-call-icon{
+    width: 50px;
+}
+
+.flex-footer{
+    justify-content: space-between;
+}
+
+.hideInfo{
+    display: none;
+}

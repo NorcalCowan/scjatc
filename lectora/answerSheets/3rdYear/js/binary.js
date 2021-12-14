@@ -6,6 +6,31 @@ Nav.x_symbol.addEventListener('click', Nav.closeNav);
 Nav.completeLesson.addEventListener('click', Nav.showSections);
  
 
+/*** COMMENTS - Use localstorage? Only good for user. Would need db for access by others. ***/
+// create array to store comments
+    // const commentsArray = [];
+// create a Class for comments
+    // class Comments{
+    //     constructor(date, page, comment){
+    //         this.timestamp = date;
+    //         this.page = page;
+    //         this.comment = comment;
+    //     }
+    // }
+    // const commentBtn_WhatsBinaryWhyCare = document.getElementById('WhatsBinaryWhyCare');
+    // const onClick_submitComment = (event) => {
+    //     let timestamp = new Date();
+    //     let page = event.srcElement.id;
+    //     let comment = document.getElementById('comment_whatsBinWhyCare').value;
+        
+    //     let commentSubmission = new Comments(timestamp, page, comment);
+    //     commentsArray.push(commentSubmission);
+    //     console.log(commentsArray);
+    //     comment = '';
+    // }
+    // commentBtn_WhatsBinaryWhyCare.addEventListener('click', onClick_submitComment);
+
+
 
 /*** What's a Bit ***/
 const whatsBitInfo_header = document.getElementsByClassName('whatsBitInfo_header');
