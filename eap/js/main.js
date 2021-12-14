@@ -40,16 +40,19 @@ function showInfo(event){
 proceduresContainer.addEventListener('click', function(){ showInfo(event); });
 
 //Function and variables for text messages
+const sheriff = '14088827767';
+const cowan = '14083908048';
+
 const evacuateText = "ATTENTION PLEASE! We need to institute an EVACUATION of the building. Staff is to take their students to their designated Assembly Area. Students please remain with your Instructor.";
 function sendEvacText(){
     let encodedText = encodeURIComponent(evacuateText);
-    window.location.href=`sms://open?addresses=+14088827767,14083908048;?&body=${encodedText}`;
+    window.location.href=`sms://open?addresses=+${sheriff},${cowan};?&body=${encodedText}`;
 }
 
 const lockdownText = "ATTENTION PLEASE! LOCKDOWN…LOCKDOWN…LOCKDOWN.  Additional information will follow.";
 function sendLockdownText(){
     let encodedText = encodeURIComponent(lockdownText);
-    window.location.href=`sms://open?addresses=+14088827767,14083908048;?&body=${encodedText}`;
+    window.location.href=`sms://open?addresses=+${sheriff},${cowan};?&body=${encodedText}`;
 }
 
 
@@ -78,13 +81,13 @@ function hideSections(){
         section_array[i].style.display = 'none'; 
     }
 }
-function showSections(){
-    for(let i=0; i<section_array.length; i++){
-        section_array[i].style.display = 'block'; 
-    }
-    // setTimeout(closeNav, 1000);
-}
-completeLesson.addEventListener('click', showSections);
+// function showSections(){
+//     for(let i=0; i<section_array.length; i++){
+//         section_array[i].style.display = 'block'; 
+//     }
+//     // setTimeout(closeNav, 1000);
+// }
+// completeLesson.addEventListener('click', showSections);
 
 
 const onClick = (event) => {
@@ -114,4 +117,4 @@ for(let i=0; i<nav.length; i++){
 // Event listeners for Nav functions
 hamIcon.addEventListener('click', openNav);
 x_symbol.addEventListener('click', closeNav);
-completeLesson.addEventListener('click', showSections);
+// completeLesson.addEventListener('click', showSections);

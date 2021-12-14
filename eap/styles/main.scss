@@ -173,7 +173,7 @@ h5{
     overflow-x: hidden; /* Disable horizontal scroll */
     padding-top: 30px; /* Place content 60px from the top */
     padding-bottom: 30px;
-    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+    transition: 0.2s; /* 0.5 second transition effect to slide in the sidenav */
     font-size: 5vw;
     box-shadow: -2px -2px 8px 2px darkgray;
     
@@ -204,4 +204,8 @@ h5{
     top: 0;
     right: 25px;
     font-size: 9vw;
+  }
+
+  .flex-plan-btn{
+      justify-content: center;
   }

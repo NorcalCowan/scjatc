@@ -19,7 +19,7 @@
             <line x1="0" y1="25" x2="50" y2="25" class="menu-icon_line"/>
             <line x1="0" y1="40" x2="50" y2="40" class="menu-icon_line"/>
         </svg>
-        <!-- <button class="btn btn-outline-danger plan-btn">View Full Plan</button> -->
+        
     </header>
 
     <body>
@@ -27,20 +27,23 @@
             <h2 class="title">NorCal SCJATC</h2>
             <h1 class="title">Emergency Action Plan</h1>
         </div>
-
+        <!-- Side Navigation -->
         <div id="Sidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn"><span id="x_symbol">&times;</span></a>
-            <h5>Table of Contents</h5>
-            <a id="completePlan" href="#">View Full Plan</a>
-            <a class="nav" id="whatsBinWhyCare" href="#">Evacuation Locations</a>
-            <a class="nav" id="whatsByte" href="#">Gas Shut-Off Procedure</a>
-            <a class="nav" id="whatsBinary" href="#">Information Resources</a>
+            <div class="flex-container flex-plan-btn">
+                <button class="btn btn-outline-danger">View Full Plan</button>
+            </div>
+            <a class="nav" id="whatsByte" href="#">Building Lockup</a>
+            <a class="nav" id="whatsByte" href="#">Paging Procedure</a>
+            <a class="nav" id="whatsByte" href="#">Gas Shut-Off</a>
+            <a class="nav" id="whatsByte" href="#">Parking Gate Manual Operation</a>
             <a class="nav" id="binaryOnsOffs" href="#">First Aid Team</a>
             <a class="nav" id="bitsDecNumbers" href="#">Response Team Lead</a>
             <a class="nav" id="convBinDec" href="#">Search and Site Assessment Team</a>
             <a class="nav" id="practiceConvBinDec" href="#">Student and Staff Liasion</a>
+            <a class="nav" id="whatsBinary" href="#">Information Resources</a>
         </div>
-        
+        <!-- Procedure Buttons -->
         <div id="procedures-container" class="procedures-container">
             <h2 class="procedures-title">Emergency Procedures</h2>
             <hr>
@@ -57,10 +60,9 @@
                 <button id="shelter" class="grid-item emerg-btn">Shelter in Place</button>
             </div>
         </div>
-      
-
+      <!-- Procedure Info's -->
         <div id="procedure-info_dispay" class="flex-container  flex-procedures-info" >
-
+            <!-- Evac Info -->
             <div id="evacuation-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Evacuation</h3>
@@ -93,7 +95,7 @@
                     <li>Do not re-enter building until "All Clear" is provided</li>
                 </ol>
             </div>
-
+            <!-- Fire Info -->
             <div id="fire-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Fire</h3>
@@ -118,7 +120,7 @@
                     <li>Follow guidance provided by first responders</li>
                 </ol>
             </div>
-
+            <!-- Earthquake Info -->
             <div id="earthquake-info" class="procedures-info-container procedure-info_animate hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Earthquake</h3>
@@ -135,7 +137,7 @@
                     <li>Take additional action as needed</li>
                 </ol>
             </div>
-
+            <!-- Active Intruder Info -->
             <div id="intruder-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Active Intruder</h3>
@@ -166,7 +168,7 @@
                     <li>Arrange crisis counseling for occcupants and staff</li>
                 </ol>
             </div>
-
+            <!-- Bomb Info -->
             <div id="bomb-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Bomb Threat</h3>
@@ -182,7 +184,7 @@
                     <li>Do not re-enter building until authorities provide clearance</li>
                 </ol>
             </div>
-
+            <!-- Drop, Cover, Hold Info -->
             <div id="dropCover-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Drop, Cover, Hold</h3>
@@ -199,7 +201,7 @@
                     <li>Take additional action as needed</li>
                 </ol>
             </div>
-
+            <!-- Lockdown Info -->
             <div id="lockdown-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Lockdown</h3>
@@ -216,7 +218,7 @@
                     <li>Wait for authorized staff or law enforcement to open the door</li>
                 </ol>
             </div>
-
+            <!-- Aircraft Crash Info -->
             <div id="crash-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Aircraft Crash</h3>
@@ -232,7 +234,7 @@
                     <li>Do not re-enter building until authorities provide clearance</li>
                 </ol>
             </div>
-
+            <!-- Severe Weather/Storm Info -->
             <div id="weather-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Severe Weather</h3>
@@ -255,7 +257,7 @@
                     <li>Take attendance and report to Site Administrator</li>
                 </ol>
             </div>
-
+            <!-- Shelter in Place Info -->
             <div id="shelter-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
                     <h3 class="procedure-info_title">Shelter in Place</h3>
@@ -271,9 +273,6 @@
                     <li>When safe, initiate "All clear" announcement</li>
                 </ol>
             </div>
-
-            
-
         </div>
        
     </body>
