@@ -52,7 +52,7 @@ header{
 }
 
 .logo{
-    width: 20%;
+    width: 25%;
     height: auto;
 }
 
@@ -93,6 +93,11 @@ header{
     box-shadow: 2px 2px 2px black;
     letter-spacing: 1px;
     border-radius: 10px;
+}
+
+.active-emerg-btn{
+    background-color: lightgray;
+    color: rgb(218,56,73);
 }
 
 .procedures-info-container{

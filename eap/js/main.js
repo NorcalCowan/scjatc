@@ -1,5 +1,5 @@
 'use strict';
- 
+// Procedure info container variables - for emergInfo_arry 
 const evacuationInfo = document.getElementById('evacuation-info');
 const fireInfo = document.getElementById('fire-info');
 const earthquakeInfo = document.getElementById('earthquake-info');
@@ -24,6 +24,31 @@ const emergInfo_array = [
     shelterInfo
 ];
 
+// Emergency button variables - for emergBtn_arry 
+const evacuationBtn = document.getElementById('evacuation');
+const fireBtn = document.getElementById('fire');
+const earthquakeBtn = document.getElementById('earthquake');
+const intruderBtn = document.getElementById('intruder');
+const bombBtn = document.getElementById('bomb');
+const dropCoverBtn = document.getElementById('dropCover');
+const lockdownBtn = document.getElementById('lockdown');
+const crashBtn = document.getElementById('crash');
+const weatherBtn = document.getElementById('weather');
+const shelterBtn = document.getElementById('shelter');
+
+const emergBtn_array = [
+    evacuationBtn,
+    fireBtn,
+    earthquakeBtn,
+    intruderBtn,
+    bombBtn,
+    dropCoverBtn,
+    lockdownBtn,
+    crashBtn,
+    weatherBtn,
+    shelterBtn
+];
+
 //  Create single function "showInfo"
 const proceduresContainer = document.getElementById('procedures-container');
 
@@ -36,8 +61,20 @@ function showInfo(event){
         emergInfo_array[i].classList.add("hideInfo");
     }
     emergInfo.classList.toggle("hideInfo");
+
+    showActiveBtn(emerg);
 }
 proceduresContainer.addEventListener('click', function(){ showInfo(event); });
+
+function showActiveBtn(clickedBtn){
+    for(let i=0; i<emergBtn_array.length; i++){
+        emergBtn_array[i].classList.remove("active-emerg-btn");
+    }
+    let activeBtn = document.getElementById(`${clickedBtn}`);
+    activeBtn.classList.toggle("active-emerg-btn");
+}
+
+
 
 //Function and variables for text messages
 const sheriff = '14088827767';
