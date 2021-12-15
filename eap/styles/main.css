@@ -149,8 +149,8 @@ footer {
 /* The side navigation menu */
 h5 {
   color: #da3849;
-  text-align: center;
   font-size: 5vw;
+  padding: 2vw 5vw 0vw 5vw;
 }
 
 .sidenav {
@@ -173,6 +173,97 @@ h5 {
   /* 0.2 second transition effect to slide in the sidenav */
   font-size: 5vw;
   box-shadow: -2px -2px 8px 2px darkgray;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  /* font-size: 25px; */
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav .whtNav {
+  color: white;
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #da3849;
+}
+
+/* Position and style the close button (top right corner) */
+.closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 9vw;
+  text-decoration: none;
+}
+
+.flex-plan-btn {
+  justify-content: center;
+  padding-top: 3vh;
+}
+
+.flex-plan-btn button {
+  width: 80%;
+}
+
+/* The side navigation menu */
+.addInfo {
+  width: 0;
+  /* 0 width - change this with JavaScript */
+  height: 90vh;
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Stay on top */
+  top: 0;
+  right: 0;
+  background-color: black;
+  opacity: 0.9;
+  overflow-x: hidden;
+  /* Disable horizontal scroll */
+  overflow-y: auto;
+  padding-top: 30px;
+  /* Place content 60px from the top */
+  padding-bottom: 30px;
+  transition: 0.2s;
+  /* 0.2 second transition effect to slide in the sidenav */
+  font-size: 5vw;
+  box-shadow: -2px -2px 8px 2px darkgray;
+}
+
+.addInfo span {
+  text-decoration: none;
+  color: white;
+}
+
+.addInfo p {
+  color: white;
+  padding: 2vw 5vw 2vw 5vw;
+  font-size: 1rem;
+}
+
+.addInfo ul {
+  color: white;
+  padding: 2vw 5vw 2vw 15vw;
+  font-size: 1rem;
+}
+
+.addInfo .announcement {
+  color: white;
+  padding: 0vw 5vw 2vw 10vw;
+  font-size: 0.8rem;
+  margin-top: 0;
+}
+
+h6 {
+  color: yellow;
+  padding: 2vw 5vw 0vw 10vw;
 }
 
 /* The navigation menu links */

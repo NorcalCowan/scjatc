@@ -32,15 +32,15 @@
             <div class="flex-container flex-plan-btn">
                 <button class="btn btn-outline-danger">View Full Plan</button>
             </div>
-            <a class="nav" id="whatsByte" href="#">Building Lockup</a>
-            <a class="nav" id="whatsByte" href="#">Paging Procedure</a>
-            <a class="nav" id="whatsByte" href="#">Gas Shut-Off</a>
-            <a class="nav" id="whatsByte" href="#">Parking Gate Manual Operation</a>
-            <a class="nav" id="binaryOnsOffs" href="#">First Aid Team</a>
-            <a class="nav" id="bitsDecNumbers" href="#">Response Team Lead</a>
-            <a class="nav" id="convBinDec" href="#">Search and Site Assessment Team</a>
-            <a class="nav" id="practiceConvBinDec" href="#">Student and Staff Liasion</a>
-            <a class="nav" id="whatsBinary" href="#">Information Resources</a>
+            <a  href="#">Building Lockup</a>
+            <a  href="#">Paging Procedure</a>
+            <a  href="#">Gas Shut-Off</a>
+            <a  href="#">Parking Gate Manual Operation</a>
+            <a  href="#">First Aid Team</a>
+            <a  href="#">Response Team Lead</a>
+            <a  href="#">Search and Site Assessment Team</a>
+            <a  href="#">Student and Staff Liasion</a>
+            <a  href="#">Information Resources</a>
         </div>
         <!-- Procedure Buttons -->
         <div id="procedures-container" class="procedures-container">
@@ -98,7 +98,72 @@
                     <li>Remain in assembly area until further instructions are received</li>
                     <li>Do not re-enter building until "All Clear" is provided</li>
                 </ol>
+                <div class="flex-container flex-center">
+                    <button id="evacAddInfo_btn" class="btn btn-secondary text-btn">Additional Information</button>
+                </div>
+                
             </div>
+            <!-- Evacuation Addition Info - Side menu -->
+            <div id="evacAddInfo" class="addInfo">
+                <a href="javascript:void(0)" class="closebtn"><span id="evacAddInfo-x_symbol">&times;</span></a>
+                
+                <!-- ADDITIONAL INFO - Evacuation off-site -->
+                <h5>Evacuation – On-site</h5>
+                <p>This action provides for the orderly movement of students and staff along prescribed routes from inside the facility to a designated outside area of safety.  Evacuation is considered appropriate for, but is not limited to, the following events:</p> 
+                <ul>
+                    <li>Fire</li>
+                    <li>Post-earthquake</li>
+                    <li>Post-lockdown</li>
+                    <li>Bomb threat</li>
+                    <li>Gas leak</li>
+                </ul>
+                <h5>Announcement</h5>
+                <p>An announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p> 
+                <p class="announcement"><q>Attention please. We need to institute an EVACUATION of the building.  Staff is to take their students to their designated Assembly Area.  Students please remain with your Instructor.</q></p> 
+                <h5>Assisting Those With Disabilities</h5>
+                <p>The needs and preferences of non-ambulatory individuals will vary.  Those at ground floor locations may be able to exit without help.  Others may have minimal ability to move and lifting may be dangerous.  Some non-ambulatory people also have respiratory complications.  Remove them from smoke and vapors immediately.</p> 
+                <h6>Visually-impaired</h6>
+                <ul>
+                    <li>Announce the type of emergency</li>
+                    <li>Offer your arm for guidance</li>
+                    <li>Tell person where you are going, obstacles you encounter</li>
+                    <li>When you reach safety, ask if further help is needed</li>
+                </ul>
+                <h6>Hearing-impaired</h6>
+                <ul>
+                    <li>Turn lights on/off to gain person’s attention -OR-</li>
+                    <li>Indicate directions with gestures –OR-</li>
+                    <li>Write a note with evacuation directions</li>
+                </ul>
+                <h6>Crutches, Canes, or Walkers</h6>
+                <ul>
+                    <li>Evacuate these individuals as injured persons</li>
+                    <li>Assist and accompany to evacuation site, if possible -OR-</li>
+                    <li>Use a sturdy chair (or one with wheels) to move person -OR-</li>
+                    <li>Help carry individual to safety</li>
+                </ul>
+                <h6>Wheelchairs</h6>
+                <ul>
+                    <li>Give priority assistance to wheelchair users with electrical respirators</li>
+                    <li>If wheelchair is too heavy to take downstairs, determine the best carry options</li>
+                    <li>Reunite person with the wheelchair as soon as it is safe to do so</li>
+                    <li>Use evacuation chair if available and needed</li>
+                </ul>
+                <!-- ADDITIONAL INFO - Evacuation off-site -->
+                <h5>Evacuation – Off-site</h5>
+                <p>Off-site evacuation is implemented when it is unsafe to remain on the site and evacuation to an off-site assembly area is required.  This action provides for the orderly movement of students and staff along prescribed routes from inside the buildings to a designated area of safety. Off-site evacuation is considered appropriate for, but is not limited to, the following events:</p> 
+                <ul>
+                    <li>Fire</li>
+                    <li>Post-earthquake</li>
+                    <li>Post-lockdown</li>
+                    <li>Bomb threat</li>
+                    <li>Gas leak</li>
+                </ul>
+                <h5>Announcement</h5>
+                <p>An announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p> 
+                <p class="announcement"><q>Attention please. We need to institute an EVACUATION of the building.  Staff is to take their students to their designated Assembly Area.  Students please remain with your Instructor.</q></p>
+            </div>
+
             <!-- Fire Info -->
             <div id="fire-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
@@ -124,6 +189,31 @@
                     <li>Follow guidance provided by first responders</li>
                 </ol>
             </div>
+            <!-- Fire Addition Info - Side menu -->
+            <div id="evacAddInfo" class="addInfo">
+                <a href="javascript:void(0)" class="closebtn"><span id="evacAddInfo-x_symbol">&times;</span></a>
+                
+                <!-- ADDITIONAL INFO - Fire inside building -->
+                <h5>Fire – Inside Building</h5>
+                <p>Should any fire endanger the occupants or staff, it is important to act quickly and decisively to prevent injuries and contain the spread of the fire. In the event of a fire, the following guidelines should be followed:</p> 
+                <ul>
+                    <li>Elevator should not be used</li>
+                    <li>Close all doors leading to the fire</li>
+                    <li>If area is full of smoke, crawl along the floor close to the walls</li>
+                    <li>Before opening a door, check it for heat by placing hand one inch from the door near the top</li>
+                </ul>
+                <p>If a fire of any size is extinguished by onsite personnel, the fire department MUST be called to confirm that the fire is out.</p>
+                
+                <!-- ADDITIONAL INFO - Fire outside / adjacent building -->
+                <h5>Fire – Outside / Adjacent Building</h5>
+                <p>A fire in an adjoining building or area can threaten the site/building and endanger occupants and staff. Response actions will be determined by the location, size, proximity to building, and the likelihood that it may endanger the health and safety of occupants.</p> 
+                <p>If building is evacuated:</p>
+                <ul>
+                    <li>Monitor radio for information</li>
+                    <li>If fire reached the building, do not return to the building until it has been inspected and determined safe by proper authorities</li>
+                </ul>
+            </div>
+            
             <!-- Earthquake Info -->
             <div id="earthquake-info" class="procedures-info-container procedure-info_animate hideInfo">
                 <div class="flex-container flex-text">
