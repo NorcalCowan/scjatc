@@ -42,18 +42,24 @@ proceduresContainer.addEventListener('click', function(){ showInfo(event); });
 //Function and variables for text messages
 const sheriff = '14088827767';
 const cowan = '14083908048';
+const lopez = '14085697138';
+const hackett = '14083321363';
 
 const evacuateText = "ATTENTION PLEASE! We need to institute an EVACUATION of the building. Staff is to take their students to their designated Assembly Area. Students please remain with your Instructor.";
 function sendEvacText(){
     let encodedText = encodeURIComponent(evacuateText);
-    window.location.href=`sms://open?addresses=+${sheriff},${cowan};?&body=${encodedText}`;
+    window.location.href=`sms://open?addresses=+${lopez},${cowan};?&body=${encodedText}`;
 }
 
 const lockdownText = "ATTENTION PLEASE! LOCKDOWN…LOCKDOWN…LOCKDOWN.  Additional information will follow.";
 function sendLockdownText(){
     let encodedText = encodeURIComponent(lockdownText);
-    window.location.href=`sms://open?addresses=+${sheriff},${cowan};?&body=${encodedText}`;
+    window.location.href=`sms://open?addresses=+${lopez},${cowan};?&body=${encodedText}`;
 }
+
+//Functions and variables for emergency calls
+const jatc = '15105602032';
+
 
 
 
