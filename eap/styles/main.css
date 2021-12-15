@@ -10,6 +10,10 @@ body {
   display: flex;
 }
 
+.flex-center {
+  justify-content: center;
+}
+
 .grid-container {
   max-width: 100%;
   display: grid;
@@ -66,7 +70,7 @@ header {
 }
 
 .procedures-container {
-  margin-bottom: 10vw;
+  margin-bottom: 2vh;
 }
 
 .procedures-container hr {
@@ -84,9 +88,10 @@ header {
 .procedures-info-container {
   width: 96vw;
   margin-bottom: 2vw;
+  margin-top: 2vh;
   border-radius: 10px;
   font-size: 1.1rem;
-  padding: 2vw 2vw 15vw 2vw;
+  padding: 2vw 2vw 10vh 2vw;
 }
 
 .procedure-info_title {
@@ -107,18 +112,19 @@ header {
 
 footer {
   position: fixed;
-  bottom: 0;
+  bottom: 5vh;
   width: 100%;
-  height: 7%;
   background-color: black;
+  opacity: 0.9;
   padding: 2vw;
 }
 
 .call911 {
+  width: 80%;
   letter-spacing: 1px;
 }
 
-.footer-icon-container {
+.call-icon-container {
   margin: 0 5vw;
 }
 
