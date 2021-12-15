@@ -39,7 +39,8 @@ header {
 }
 
 .logo {
-  width: 100px;
+  width: 20%;
+  height: auto;
 }
 
 .menu-icon {
@@ -141,8 +142,6 @@ h5 {
 }
 
 .sidenav {
-  height: 88%;
-  max-height: 88%;
   width: 0;
   /* 0 width - change this with JavaScript */
   position: fixed;
@@ -152,14 +151,14 @@ h5 {
   top: 0;
   right: 0;
   background-color: black;
-  opacity: 0.85;
+  opacity: 0.9;
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 30px;
   /* Place content 60px from the top */
   padding-bottom: 30px;
   transition: 0.2s;
-  /* 0.5 second transition effect to slide in the sidenav */
+  /* 0.2 second transition effect to slide in the sidenav */
   font-size: 5vw;
   box-shadow: -2px -2px 8px 2px darkgray;
 }
@@ -193,6 +192,11 @@ h5 {
 
 .flex-plan-btn {
   justify-content: center;
+  padding-top: 3vh;
+}
+
+.flex-plan-btn button {
+  width: 80%;
 }
 
 /*# sourceMappingURL=main.css.map */
