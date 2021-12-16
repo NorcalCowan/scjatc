@@ -120,18 +120,64 @@ x_symbol.addEventListener('click', closeNav);
 
 
 
-// Additional Info Request 
-const evacAddInfo_btn = document.getElementById("evacAddInfo_btn");
-
-function openAddInfo() {
-    document.getElementById("evacAddInfo").style.width = "90%";
+/** Additional Info Requests **/ 
+// Create array of "Additional Info" buttons
+const addInfoBtn_array = document.getElementsByClassName('addInfo-btn');
+// Create function to loop through array and add 'click' event listener to each button to call 'openAddInfo' function
+function addInfoBtn_eventListeners(){
+    for(let i=0; i<addInfoBtn_array.length; i++){
+        addInfoBtn_array[i].addEventListener('click', openAddInfo);
+    }
 }
-evacAddInfo_btn.addEventListener('click', openAddInfo);
-  
-/* Set the width of the side navigation to 0 */
-const evacAddInfoX_symbol = document.getElementById("evacAddInfo-x_symbol");
-
-function closeAddInfo() {
-document.getElementById("evacAddInfo").style.width = "0";
+// Call function
+addInfoBtn_eventListeners();
+// Create function to display the additional information requested that takes the id of the info as a parameter
+function displayInfo(emergAddInfo) {
+    document.getElementById(emergAddInfo).style.width = "90%";
 }
-evacAddInfoX_symbol.addEventListener('click', closeAddInfo);
+// Create function to match button clicked id to addInfoId, then create infoId variable for additional info
+function openAddInfo(emergAddInfo){
+    emergAddInfo = event.target.id;
+    for(let i=0; i<addInfoBtn_array.length; i++){
+        if(emergAddInfo === addInfoBtn_array[i].id){
+            console.log('We have a winner!');
+            let remove_btn = addInfoBtn_array[i].id.length - 4;
+            console.log(remove_btn);
+            let infoId = addInfoBtn_array[i].id.substring(0,remove_btn);
+            console.log(infoId);
+            displayInfo(infoId);
+        }
+    }
+}
+
+
+// Create array of "X-Symbol" close buttons
+const closeAddInfoBtn_array = document.getElementsByClassName('span_x');
+// Create function to loop through array and add 'click' event listener to each button to call 'closeAddInfo' function
+function closeAddInfoBtn_eventListeners(){
+    for(let i=0; i<closeAddInfoBtn_array.length; i++){
+        closeAddInfoBtn_array[i].addEventListener('click', closeAddInfo);
+    }
+}
+// Call function
+closeAddInfoBtn_eventListeners();
+
+function closeInfo(closeInfoId) {
+document.getElementById(closeInfoId).style.width = "0";
+}
+
+function closeAddInfo(){
+    console.log('close function called');
+    console.log(event.target.id);
+    let xSymbol_id = event.target.id;
+    for(let i=0; i<closeAddInfoBtn_array.length; i++){
+        if(xSymbol_id === closeAddInfoBtn_array[i].id){
+            console.log('We have another winner!');
+            let removeX_symbol = xSymbol_id.length - 9;
+            console.log(removeX_symbol);
+            let closeInfoId = xSymbol_id.substring(0,removeX_symbol);
+            console.log(closeInfoId);
+            closeInfo(closeInfoId);
+        }
+    }
+}

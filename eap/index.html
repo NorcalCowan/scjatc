@@ -99,13 +99,13 @@
                     <li>Do not re-enter building until "All Clear" is provided</li>
                 </ol>
                 <div class="flex-container flex-center">
-                    <button id="evacAddInfo_btn" class="btn btn-secondary text-btn">Additional Information</button>
+                    <button id="evacAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
                 </div>
                 
             </div>
             <!-- Evacuation Addition Info - Side menu -->
             <div id="evacAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="evacAddInfo-x_symbol">&times;</span></a>
+                <a href="javascript:void(0)" class="closebtn"><span id="evacAddInfo-x_symbol" class="span_x">&times;</span></a>
                 
                 <!-- ADDITIONAL INFO - Evacuation off-site -->
                 <h5>Evacuation – On-site</h5>
@@ -188,10 +188,14 @@
                     <li>Post a notice stating "Building closed due to local emergency"</li>
                     <li>Follow guidance provided by first responders</li>
                 </ol>
+                <div class="flex-container flex-center">
+                    <button id="fireAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+                </div>
             </div>
+
             <!-- Fire Addition Info - Side menu -->
-            <div id="evacAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="evacAddInfo-x_symbol">&times;</span></a>
+            <div id="fireAddInfo" class="addInfo">
+                <a href="javascript:void(0)" class="closebtn"><span id="fireAddInfo-x_symbol" class="span_x">&times;</span></a>
                 
                 <!-- ADDITIONAL INFO - Fire inside building -->
                 <h5>Fire – Inside Building</h5>
@@ -213,7 +217,7 @@
                     <li>If fire reached the building, do not return to the building until it has been inspected and determined safe by proper authorities</li>
                 </ul>
             </div>
-            
+
             <!-- Earthquake Info -->
             <div id="earthquake-info" class="procedures-info-container procedure-info_animate hideInfo">
                 <div class="flex-container flex-text">
@@ -230,7 +234,56 @@
                     <li>Evaluate the situation</li>
                     <li>Take additional action as needed</li>
                 </ol>
+                <div class="flex-container flex-center">
+                    <button id="quakeAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+                </div>
             </div>
+
+            <!-- Earthquake Addition Info - Side menu -->
+            <div id="quakeAddInfo" class="addInfo">
+                <a href="javascript:void(0)" class="closebtn"><span id="quakeAddInfo-x_symbol"  class="span_x">&times;</span></a>
+                
+                <!-- ADDITIONAL INFO - Earthquake -->
+                <h5>Hazards and Cautions</h5>
+                <p>The major threat of injury during an earthquake is from falling objects, glass shards and debris. Many injuries are sustained while entering or leaving buildings. Therefore, it is important to quickly move away from windows, free-standing partitions and shelves and take the best available cover under a sturdy desk or table, in a doorway or against an inside wall.   All other actions must wait until the shaking stops.  If persons are protected from falling objects, the rolling motion of the earth may be frightening but not necessarily dangerous.</p> 
+                <ul>
+                    <li>Elevator should not be used</li>
+                    <li>Fire alarms or sprinkler systems may be activated by the shaking</li>
+                    <li>Stairways will need to be inspected for damage before they can be used</li>
+                    <li>The major shock is usually followed by numerous aftershocks, which may last for weeks</li>
+                </ul>
+                <h5>Announcement (if possible)</h5>
+                <p>If possible, an announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p>
+                <p class="announcement"><q>Attention please. We are experiencing an earthquake. For your protection, follow DROP, COVER and HOLD ON procedures. Get under a table or desk, away from windows and anything that could fall and hurt you. Hold that position until the shaking stops or until you receive further instructions.</q></p>
+
+                <h5>Outside Building - Actions and Precautions</h5>
+                <p>If outside the building when an earthquake occurs, follow the steps and precautions below:</p> 
+                <h6>During the earthquake</h6>
+                <ul>
+                    <li>Move students away from buildings, trees, overhead wires and poles</li>
+                    <li>Make body as small as possible by</li>
+                    <ul>
+                        <li>Dropping to knees</li>
+                        <li>Clasp both hands behind neck</li>
+                        <li>Bury face in arms, covering ears with forearms</li>
+                    </ul>
+                    <li>Maintain position until shaking stops</li>
+                </ul>
+                <h6>After the shaking stops</h6>
+                <ul>
+                    <li>Remain in place for at least 20 seconds</li>
+                    <li>Relocate to the proper evacuation assembly area</li>
+                </ul>
+                <p>Evaluate the situation and take further action in accordance with the Evacuation Procedure</p>
+                <h5>During Non-Operational Hours</h5>
+                <ul>
+                    <li>Inspect building to assess damage and determine corrective actions</li>
+                    <li>Notify fire department and utility company of suspected breaks in utility lines or pipes</li>
+                    <li>If site must be closed, notify staff and students</li>
+                    <li>Arrange for alternative learning if necessary</li>
+                </ul>
+            </div>
+
             <!-- Active Intruder Info -->
             <div id="intruder-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
@@ -391,6 +444,7 @@
 
 <!-- Notes -->
 <!-- 
+    * Add "Additional Info"
     *Login that saves to localstorage?
     *Make PDF form available for bomb threat at top. Fillable PDF that can be downloaded and completed?
         Could it be uploaded and saved to folder?

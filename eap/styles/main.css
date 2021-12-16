@@ -237,6 +237,10 @@ h5 {
   box-shadow: -2px -2px 8px 2px darkgray;
 }
 
+.addInfo-btn {
+  box-shadow: 2px 2px 2px 2px lightgray;
+}
+
 .addInfo span {
   text-decoration: none;
   color: white;
