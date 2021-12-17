@@ -167,7 +167,7 @@ h5 {
   overflow-x: hidden;
   /* Disable horizontal scroll */
   padding-top: 30px;
-  /* Place content 60px from the top */
+  /* Place content 30px from the top */
   padding-bottom: 30px;
   transition: 0.2s;
   /* 0.2 second transition effect to slide in the sidenav */
@@ -177,16 +177,11 @@ h5 {
 
 /* The navigation menu links */
 .sidenav a {
-  padding: 8px 8px 8px 32px;
+  padding: 2vw 5vw 2vw 5vw;
   text-decoration: none;
-  /* font-size: 25px; */
-  color: white;
+  color: #ffffff;
   display: block;
   transition: 0.3s;
-}
-
-.sidenav .whtNav {
-  color: white;
 }
 
 /* When you mouse over the navigation links, change their color */
@@ -229,7 +224,7 @@ h5 {
   /* Disable horizontal scroll */
   overflow-y: auto;
   padding-top: 30px;
-  /* Place content 60px from the top */
+  /* Place content 30px from the top */
   padding-bottom: 30px;
   transition: 0.2s;
   /* 0.2 second transition effect to slide in the sidenav */
