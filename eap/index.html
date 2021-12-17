@@ -566,7 +566,20 @@
                     <li>Close all blinds and curtains</li>
                     <li>Take attendance and report to Site Administrator</li>
                 </ol>
+                <div class="flex-container flex-center">
+                    <button id="weatherAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+                </div>
             </div>
+
+            <!-- Severe Weather Addition Info - Side menu -->
+            <div id="weatherAddInfo" class="addInfo">
+                <a href="javascript:void(0)" class="closebtn"><span id="weatherAddInfo-x_symbol" class="span_x">&times;</span></a>
+                
+                <!-- ADDITIONAL INFO - Severe Weather -->
+                <h5>Storm / Severe Weather</h5>
+                <p>Severe weather can be accompanied by high winds, downed trees and swollen creeks.  An emergency response is required when this type of weather poses any risk to the staff and students.  Assure that each student’s method of returning home is safe and reliable.</p> 
+            </div>
+
             <!-- Shelter in Place Info -->
             <div id="shelter-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
@@ -582,22 +595,47 @@
                     <li>Utilize information gathering resources</li>
                     <li>When safe, initiate "All clear" announcement</li>
                 </ol>
+                <div class="flex-container flex-center">
+                    <button id="shelterAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+                </div>
+            </div>
+
+            <!-- Shelter in Place Addition Info - Side menu -->
+            <div id="shelterAddInfo" class="addInfo">
+                <a href="javascript:void(0)" class="closebtn"><span id="shelterAddInfo-x_symbol" class="span_x">&times;</span></a>
+                
+                <!-- ADDITIONAL INFO - Shelter in Place -->
+                <h5>Shelter in Place</h5>
+                <p>A short-term measure implemented when there is a need to isolate students and staff from the outdoor environment to prevent exposure to airborne contaminants. The procedures includes taking actions to prevent exposure to the outside air.  Free movement of staff and students within the building is permitted, although one should not leave the room until further instructions are received. It is appropriate to initiate Shelter in Place for, but not limited to, the following events:</p> 
+                <ul>
+                    <li>Gas leaks</li>
+                    <li>External chemical release</li>
+                    <li>Dirty bombs</li>
+                    <li>Hazardous material spills</li>
+                </ul>
+
+                <h5>Announcement</h5>
+                <p>An announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p>
+                <p class="announcement"><q>Attention please. We have a hazard in the community and are instituting SHELTER IN PLACE procedures.  Students and staff should remain inside with windows and doors securely closed and air conditioning units turned off.  Those who are outside should immediately move to the protection of an inside room.  Do not go outdoors until you receive further instructions.</q></p>
+                <p>Give clear instructions, remain calm, and convey reassurance that the situation is under control.</p>
+
+                <h5>Securing Offices and Classrooms</h5>
+                <ul>
+                    <li>Close and lock doors and windows</li>
+                    <li>Shut down office / classroom HVAC</li>
+                    <li>Turn off local fans</li>
+                    <li>Seal gaps under doors and windows using wet towels or duct tape</li>
+                    <li>Seal vents with aluminum foil or plastic wrap</li>
+                    <li>Turn off sources of ignition such as pilot lights</li>
+                </ul>
             </div>
         </div>
-       
     </body>
 
     <footer>
         <div class="flex-container flex-center">
             <button class="btn btn-danger call911" onclick="window.location.href='tel:15105602032'">Call 911</button>
         </div>
-        
-        <!-- <div class="flex-container flex-footer footer-icon-container">
-            <a href="callto://+15105602032"><img src="images/fire.png" alt="Fire Icon" class="emerg-call-icon"></a>
-            <a href="callto://+15105602032"><img src="images/police-badge.png" alt="Police Icon" class="emerg-call-icon"></a>
-            <a href="callto://+15105602032"><img src="images/pge-icon.png" alt="PG&E Icon" class="emerg-call-icon"></a>
-            <button class="btn btn-danger">911</button>
-        </div> -->
     </footer>
 
     <script src="js/main.js"></script>
@@ -607,8 +645,6 @@
 
 <!-- Notes -->
 <!-- 
-    * Move side menus further off screen - get rid of blur
-    * Add "Additional Info"
     * Turn off button?
     *Login that saves to localstorage?
     *Make PDF form available for bomb threat at top. Fillable PDF that can be downloaded and completed?
@@ -616,5 +652,4 @@
     * Change to XML to allow for getting files
     * Include training link in menu?
     * Change menu icon to sidebar menu for ipad view
-    * Indicate "Active" emerg button
  -->
