@@ -520,7 +520,30 @@
                     <li>Account for building occupants</li>
                     <li>Do not re-enter building until authorities provide clearance</li>
                 </ol>
+                <div class="flex-container flex-center">
+                    <button id="crashAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+                </div>
             </div>
+
+            <!-- Aircraft Crash Addition Info - Side menu -->
+            <div id="crashAddInfo" class="addInfo">
+                <a href="javascript:void(0)" class="closebtn"><span id="crashAddInfo-x_symbol" class="span_x">&times;</span></a>
+                
+                <!-- ADDITIONAL INFO - Aircraft crash -->
+                <h5>Aircraft Crash – Near or Into Facility</h5>
+                <p>Emergency protocol will depend on the size of the aircraft, nature of the crash, and proximity to the facility.  If it is safe to remain inside the building, all students should be kept in the building under supervision.  The crash may also result in an explosion, chemical spill or utility interruption.</p> 
+                <h5>Evacuation</h5>
+                <ul>
+                    <li>Move students away from immediate vicinity of the crash</li>
+                    <li>Evacuate students from the building using primary and /or alternate fire routes to a safe assembly area away from the crash scene</li>
+                    <li>Take class roster/nametags and emergency backpack from storage area located in the break room</li>
+                    <li>Check site to assure that all students have evacuated</li>
+                    <li>Take attendance at the designated assembly area</li>
+                    <li>Report missing students to the administration/designee and emergency response personnel</li>
+                    <li>Maintain control of the students a safe distance from the crash site</li>
+                </ul>
+            </div>
+
             <!-- Severe Weather/Storm Info -->
             <div id="weather-info" class="procedures-info-container hideInfo">
                 <div class="flex-container flex-text">
@@ -584,7 +607,9 @@
 
 <!-- Notes -->
 <!-- 
+    * Move side menus further off screen - get rid of blur
     * Add "Additional Info"
+    * Turn off button?
     *Login that saves to localstorage?
     *Make PDF form available for bomb threat at top. Fillable PDF that can be downloaded and completed?
         Could it be uploaded and saved to folder?
