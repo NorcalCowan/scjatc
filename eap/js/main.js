@@ -181,3 +181,29 @@ function closeAddInfo(){
         }
     }
 }
+
+// Create array of Side-Navigation links
+const menuLinks_array = document.getElementsByClassName('menuLink');
+// Create function to loop through array and add 'click' event listener to each button to call 'openAddInfo' function
+function menuLink_eventListeners(){
+    for(let i=0; i<menuLinks_array.length; i++){
+        menuLinks_array[i].addEventListener('click', openMenuLinkInfo);
+    }
+}
+// Call function
+menuLink_eventListeners();
+
+// Create function to match link clicked id to addInfoId, then create infoId variable for additional info
+function openMenuLinkInfo(emergAddInfo){
+    emergAddInfo = event.target.id;
+    for(let i=0; i<menuLinks_array.length; i++){
+        if(emergAddInfo === menuLinks_array[i].id){
+            console.log('We have a winner!');
+            let remove_link = menuLinks_array[i].id.length - 5;
+            console.log(remove_link);
+            let infoId = menuLinks_array[i].id.substring(0,remove_link);
+            console.log(infoId);
+            displayInfo(infoId);
+        }
+    }
+}

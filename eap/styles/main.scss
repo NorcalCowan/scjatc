@@ -189,8 +189,7 @@ h5{
     padding-bottom: 30px;
     transition: 0.2s; /* 0.2 second transition effect to slide in the sidenav */
     font-size: 5vw;
-    box-shadow: -2px -2px 8px 2px darkgray;
-    
+    box-shadow: -2px -2px 8px 2px darkgray;    
   }
   
   /* The navigation menu links */
@@ -201,6 +200,7 @@ h5{
     color: $side-menu_text-color;
     display: block;
     transition: 0.3s;
+    margin-right: 2vw;
   }
   
   /* When you mouse over the navigation links, change their color */
@@ -266,6 +266,13 @@ h5{
     color: white;
     padding: 2vw 5vw 2vw 15vw;
     font-size: 1rem;
+}
+
+.addInfo ol{
+    color: white;
+    font-size: 1rem;
+    padding-left: 15vw;
+    margin-right: 5vw;
 }
 .addInfo .announcement{
     color: white;
