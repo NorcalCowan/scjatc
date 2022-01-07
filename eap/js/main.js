@@ -74,7 +74,7 @@ function showActiveBtn(clickedBtn){
     activeBtn.classList.toggle("active-emerg-btn");
 }
 
-
+ 
 
 //Function and variables for text messages
 const sheriff = '14088827767';

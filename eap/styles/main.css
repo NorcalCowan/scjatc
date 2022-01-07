@@ -14,6 +14,10 @@ body {
   justify-content: center;
 }
 
+.flex-column {
+  flex-direction: column;
+}
+
 .grid-container {
   max-width: 100%;
   display: grid;
@@ -311,6 +315,14 @@ h6 {
 
 .flex-plan-btn button {
   width: 80%;
+}
+
+#gas, #parking {
+  opacity: 1;
+}
+
+.side-menu_img-container {
+  margin: 2vw 0 4vw 0;
 }
 
 /*# sourceMappingURL=main.css.map */
