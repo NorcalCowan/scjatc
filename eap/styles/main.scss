@@ -24,6 +24,10 @@ body{
     justify-content: center;
 }
 
+.flex-right{
+    justify-content: right;
+}
+
 .flex-column{
     flex-direction: column;
 }
@@ -359,4 +363,53 @@ h6{
 }
 .shaded-cell{
     background-color: lightgray;
+}
+
+
+/** Full Plan Styling **/
+.section_header{
+    background-color: rgb(235, 32, 46);
+    color: white;
+    padding: 1vw 2vw;
+    width: 40vw;
+    position: relative;
+    left: 0;
+    font-size: .75rem;
+}
+.full-plan_section{
+    margin: 0 2vw 10vw 2vw;
+    padding-top: 2vw;
+    border-top: 1px solid lightgray;
+}
+
+.section_h1{
+    color: darkgray;
+}
+
+.section_h2{
+    color: rgb(235, 32, 46);
+    font-size: 1.3rem;
+}
+.section_h3{
+    font-size: 1.1rem;
+}
+.section_h4{
+    font-size: 0.9rem;
+    font-style: italic;
+    font-weight: bold;
+    margin-top: 2vw;
+    color: darkgray;
+}
+.full-plan_section .section_h5{
+    font-size: 0.75rem;
+    color:rgb(235, 32, 46);
+}
+
+.note{
+    font-size: 0.75rem;
+    margin-left: 5vw;
+}
+
+.table-container{
+    margin-bottom: 5vw;
 }

@@ -21,7 +21,7 @@
     </svg> 
 </header>
 
-<body>
+<body class="full-plan_body">
     <div class="title-container">
         <h1 class="title">Emergency Action Plan</h1>
     </div>
@@ -30,7 +30,7 @@
     <div id="Sidenav" class="sidenav">
         <a href="javascript:void(0)" class="closebtn"><span id="x_symbol">&times;</span></a>
         <div class="flex-container flex-plan-btn">
-            <button class="btn btn-outline-danger">View Full Plan</button>
+            <button id="fullPlan_btn" class="btn btn-outline-danger">View Full Plan</button>
         </div>
         <a  href="#" id="introduction_link" class="menuLink">Introduction</a>
         <a  href="#" id="general-info_link" class="menuLink">General Information</a>
@@ -47,8 +47,12 @@
     </div>
 
     <!-- INTRODUCTION SECTION -->
-    <section id="section_introduction">
-        <h1 class="section_header"></h1>
+    <div class="flex-container flex-right section-header_container">
+        <h1 class="section_header">Introduction</h1>
+    </div>
+    
+    <section id="section_introduction" class="full-plan_section">
+        
         <h1 class="section_h1">Introduction</h1>
         <p>This plan is designed to be a general “All Hazards Plan” and outlines some recommended steps that can be taken to prepare your facility, staff and family for a variety of possible disasters. This is just a plan; the execution of the plan is the responsibility of the user. This plan is based upon Mitigation, Preparedness, Response and Recovery phases. The objective of this plan is to produce a sense of confidence in the users that they have the resources and practices in place to respond and recover from an emergency / disaster as effectively as possible.</p>
         <p>Annual reviews and drills of this plan should be conducted by all parties the plan as a whole should be reviewed and updated annually.</p>
@@ -59,8 +63,11 @@
     </section>
 
     <!-- GENERAL INFO SECTION -->
-    <section id="section_general-info">
+    <div class="flex-container flex-right">
         <h1 class="section_header">General Information</h1>
+    </div>
+    <section id="section_general-info" class="full-plan_section">
+        
         <h1 class="section_h1">General Information</h1>
 
         <h2 class="section_h2">Purpose</h2>
@@ -96,12 +103,15 @@
         <p>45 – 60 </p>
 
         <h2 class="section_h2">Facility Description</h2>
-        <p class="note">Educational facility - One building 2 floors with a roof access (stairwell), a detached small storage shed, secure rear parking area (automatic vehicle gate access and pedestrian gate access). Square footage: 28,000. Small front parking area for staff and visitors.</p>
+        <p>Educational facility - One building 2 floors with a roof access (stairwell), a detached small storage shed, secure rear parking area (automatic vehicle gate access and pedestrian gate access). Square footage: 28,000. Small front parking area for staff and visitors.</p>
     </section>
 
     <!-- HAZARD REVIEW SECTION -->
-    <section id="section_hazard-review">
+    <div class="flex-container flex-right">
         <h1 class="section_header">Hazard Review</h1>
+    </div>
+    <section id="section_hazard-review" class="full-plan_section">
+        
         <h1 class="section_h1">Hazard Review</h1>
         <p>A cursory review of the property and the location of the three sites within the City of San Leandro and the County of Alameda indicate that the hazards that are the most likely to impact these sites are as follows:</p>
 
@@ -158,8 +168,11 @@
     </section>
 
     <!-- PLAN MANAGEMENT SECTION -->
-    <section id="section_plan-management">
+    <div class="flex-container flex-right">
         <h1 class="section_header">Plan Management</h1>
+    </div>
+    <section id="section_plan-management" class="full-plan_section">
+        
         <h1 class="section_h1">Plan Management</h1>
 
         <h2 class="section_h2">Management of Emergency Action Plan</h2>
@@ -229,8 +242,11 @@
     </section>
 
     <!-- STAFF RESPONSIBILITIES SECTION -->
-    <section id="section_staff-responsibilities">
+    <div class="flex-container flex-right">
         <h1 class="section_header">Staff Responsibilities</h1>
+    </div>
+    <section id="section_staff-responsibilities" class="full-plan_section">
+        
         <h1 class="section_h1">Staff Responsibilities</h1>
         <p>In addition to the Emergency Team assignments, every JATC staff member has general responsibilities during an emergency.</p>
 
@@ -275,8 +291,11 @@
     </section>
 
     <!-- MITIGATION SECTION -->
-    <section id="section_mitigation">
+    <div class="flex-container flex-right">
         <h1 class="section_header">Mitigation</h1>
+    </div>
+    <section id="section_mitigation" class="full-plan_section">
+        
         <h1 class="section_h1">Mitigation</h1>
 
         <h2 class="section_h2">Mitigation Definition and Overview</h2>
@@ -477,8 +496,11 @@
     </section>
 
     <!-- COMMUNICATION SECTION -->
-    <section id="section_communication">
+    <div class="flex-container flex-right">
         <h1 class="section_header">Communication</h1>
+    </div>
+    <section id="section_communication" class="full-plan_section">
+        
         <h1 class="section_h1">Communication</h1>
 
         <h2 class="section_h2">Reporting an Emergency</h2>
@@ -596,8 +618,11 @@
     </section>
 
     <!-- RESPONSE SECTION -->
-    <section id="section_response">
+    <div class="flex-container flex-right">
         <h1 class="section_header">Response</h1>
+    </div>
+    <section id="section_response" class="full-plan_section">
+        
         <h1 class="section_h1">Response</h1>
 
         <h2 class="section_h2">The Emergency Response Team</h2>
@@ -807,85 +832,456 @@
     </section>
 
     <!-- RECOVERY SECTION -->
-    <section id="section_recovery">
+    <div class="flex-container flex-right">
         <h1 class="section_header">Recovery</h1>
+    </div>
+    <section id="section_recovery" class="full-plan_section">
+        
         <h1 class="section_h1">Recovery</h1>
+        <p>Recovery refers to the follow-up measures taken after a disaster to return the affected site back to normal operating conditions.  Recovery focuses on restoring the infrastructure of the school (utilities, phones, water) to service, re-establishing a sense of emotional safety and returning to the learning environment as quickly as possible after a crisis.  Recovery actions are generally begun as response activities diminish, but some activities (e.g., keeping track of personnel time) must be started simultaneously with response.  Recovery measures are designed to assist students and staff impacted by physical, psychological and emotional trauma following an event.</p>
 
         <h2 class="section_h2">Impact Assessment</h2>
+        <p>Once the safety and status of staff and students has been assured and emergency conditions have abated, assemble staff to support the restoration of the sites programs. Defining mission-critical operations and staffing will be a starting point for the recovery process.</p>
+        <ul>
+            <li><strong>CONDUCT</strong> a comprehensive assessment of the event’s physical and operational effects.  Assess physical security, data access, and all other critical services (e.g., plumbing, electrical)</li>
+            <li><strong>EXAMINE</strong> critical information technology assets and personnel resources and determine the impact on the facility for each asset and resource that is unavailable</li>
+            <li><strong>DOCUMENT</strong> damage, lost equipment and resources, and special personnel expenses that will be required for Insurance and perhaps FEMA assistance claims</li>
+            <li><strong>ADMINISTER</strong> Workers’ Compensation if claims arise that are on-the-job injuries</li>
+            <li><strong>ARRANGE</strong> for ongoing status reports during the emergency to </li>
+            <ul>
+                <li>Estimate when the site program can be fully operational</li>
+                <li>Identify special facility, equipment, and personnel issues or resources that will speed resumption of classes</li>
+            </ul>
+        </ul>
+
         <h2 class="section_h2">Resumption of Training</h2>
         <h3 class="section_h3">Re-entry Into the Facility</h3>
+        <p>The site administrator is the individual responsible for authorizing re-entry into the facility. A damage assessment team should:</p>
+        <ul>
+            <li>Survey the site after a disaster</li>
+            <li>Report findings to site administrator</li>
+            <li>Ensure that timely and accurate data is received</li>
+        </ul>
+        <p><strong>Re-entry should occur only after the site administrator has been assured by public safety officials and / or local contractors that the safety of the site has been restored.</strong></p>
         <h3 class="section_h3">Relocation</h3>
+        <p>In the event the site is damaged to the extent that all or a portion of it is uninhabitable until repairs are made, plans must be developed to address the relocation of educational services and staff to alternate facilities until repairs are made or the facility is rebuilt.</p>
         <h3 class="section_h3">Repairs and Construction</h3>
+        <p>Any repairs and rebuilding of damage wrought by site violence or natural disaster must carefully consider the input and feelings of the victims. There is a strong and significant psychological connection to death sites that must run its full course and should never be discounted or ignored.  Making changes and reconstruction in and around death and injury sites requires a delicate balance with the need to resume normal activities.  The construction must be the result of careful and deliberate consultation with students and staff Action should never be rushed.</p>
 
         <h2 class="section_h2">Business Continuity / I.T. Recovery</h2>
+        <p>See JATC Business Recovery Plan – Separate Document</p>
     </section>
 
     <!-- TRAINING AND EXERCISES SECTION -->
-    <section id="section_training-exercises">
+    <div class="flex-container flex-right">
         <h1 class="section_header">Training and Exercises</h1>
+    </div>
+    <section id="section_training-exercises" class="full-plan_section">
+        
         <h1 class="section_h1">Training and Exercises</h1>
 
         <h2 class="section_h2">Training</h2>
+        <p>The JATC will hold the following trainings and exercises on a regular basis.</p>
+
         <h3 class="section_h3">Annual Training </h3>
+        <ul>
+            <li>Offsite meeting re-location practice</li>
+            <li>Earthquake “Day Party” – use your earthquake supplies</li>
+        </ul>
         <h3 class="section_h3">Semi-Annual Training</h3>
+        <ul>
+            <li>Utility shutoff response</li>
+        </ul>
         <h3 class="section_h3">Quarterly Training</h3>
+        <ul>
+            <li>Duck, Cover and Hold drills – select a different area within the building each time</li>
+            <li>Evacuation drills</li>
+            <li>Power outage response</li>
+            <li>Emergency supply check</li>
+            <li>Response Team Training</li>
+            <ul>
+                <li>Activation process</li>
+                <li>Leadership post setup</li>
+                <li>Site assessment</li>
+                <li>Public evacuation procedure</li>
+                <li>Communication practice</li>
+            </ul>
+        </ul>
         <h3 class="section_h3">As Scheduled</h3>
+        <ul>
+            <li>CPR / First Aid/AED training -all adults/staff</li>
+            <li>Active shooter/Active Intruder</li>
+            <li>Emergency food / water check as indicated by expiration dates listed</li>
+        </ul>
+        <p>Some training will be based upon the staff expertise and training needs for the site, staff, and students. All of the trainings and drills will be documented.</p>
 
         <h2 class="section_h2">Exercises</h2>
+        <p>The purposes of any exercise include the following:</p>
+        <ul>
+            <li>Reveal planning weaknesses</li>
+            <li>Uncover resource needs and shortfalls</li>
+            <li>Improve coordination within the district and community</li>
+            <li>Clarify roles and responsibilities</li>
+            <li>Improve overall performance of all staff and students   </li>
+        </ul>
+        <p>It is essential to practice the Plan periodically to make sure that it works and ensure that all personnel understand their roles.  Annually, the JATC will select and create a specific scenario to test certain areas of the response in an event, such as:</p>
+        <ul>
+            <li>Communication</li>
+            <li>Lockdown</li>
+            <li>Evacuation</li>
+            <li>Site Search</li>
+            <li>First Aid</li>
+        </ul>
+
         <h2 class="section_h2">Requirements of JATC for Training Staff</h2>
+        <p>Before implementing the emergency action plan, the employer shall designate and train a sufficient number of persons to assist in the safe and orderly emergency evacuation of employees.</p>
+        <p>The employer shall advise each employee of his / her responsibility under the plan at the following times:</p>
+        <ul>
+            <li>Initially when the plan is developed</li>
+            <li>Whenever the employee's responsibilities or designated actions under the plan change</li>
+            <li>Whenever the plan is changed</li>
+        </ul>
+        <p>The employer shall review with each employee upon initial assignment those parts of the plan, which the employee must know to protect the employee in the event of an emergency. The written plan shall be kept at the workplace and made available for employee review. For those employers with 10 or fewer employees the plan may be communicated orally to employees and the employer need not maintain a written plan.</p>
+        <p class="note">Note: Authority and reference cited: Section 142.3, Labor Code.</p>
     </section>
 
     <!-- PREPAREDNESS SECTION -->
-    <section id="section_preparedness">
+    <div class="flex-container flex-right">
         <h1 class="section_header">Preparedness</h1>
+    </div>
+    <section id="section_preparedness" class="full-plan_section">
+        
         <h1 class="section_h1">Preparedness</h1>
 
         <h2 class="section_h2">Facility Emergency Supplies and Resources</h2>
         <h3 class="section_h3">Supply Storage Area</h3>
         <h4 class="section_h4">Purpose</h4>
+        <p>The objective of a storage container is to have available a cache of supplies to sustain the site for a short period of time up to 24 hours.</p>
+
         <h4 class="section_h4">Storage area(s) Selection</h4>
+        <p>The location of the storage container should be carefully selected to provide stable, safe and easy access, the breakrooms and administrative offices have been designated at storage area.</p>
+
         <h4 class="section_h4">Storage Structure</h4>
+        <p>Use large rubber or plastic tubs to store all supplies with the exception of bottled water.</p>
+
         <h4 class="section_h4">Organization</h4>
+        <p>Maintain a dated inventory of the stored supplies, shelf-life replacement schedule, and vendor contact information.</p>
+
         <h4 class="section_h4">Maintenance</h4>
+        <p>Develop procedures to keep the structure and contents functional, clean, dry, up-to-date and in sound condition.  Post the procedures on or near the door. Inspections should be made annually.</p>
 
         <h3 class="section_h3">Facility Preparedness Supply List</h3>
+        <p>The JATC facility will have the following supplies to support the students and staff:</p>
+        <ul>
+            <li>Small First Aid Kit</li>
+            <li>Duct tape</li>
+            <li>Flashlight with extra batteries</li>
+            <li>Glow stick(s)</li>
+            <li>Whistle(s)</li>
+            <li>Pen and note pad</li>
+            <li>Garbage bags</li>
+            <li>Moist wipes</li>
+            <li>Toilet paper</li>
+            <li>Several cases of bottled water (60 bottles Min.)</li>
+            <li>Protein bars</li>
+            <li>JATC emergency contact phone numbers listing</li>
+            <li>Battery Operated AM/FM radio</li>
+            <li>Megaphone</li>
+        </ul>
+        <p>These Emergency supplies will be reviewed and re-stocked annually and stored within the following locations:</p>
+        <ul>
+            <li>1st floor staff break area</li>
+            <li>2nd floor boardroom break area</li>
+        </ul>
+
         <h3 class="section_h3">Office Space Go-Bags</h3>
+        <p>Each JATC office space will have a small “Go Bag” located within them.  These bags will be checked annually and re-stocked with the following items as needed:</p>
+        <ul>
+            <li>Small First Aid Kit</li>
+            <li>Duct tape</li>
+            <li>Flashlight- extra batteries</li>
+            <li>Glow stick(s)</li>
+            <li>Whistle</li>
+            <li>Pen and note pad</li>
+            <li>Garbage bags</li>
+            <li>Moist wipes</li>
+            <li>Toilet paper</li>
+            <li>Several bottles of water (6 bottles Min.)</li>
+            <li>Protein bars</li>
+            <li>JATC emergency contact phone numbers listing</li>
+        </ul>
 
         <h2 class="section_h2">Personal and Family Preparedness</h2>
+        <p>When a major emergency occurs, this site and staff should be prepared and committed to serving their students. To do this effectively, each employee must:</p>
+        <ul>
+            <li>Have confidence that their families are prepared for emergencies in their absence</li>
+            <li>Know how to complete those tasks for which they are assigned</li>
+        </ul>
+        <p>The time and energy a staff member commits to being prepared at home will provide the best assurance that they are capable of dealing with crisis situations at the facility.</p>
+
         <h3 class="section_h3">Personal and Family Communication</h3>
+        <p>Create a written list of critical phone numbers which includes the following:</p>
+        <ul>
+            <li>In Case of Emergency (ICE) cell phone numbers</li>
+            <li>24-hour doctor</li>
+            <li>Family contacts</li>
+            <li>Neighbor contacts</li>
+            <li>School / Child care contacts</li>
+            <li>Business / Office</li>
+        </ul>
+        <p>This list should be updated annually. Post a hard copy near home phones and keep a copy in each vehicle, brief case, purse, and child’s backpack. Also, distribute this list to extended family members.</p>
+
         <h3 class="section_h3">Residential Hazard Review and Response</h3>
+        <p></p>
+        <ul>
+            <li>Identify a “Duck and Cover” location</li>
+            <li>Hazards that could impact their safety during an event or their exiting from the area:</li>
+            <ul>
+                <li>Chest of drawers</li>
+                <li>Large screen televisions</li>
+                <li>Large glass windows</li>
+                <li>Book shelves</li>
+                <li>China cabinets</li>
+                <li>Large pieces of artwork</li>
+                <li>Objects that could fall off shelving</li>
+                <li>Light fixtures</li>
+            </ul>
+            <li>Identify exit options from the physical living space.  (Two if possible)</li>
+            <li>Locate the special equipment available:</li>
+            <ul>
+                <li>Fire extinguishers</li>
+                <li>Flash lights</li>
+                <li>Escape ladders</li>
+                <li>First aid kit</li>
+            </ul>
+            <li>Have an emergency supply “Go Bag” in place for each area</li>
+            <li>Create a location guide for utility shut offs and provide shut off tool, i.e. Gas shutoff</li>
+            <li>Review onsite and offsite evacuation assembly area location(s) and practice routes to these locations</li>
+        </ul>
+
         <h3 class="section_h3">Personal Property Protection Plan Recommendations</h3>
+        <ul>
+            <li>Consider a fire rated safe or fire proof box or offsite safety deposit box for critical document storage</li>
+            <ul>
+                <li>Birth certificates, Marriage licenses, Passports, Insurance information, trust documents, mortgage, Driver’s license copies and Property deeds, etc.</li>
+                <li>Request an annual “Property Insurance Review” by your provider.  Update any new purchases or acquisitions</li>
+                <li>Perform “Video” documentation of the interior and exterior of your property. Place a copy in in your fireproof storage or safety deposit box</li>
+                <li>Back up personal computers to the “cloud” or other offsite storage platforms</li>
+            </ul>
+            <li>In the event of a planned evacuation</li>
+            <ul>
+                <li>Create a list of important items – family photos, musical instruments, heirlooms, jewelry, etc. to take with you as you evacuate.</li>
+                <li>Develop a location map for these items for quick access and removal</li>
+            </ul>
+            <li>Defensible space for your home</li>
+            <ul>
+                <li><a href="http://calfire.ca.gov/communications/downloads/fact_sheets/Checklist">http://calfire.ca.gov/communications/downloads/fact_sheets/Checklist</a></li>
+            </ul>
+        </ul>
+
         <h3 class="section_h3">Emergency Supplies and Resource Recommendations</h3>
+        <ul>
+            <li>Planning and maintenance of supplies – develop a quarterly review</li>
+            <li>Storage </li>
+            <ul>
+                <li>Should be maintained outside of any structure, a shed(s) should be used</li>
+                <li>Include a list of perishable items located within and dates to be used by</li>
+                <li>Checked monthly – perishable items can be used as part of the day to day house hold use and replaced to minimize cost and waste</li>
+            </ul>
+            <li>Alternate Cooking Sources</li>
+            <ul>
+                <li>Propane or charcoal BBQ</li>
+            </ul>
+            <li>Consider purchasing a Propane or Charcoal BBQ</li>
+            <li>First aid supplies</li>
+            <li>Offsite “Go Bag” supplies</li>
+            <li>Pet food</li>
+            <li>Medications and other special needs</li>
+            <li>Cash</li>
+            <ul>
+                <li>ATMS and merchant purchasing systems may not be functioning immediately following and event – it is recommended that each family determine the amount of cash they would maintain in their possession</li>
+            </ul>
+        </ul>
+
         <h3 class="section_h3">Emergency Supply List – Sample</h3>
+        <p class="note"><strong>Note:</strong> This is a sample list and may not be all-inclusive.</p>
+        <h4>Food and Supplies</h4>
+        <p>Your food, water and all supplies should be enough for your family 5-7 days. Allow for 1 gallon of water per day per family member.  Itemize (number of items) and label all food items with an expiration date, list them, and place that list inside of storage container.</p>
+        <ol>
+            <li>Bottled water - 4 cases (24 bottles per case)</li>
+            <li>Powered drinks – (i.e. Gatorade)</li>
+            <li>Canned juice(s)</li>
+            <li>7 day supply for your family</li>
+            <ol>
+                <li>Canned Meats, Tuna</li>
+                <li>Canned Soup - ready to eat </li>
+                <li>Canned Vegetables, Fruits etc.</li>
+                <li>Snack bars, Crackers, etc.…</li>
+                <li>Dry soup mix </li>
+            </ol>
+            <li>Toilet paper</li>
+            <li>Pet food and water – ½ gallon of water per day for the dog</li>
+            <li>Hand can opener</li>
+            <li>Scissors</li>
+            <li>Utility knife</li>
+            <li>Dish soap</li>
+            <li>Hand soap</li>
+            <li>Disposable eating utensils, cups</li>
+            <li>Paper towels</li>
+            <li>Children games, books, toys</li>
+            <li>Special needs:</li>
+            <ol>
+                <li>Medications - request a 14 day supply</li>
+                <li>Anti-diarrhea medicine</li>
+                <li>Rubbing alcohol</li>
+                <li>Aspirin - Adult and Children</li>
+                <li>Extra eye glasses, contact lenses, and supplies</li>
+                <li>Personal hygiene items</li>
+            </ol>
+            <li>First aid kit</li>
+            <ol>
+                <li>Sterile adhesive bandages in assorted sizes</li>
+                <li>2-inch sterile gauze pads (4-6)</li>
+                <li>4-inch sterile gauze pads (4-6)</li>
+                <li>Hypoallergenic adhesive tape</li>
+                <li>Triangular bandages (3)</li>
+                <li>2-inch sterile roller bandages (3 rolls)</li>
+                <li>3-inch sterile roller bandages (3 rolls)</li>
+                <li>Scissors</li>
+                <li>Needle and thread</li>
+                <li>Moistened towelettes</li>
+                <li>Antiseptic</li>
+                <li>Thermometer</li>
+                <li>Tongue blades (2)</li>
+                <li>Tube of petroleum jelly or other lubricant</li>
+                <li>Assorted sizes of safety pins</li>
+                <li>Latex Gloves</li>
+                <li>Disposable hand wipes</li>
+            </ol>
+            <li>Basic Tool kit</li>
+            <ol>
+                <li>Wrenches for gas lines</li>
+                <li>Heavy duty hammer</li>
+                <li>Work gloves</li>
+                <li>Crowbar</li>
+                <li>Garbage bags</li>
+                <li>2-3 (5 gallon buckets)</li>
+                <li>Duct tape</li>
+                <li>Pliers</li>
+                <li>Crescent wrench</li>
+            </ol>
+            <li>Flashlights with extra batteries</li>
+            <li>Battery operated camping lanterns</li>
+            <li>Toy whistle</li>
+            <li>Portable AM/FM radio with extra batteries</li>
+            <li>Water storage barrel</li>
+            <ol>
+                <li><a href="https://disastersupplycenter.com/collections/water-storage/products/30-gallon-size-water-package">https://disastersupplycenter.com/collections/water-storage/products/30-gallon-size-water-package</a></li>
+            </ol>
+            <li>Portable generator (if desired)</li>
+        </ol>
 
         <h3 class="section_h3">Go Bags</h3>
         <h4 class="section_h4">Office / Car Go Bag</h4>
+        <ul>
+            <li>3 bottles of water</li>
+            <li>Snack bars 4-6</li>
+            <li>Whistle</li>
+            <li>Garage bags 2-3</li>
+            <li>Toilet paper – roll</li>
+            <li>Flashlight/batteries</li>
+            <li>Medication – 2 days</li>
+            <li>Jacket/long sleeve shirt</li>
+            <li>Walking shoes</li>
+            <li>Small first aid kit</li>
+            <li>Cash</li>
+        </ul>
         <h4 class="section_h4">Home / Family Go Bag</h4>
-
-        <h2 class="section_h2">Requirements of JATC for Training Staff</h2>
+        <ul>
+            <li>12 bottles of water</li>
+            <li>Snack bars 8-12</li>
+            <li>Flashlight</li>
+            <li>Medication – 2 days</li>
+            <li>Jacket</li>
+            <li>Change of clothing for each person</li>
+            <li>Walking shoes</li>
+            <li>Small first aid kit</li>
+            <li>Cash</li>
+        </ul>
     </section>
 
     <!-- EMERGENCY RESPONDERS SECTION -->
-    <section id="section_emerg-responders">
+    <div class="flex-container flex-right">
         <h1 class="section_header">Emergency Responders</h1>
+    </div>
+    <section id="section_emerg-responders" class="full-plan_section">
+        
         <h1 class="section_h1">Emergency Responders</h1>
 
         <h2 class="section_h2">Local Fire / Police Information</h2>
         <h3 class="section_h3">Fire Department</h3>
+        <p>Alameda County Fire Station 12 
+        <br>
+        Address:  1065 143rd Ave, San Leandro CA  94578
+        <br>
+        Phone:  (510) 632-3473 ext. 2012
+        </p>
+
         <h3 class="section_h3">Police Department</h3>
+        <p>Address:  901 E 14th Street, San Leandro CA  94577
+        <br>
+        Phone:  (510) 577-2740 
+        </p>
 
         <h2 class="section_h2">First Responder Information Packet</h2>
+        <p>The JATC will develop and maintain a First Responder Information Packet that will include the following information.</p>
+        <ul>
+            <li>Floor plan(s)</li>
+            <li>Critical contact phone numbers</li>
+            <li>Utility shut-off locations</li>
+            <li>Location of master keys</li>
+            <li>Facility leadership</li>
+            <li>Off-site meeting location and address</li>
+        </ul>
+        <p>This information will be updated annually and stored within the administrative offices.</p>
     </section>
 
     <!-- SECURITY SECTION -->
-    <section id="section_security">
+    <div class="flex-container flex-right">
         <h1 class="section_header">Security Information</h1>
+    </div>
+    <section id="section_security" class="full-plan_section">
+        
         <h1 class="section_h1">Security Information</h1>
+        <p>This facility is monitored by a series of video surveillance cameras both interior and exterior – these cameras are recorded and the video is maintained for a minimum period of time approximately 6 months.</p>
+        <p>There are multiple live monitoring stations available and this is a web based system so it can be accessed from multiple locations if desired.</p>
+        <p>The site also maintains a building alarm system that is monitored from an external source/ vendor.</p>
+        <p>The building access system is both hard key and electronic access key card. Both of these systems should be reviewed bi-annually for changes in users and potential access threat elimination. The assignment of these access keys is monitored by the administrative staff.</p>
+        <p>Vendors and contractors who are providing services to the facility are provided a temporary access key card to perform those services. These keys are available at the main reception desk and are verified and signed out to those individuals.</p>
 
         <h2 class="section_h2">Limiting Building Access</h2>
+        <p>This is an educational facility with students and staff accessing multiple locations within the site during normal operating hours. A limited number of access doors should be available during business hours for the students and staff to move freely about the site.  These doors should be monitored by staff on regular basis to assure access is not being compromised by others without the authority to be onsite.</p>
+        <p>All doors to classrooms, labs, offices, storage areas and gathering locations should be secured when not in use.</p>
+        <p>Regular security / visibility walks should be performed by the staff throughout the course of the normal operating day.</p>
+        <p>During non-regular operating hours, weekends, and evening classes all access points to the facility should be limited and controlled to maintain building security.</p>
+        <p>Before securing the facility after operations, perform a walk-thru of the facility.  Each area should be visually secured and doors should be locked.</p>
+
         <h2 class="section_h2">Site Security Assessments</h2>
+        <p>Quarterly, a designated individual should perform a Site Security Assessment review.  This review should include, but is not limited to:</p>
+        <ul>
+            <li>Outside security / parking lot lighting</li>
+            <li>Security camera functionality</li>
+            <li>Perimeter fencing check</li>
+            <li>Door locking functionality</li>
+        </ul>
+
         <h2 class="section_h2">Threat Reporting</h2>
+        <p>All threats should be taken seriously and reported.  If a threat is imminent, call 911 immediately.</p>
+        <p>The JATC requires employees to report all threats or incidents of violent behavior which they observe or are informed about to the JATC site administrator. The site administrator should take the steps necessary to complete a “Threat Incident Report” as quickly as possible, including a private interview of the victim(s) and witness (s). The report will be used by the JATC to assess the safety of the workplace and to decide upon a plan of action.  Elements of the “Threat Incident Report” and any subsequent actions relating to the incident should be recorded in a tracking system for use by the site.</p>
+        <p>The tracking system as well as all investigative files should be kept secure and maintained separately from other records.</p>
     </section>
+
+    <script src="../js/full-plan.js"></script>
     
 </body>
 </html>
