@@ -337,3 +337,26 @@ h6{
   .side-menu_img-container{
       margin: 2vw 0 4vw 0;
   }
+
+
+.table-container{
+    display: flex;
+    justify-content: center;
+}
+.grid-table{
+    display: grid;
+    grid-template-columns: 35% 1fr 1fr 1fr;
+    width: 600px;
+    max-width: 96vw;
+    font-size: 0.75rem;
+}
+.table-header{
+    border-bottom: 1px solid black;
+    text-align: center;
+}
+.table-cell{
+    border: 1px solid black;    
+}
+.shaded-cell{
+    background-color: lightgray;
+}

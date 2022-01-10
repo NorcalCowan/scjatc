@@ -11,957 +11,957 @@
     <!-- Bootstrap5 JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
+<header class="flex-container flex-header">
+    <img src="images/tranparent-logo.png" alt="JATC Logo" class="logo">
+    <svg id="hamIcon" height="50" width="50">
+        <line x1="0" y1="10" x2="50" y2="10" class="menu-icon_line"/>
+        <line x1="0" y1="25" x2="50" y2="25" class="menu-icon_line"/>
+        <line x1="0" y1="40" x2="50" y2="40" class="menu-icon_line"/>
+    </svg>
+    
+</header>
+
 <body>
-    <header class="flex-container flex-header">
-        <img src="images/tranparent-logo.png" alt="JATC Logo" class="logo">
-        <svg id="hamIcon" height="50" width="50">
-            <line x1="0" y1="10" x2="50" y2="10" class="menu-icon_line"/>
-            <line x1="0" y1="25" x2="50" y2="25" class="menu-icon_line"/>
-            <line x1="0" y1="40" x2="50" y2="40" class="menu-icon_line"/>
-        </svg>
-        
-    </header>
-
-    <body>
-        <div class="title-container">
-            <h1 class="title">Emergency Action Plan</h1>
+    <div class="title-container">
+        <h1 class="title">Emergency Action Plan</h1>
+    </div>
+    <!-- Side Navigation -->
+    <div id="Sidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn"><span id="x_symbol">&times;</span></a>
+        <div class="flex-container flex-plan-btn">
+            <button class="btn btn-outline-danger">View Full Plan</button>
         </div>
-        <!-- Side Navigation -->
-        <div id="Sidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn"><span id="x_symbol">&times;</span></a>
-            <div class="flex-container flex-plan-btn">
-                <button class="btn btn-outline-danger">View Full Plan</button>
+        <a  href="#" id="respTeamLead_link" class="menuLink">Response Team Lead</a>
+        <a  href="#" id="search_link" class="menuLink">Search and Site Assessment Team</a>
+        <a  href="#" id="studentStaff_link" class="menuLink">Student and Staff Liasion</a>
+        <a  href="#" id="firstAid_link" class="menuLink">First Aid Team</a>
+        <a  href="#" id="gas_link" class="menuLink">Gas Shut-Off</a>
+        <a  href="#" id="paging_link" class="menuLink">Paging Procedure</a>
+        <a  href="#" id="parking_link" class="menuLink">Parking Gate Manual Operation</a>
+        <a  href="#" id="lockup_link" class="menuLink">Building Lockup</a>
+        <a  href="#" id="infoResources_link" class="menuLink">Information Resources</a>
+    </div>
+
+    <!-- Response Team Lead Info - Side menu -->
+    <div id="respTeamLead" class="addInfo">
+        <a href="javascript:void(0)" class="closebtn"><span id="respTeamLead-x_symbol" class="span_x">&times;</span></a>
+
+        <h5>Response Team Lead</h5>
+        <p>The Response Team Lead directs on-scene operations and is responsible for overall management of the incident. Coordinates the actions of the team, interface with First Responders, and provide updates to the ownership/representative.</p>
+        <p>The Response Team Lead will coordinate the activities of</p>
+        <ul>
+            <li>Search and Site Assessment</li>
+            <li>First Aid</li>
+            <li>Student / Staff Liaison</li>
+        </ul>
+        
+        <!-- Response Team Lead Actions -->
+        <h5>Initial Actions</h5>
+        <ol>
+            <li>Assess type and scope of emergency</li>
+            <li>Determine threat to human life and structures</li>
+            <li>Activate appropriate emergency action</li>
+            <li>If evacuation is necessary, verify safety of routes and assembly area</li>
+            <li>Set up leadership post and obtain personal safety equipment</li>
+            <li>Organize teams needed for response</li>
+        </ol>
+        
+        <h5>During Emergency Event</h5>
+        <ol>
+            <li>Determine need and request First Responder assistance</li>
+            <li>Monitor and assess the situation</li>
+            <li>Receive updates from other response teams</li>
+            <li>Coordinate with Student / Staff Liaison to account for students and staff</li>
+            <li>Reassign and/or release staff as appropriate</li>
+            <li>Remain in charge of site until redirected or event has ended</li>
+        </ol>
+
+        <h5>After Emergency Event</h5>
+        <ol>
+            <li>Receive briefing from public safety agency to obtain “All Clear”</li>
+            <li>Authorize deactivation of response teams</li>
+            <li>Provide information for reporting</li>
+            <li>If necessary, proceed with recovery operations</li>
+        </ol>
+    </div>
+
+    <!-- Search and Site Assessment Info - Side menu -->
+    <div id="search" class="addInfo">
+        <a href="javascript:void(0)" class="closebtn"><span id="search-x_symbol" class="span_x">&times;</span></a>
+
+        <h5>Search and Site Assessment Team</h5>
+        <p>Assess all facilities on the property(s) for safety and damage, lead any and all search efforts if needed. Review and execute utility shut-offs if needed. Sweep quickly through the buildings to identify location of trapped or injured students and staff.   Notify leadership of those who are trapped and or injured.</p>
+        <p>This is a two-person team with an identified team leader. Take no action that might endanger you. Do not work beyond expertise. Use appropriate safety gear. Size up the situation first before taking any actions.</p>
+        <h5>Equipment and Supplies</h5>
+        <ul>
+            <li>ID Vest</li>
+            <li>Work and latex gloves</li>
+            <li>First aid backpack</li>
+            <li>Clipboard with job description and map</li>
+            <li>Fire extinguisher if available</li>
+            <li>Backpack with goggles, flashlight, face masks, pry bar, duct tape</li>
+            <li>Hard hat</li>
+            <li>Whistle with master keys on lanyard</li>
+            <li>Caution tape</li>
+            <li>Chalk marker</li>
+        </ul>
+        
+        <!-- Search and Site Assessment Actions -->
+        <h5>Initial Actions</h5>
+        <ol>
+            <li>If possible, create two teams with two searchers in each team</li>
+            <li>Put on personal safety gear</li>
+            <li>Obtain all necessary equipment (i.e. flashlight, marking chalk, first aid backpack)</li>
+            <li>Contact Leadership before beginning Search and maintain communications</li>
+            <li>Establish Search Route and communicate it to Leadership</li>
+        </ol>
+        
+        <h5>During Search and Assessment</h5>
+        <ol>
+            <li>Before entering a space, evaluate if the area can be entered safely</li>
+            <li>Report structural damage to team leader</li>
+            <li>Use yellow caution tape to barricade hazardous areas</li>
+            <li>Do not enter severely damaged areas</li>
+            <li>One team member remains outside of the area being searched for safety and communication</li>
+            <li>Building search and sweep process to be completed on each floor:</li>
+            <ul>
+                <li>Follow established search to cover all areas</li>
+                <li>If area is safe to enter, search assigned area (following map) using orderly pattern</li>
+                <li>If room is clear, mark the outside of door with an <q>X</q></li>
+                <li>If room contains injured or dead persons, mark the outside of door with an <q>/</q></li>
+                <li>Report by phone or radio to the Leadership Post when room or area has cleared</li>
+            </ul>
+            <li>Report gas leaks, fires, or structural damage to Leadership immediately upon discovery</li>
+            <li>Record exact location of damage and triage on map and report to Leadership</li>
+        </ol>
+    </div>
+    
+    <!-- Student / Staff Liaison Info - Side menu -->
+    <div id="studentStaff" class="addInfo">
+        <a href="javascript:void(0)" class="closebtn"><span id="studentStaff-x_symbol" class="span_x">&times;</span></a>
+
+        <h5>Student / Staff Liaison</h5>
+        <p>Ensure the care and safety of all students on the site except those who are in the First Aid Station. Contact and interface with all family and guests on property to ensure, clear communication, status and evacuations if needed.</p>
+        
+        <!-- Student / Staff Liaison Actions -->
+        <h5>Initial Actions</h5>
+        <ol>
+            <li>Identify team leader</li>
+            <li>Put on safety vest or position identifier</li>
+            <li>Check in with Leadership for situation briefing</li>
+            <li>If site is evacuating:</li>
+            <ul>
+                <li>Verify that the assembly area and routes to it are safe</li>
+                <li>Count students or observe the classrooms as they exit to make sure that all classes evacuate</li>
+                <li>Initiate the set-up of support supplies</li>
+            </ul>
+        </ol>
+        
+        <h5>During Emergency Event</h5>
+        <ol>
+            <li>Monitor the safety and wellbeing of students and staff in Assembly Area</li>
+            <li>If first aid is needed refer to First Aid Station</li>
+            <li>When necessary, provide water and food to students and staff</li>
+            <li>Update records of the number of students and staff in the assembly area</li>
+            <li>Account for and document all staff and students prior to them leaving the site</li>
+            <li>Make arrangements to provide shelter for students and staff</li>
+        </ol>
+
+        <h5>After Emergency Event</h5>
+        <ol>
+            <li>Return equipment and reusable supplies to building</li>
+        </ol>
+    </div>
+
+    <!-- First Aid Team Info - Side menu -->
+    <div id="firstAid" class="addInfo">
+        <a href="javascript:void(0)" class="closebtn"><span id="firstAid-x_symbol" class="span_x">&times;</span></a>
+
+        <h5>First Aid Team</h5>
+        <p>Provide first aid support as needed and establish emergency supplies. Establish the First Aid treatment area, triage and emergency medical response/ first aid. Ensure that appropriate actions are taken using basic first aid. Coordinate with the Search and Site Assessment Team and inform Leadership when the situation requires health or medical services that staff cannot provide.</p>
+
+        <h5>First Aid Area Organization</h5>
+        <p>Locate triage (injury sorting area) at the entry of the First Aid area. This area is for the injured to be quickly evaluated for severity of injury and directed to the appropriate treatment area.</p>
+        <h6>Immediate Care</h6>
+        <p class="indent">For people with life and limb threatening injuries that require immediate attention, such as difficulty breathing, severe bleeding, major burns and shock.  Locate immediate care in an area out of sight of most students and staff but accessible to emergency vehicles.</p>
+        <h6>Delayed Care</h6>
+        <p class="indent">For injured individuals who do not require attention within the first hour.  Such people may have lacerations, broken bones or need medication.  Locate near the immediate care area, but shield from the sight of the injured in immediate care area.</p>
+        
+        <!-- First Aid Team Actions -->
+        <h5>Initial Actions</h5>
+        <ol>
+            <li>Set up First Aid area</li>
+            <li>Obtain and put on personal safety equipment including vests and non-latex or nitrile gloves</li>
+            <li>Secure First aid supplies</li>
+        </ol>
+        
+        <h5>During Emergency Event</h5>
+        <ol>
+            <li>Admit injured students/staff to First Aid area, listing name on master log</li>
+            <li>Administer appropriate first aid</li>
+            <li>Keep accurate records of care given</li>
+            <li>Continue to assess victims at regular intervals</li>
+            <li>If and when transport is available, do final assessment and document. Keep and file records for reference—do not send with victim. Determine where the injured will be transported to / location.</li>
+            <li>A copy of the Student’s and Staff Emergency Contact Information must accompany student removed from site to receive advanced medical attention</li>
+        </ol>
+    </div>
+
+
+    <!-- Gas Shut-Off Needed Here -->
+    <div id="gas" class="addInfo">
+        <a href="javascript:void(0)" class="closebtn"><span id="gas-x_symbol" class="span_x">&times;</span></a>
+
+        <h5>Gas Shut-Off</h5>
+        <ol>
+            <li>Gas shut-off is located within the fenced area of the front parking lot</li>
+            <div class="side-menu_img-container  flex-container flex-center">
+                <img src="images/fenced-area.jpg" alt="Fenced area" class="side-menu_img"></img>
             </div>
-            <a  href="#" id="respTeamLead_link" class="menuLink">Response Team Lead</a>
-            <a  href="#" id="search_link" class="menuLink">Search and Site Assessment Team</a>
-            <a  href="#" id="studentStaff_link" class="menuLink">Student and Staff Liasion</a>
-            <a  href="#" id="firstAid_link" class="menuLink">First Aid Team</a>
-            <a  href="#" id="gas_link" class="menuLink">Gas Shut-Off</a>
-            <a  href="#" id="paging_link" class="menuLink">Paging Procedure</a>
-            <a  href="#" id="parking_link" class="menuLink">Parking Gate Manual Operation</a>
-            <a  href="#" id="lockup_link" class="menuLink">Building Lockup</a>
-            <a  href="#" id="infoResources_link" class="menuLink">Information Resources</a>
-        </div>
-
-        <!-- Response Team Lead Info - Side menu -->
-        <div id="respTeamLead" class="addInfo">
-            <a href="javascript:void(0)" class="closebtn"><span id="respTeamLead-x_symbol" class="span_x">&times;</span></a>
-
-            <h5>Response Team Lead</h5>
-            <p>The Response Team Lead directs on-scene operations and is responsible for overall management of the incident. Coordinates the actions of the team, interface with First Responders, and provide updates to the ownership/representative.</p>
-            <p>The Response Team Lead will coordinate the activities of</p>
-            <ul>
-                <li>Search and Site Assessment</li>
-                <li>First Aid</li>
-                <li>Student / Staff Liaison</li>
-            </ul>
             
-            <!-- Response Team Lead Actions -->
-            <h5>Initial Actions</h5>
-            <ol>
-                <li>Assess type and scope of emergency</li>
-                <li>Determine threat to human life and structures</li>
-                <li>Activate appropriate emergency action</li>
-                <li>If evacuation is necessary, verify safety of routes and assembly area</li>
-                <li>Set up leadership post and obtain personal safety equipment</li>
-                <li>Organize teams needed for response</li>
-            </ol>
-            
-            <h5>During Emergency Event</h5>
-            <ol>
-                <li>Determine need and request First Responder assistance</li>
-                <li>Monitor and assess the situation</li>
-                <li>Receive updates from other response teams</li>
-                <li>Coordinate with Student / Staff Liaison to account for students and staff</li>
-                <li>Reassign and/or release staff as appropriate</li>
-                <li>Remain in charge of site until redirected or event has ended</li>
-            </ol>
+            <li>Unlock the combination padlock to access area (code is 3101). <br>
+                After aligning the code on the padlock, push up on the padlock, then pull down to unlock it.</li>
+            <div class="side-menu_img-container flex-container flex-center">
+                <img src="images/combo-lock.jpg" alt="Combination lock" class="side-menu_img"></img>
+            </div>
 
-            <h5>After Emergency Event</h5>
-            <ol>
-                <li>Receive briefing from public safety agency to obtain “All Clear”</li>
-                <li>Authorize deactivation of response teams</li>
-                <li>Provide information for reporting</li>
-                <li>If necessary, proceed with recovery operations</li>
-            </ol>
-        </div>
-
-        <!-- Search and Site Assessment Info - Side menu -->
-        <div id="search" class="addInfo">
-            <a href="javascript:void(0)" class="closebtn"><span id="search-x_symbol" class="span_x">&times;</span></a>
-
-            <h5>Search and Site Assessment Team</h5>
-            <p>Assess all facilities on the property(s) for safety and damage, lead any and all search efforts if needed. Review and execute utility shut-offs if needed. Sweep quickly through the buildings to identify location of trapped or injured students and staff.   Notify leadership of those who are trapped and or injured.</p>
-            <p>This is a two-person team with an identified team leader. Take no action that might endanger you. Do not work beyond expertise. Use appropriate safety gear. Size up the situation first before taking any actions.</p>
-            <h5>Equipment and Supplies</h5>
-            <ul>
-                <li>ID Vest</li>
-                <li>Work and latex gloves</li>
-                <li>First aid backpack</li>
-                <li>Clipboard with job description and map</li>
-                <li>Fire extinguisher if available</li>
-                <li>Backpack with goggles, flashlight, face masks, pry bar, duct tape</li>
-                <li>Hard hat</li>
-                <li>Whistle with master keys on lanyard</li>
-                <li>Caution tape</li>
-                <li>Chalk marker</li>
-            </ul>
+            <li>Remove latch by opening clasp</li>
+            <div class="side-menu_img-container flex-container flex-column">
+                <img src="images/opening-latch.jpg" alt="Opening clasp" class="side-menu_img"></img>
+                <img src="images/open-latch.jpg" alt="Clasp opened" class="side-menu_img"></img>
+            </div>
             
-            <!-- Search and Site Assessment Actions -->
-            <h5>Initial Actions</h5>
-            <ol>
-                <li>If possible, create two teams with two searchers in each team</li>
-                <li>Put on personal safety gear</li>
-                <li>Obtain all necessary equipment (i.e. flashlight, marking chalk, first aid backpack)</li>
-                <li>Contact Leadership before beginning Search and maintain communications</li>
-                <li>Establish Search Route and communicate it to Leadership</li>
-            </ol>
+            <li>Gas shut-off and tool are located in back right corner of fenced area</li>
+            <div class="side-menu_img-container flex-container flex-center">
+                <img src="images/gas-tool.jpg" alt="Gas shut-off and tool" class="side-menu_img"></img>
+            </div>
+
+            <li>Gas shut-off valve is located on the backside of the pipe. When valve is in the vertical position, it is open</li>
+            <div class="side-menu_img-container flex-container flex-center">
+                <img src="images/gas-valve.jpg" alt="Gas shut-off valve" class="side-menu_img"></img>
+            </div>
             
-            <h5>During Search and Assessment</h5>
-            <ol>
-                <li>Before entering a space, evaluate if the area can be entered safely</li>
-                <li>Report structural damage to team leader</li>
-                <li>Use yellow caution tape to barricade hazardous areas</li>
-                <li>Do not enter severely damaged areas</li>
-                <li>One team member remains outside of the area being searched for safety and communication</li>
-                <li>Building search and sweep process to be completed on each floor:</li>
-                <ul>
-                    <li>Follow established search to cover all areas</li>
-                    <li>If area is safe to enter, search assigned area (following map) using orderly pattern</li>
-                    <li>If room is clear, mark the outside of door with an <q>X</q></li>
-                    <li>If room contains injured or dead persons, mark the outside of door with an <q>/</q></li>
-                    <li>Report by phone or radio to the Leadership Post when room or area has cleared</li>
-                </ul>
-                <li>Report gas leaks, fires, or structural damage to Leadership immediately upon discovery</li>
-                <li>Record exact location of damage and triage on map and report to Leadership</li>
-            </ol>
-        </div>
+            <li>Attach tool to valve</li>
+            <div class="side-menu_img-container flex-container flex-column">
+                <img src="images/tool1.jpg" alt="Tool attached to valve" class="side-menu_img"></img>
+                <img src="images/tool2.jpg" alt="Tool attached to valve" class="side-menu_img"></img>
+            </div>
+
+            <li>Close gas shut-off by pulling up on the tool to turn valve ¼ turn to the left. Valve will be in the horizontal position when it is closed</li>
+            <div class="side-menu_img-container flex-container flex-center">
+                <img src="images/closing-valve.jpg" alt="Closing valve" class="side-menu_img"></img>
+            </div>
+            
+        </ol>
+    </div>
+
+    <!-- Paging Procedure - Side menu -->
+    <div id="paging" class="addInfo">
+        <a href="javascript:void(0)" class="closebtn"><span id="paging-x_symbol" class="span_x">&times;</span></a>
+
+        <p>To perform an “All Call” on the PA System, follow the steps outlined below:</p>
+        <h5>Desktop Phone</h5>
+        <ol>
+            <li>Dial extension 115 and wait for the long tone after the initial ring</li>
+            <li>Press 0 * - After you hear three beeps from the overhead speakers, state your message</li>
+            <li>Upon completing message, hang up</li>
+        </ol>
+        <h5>Mobile Phone</h5>
+        <ol>
+            <li>Dial <a href="tel://+15105602032">(510) 560-2032</a> and press 3 for the Dial-By-Name directory</li>
+            <li>Enter “S-Y-S” on the keypad for the last name (System)</li>
+            <li>Wait for the long tone after the initial ring</li>
+            <li>Press 0 * - After you hear three beeps from the overhead speakers, state your message</li>
+            <li>Upon completing message, hang up</li>
+        </ol>
+    </div>
+
+
+    <!-- Parking gate manual operation -->
+    <div id="parking" class="addInfo">
+        <a href="javascript:void(0)" class="closebtn"><span id="parking-x_symbol" class="span_x">&times;</span></a>
+
+        <h5>Parking Gate Manual Operation</h5>
+        <ol>
+            <li>Locate switch at the base of the arm controller and switch it to the RESET / DISCONNECT position</li>
+            <div class="side-menu_img-container  flex-container flex-center">
+                <img src="images/gate-switch.jpg" alt="Reset / Disconnect switch" class="side-menu_img"></img>
+            </div>
+            
+            <li>Remove screw securing cover to manual release lever</li>
+            <div class="side-menu_img-container flex-container flex-center">
+                <img src="images/remove-screw.jpg" alt="Removing screw" class="side-menu_img"></img>
+            </div>
+
+            <li>Remove cover for the manual release lever</li>
+            <div class="side-menu_img-container flex-container flex-column">
+                <img src="images/remove-cover.jpg" alt="Removing cover" class="side-menu_img"></img>
+            </div>
+            
+            <li>Pull lever 180 degrees to manually release the parking gate</li>
+            <div class="side-menu_img-container flex-container flex-center">
+                <img src="images/lever.jpg" alt="Pulling lever" class="side-menu_img"></img>
+            </div>
+
+            <li>Pull open parking gate</li>
+            <div class="side-menu_img-container flex-container flex-center">
+                <img src="images/open-gate.jpg" alt="Pulling open gate" class="side-menu_img"></img>
+            </div>
+        </ol>
+    </div>
+
+    <!-- Lockup Procedure - Side menu -->
+    <div id="lockup" class="addInfo">
+        <a href="javascript:void(0)" class="closebtn"><span id="lockup-x_symbol" class="span_x">&times;</span></a>
+
+        <h5>PA Announcement</h5>
+        <p>Announcements are pre-programmed to alert occupants that the building is closing and to exit.  The final announcement occurs 5 minutes prior to closing.  If for any reason the automated announcement does not occur, perform the following announcement using the paging system:</p>
+        <p class="announcement"><q>Attention please. We need to institute an EVACUATION of the building.  Staff is to take their students to their designated Assembly Area.  Students please remain with your Instructor.</q></p>
         
-        <!-- Student / Staff Liaison Info - Side menu -->
-        <div id="studentStaff" class="addInfo">
-            <a href="javascript:void(0)" class="closebtn"><span id="studentStaff-x_symbol" class="span_x">&times;</span></a>
+        <!-- Lockup Actions -->
+        <h5>Building Check</h5>
+        <ol>
+            <li>Power down equipment in classrooms/labs</li>
+            <li>Close all doors to offices, classrooms, and admin</li>
+            <li>Close doors accessing the second floor</li>
+            <li>Ensure all rooms (including bathrooms) are not occupied</li>
+            <li>Turn off televisions</li>
+            <li>Lower blinds in breakroom, lobby, and admin</li>
+            <li>Close doors accessing the second floor</li>
+            <li>Close and secure rear exit door and roll-up door</li>
+            <li>De-energize lobby sliding glass doors using key switch, then lock doors</li>
+            <li>Activate alarm and exit building during the 60-second delay</li>
+        </ol>
+    </div>
 
-            <h5>Student / Staff Liaison</h5>
-            <p>Ensure the care and safety of all students on the site except those who are in the First Aid Station. Contact and interface with all family and guests on property to ensure, clear communication, status and evacuations if needed.</p>
-            
-            <!-- Student / Staff Liaison Actions -->
-            <h5>Initial Actions</h5>
-            <ol>
-                <li>Identify team leader</li>
-                <li>Put on safety vest or position identifier</li>
-                <li>Check in with Leadership for situation briefing</li>
-                <li>If site is evacuating:</li>
-                <ul>
-                    <li>Verify that the assembly area and routes to it are safe</li>
-                    <li>Count students or observe the classrooms as they exit to make sure that all classes evacuate</li>
-                    <li>Initiate the set-up of support supplies</li>
-                </ul>
-            </ol>
-            
-            <h5>During Emergency Event</h5>
-            <ol>
-                <li>Monitor the safety and wellbeing of students and staff in Assembly Area</li>
-                <li>If first aid is needed refer to First Aid Station</li>
-                <li>When necessary, provide water and food to students and staff</li>
-                <li>Update records of the number of students and staff in the assembly area</li>
-                <li>Account for and document all staff and students prior to them leaving the site</li>
-                <li>Make arrangements to provide shelter for students and staff</li>
-            </ol>
+    <!-- Information Gathering Resources - Side menu -->
+    <div id="infoResources" class="addInfo">
+        <a href="javascript:void(0)" class="closebtn"><span id="infoResources-x_symbol" class="span_x">&times;</span></a>
 
-            <h5>After Emergency Event</h5>
-            <ol>
-                <li>Return equipment and reusable supplies to building</li>
-            </ol>
+        <h5>Television and Radio Stations</h5>
+        <ul>
+            <li>Portable battery-powered radios on each floor</li>
+            <li>Car radios</li>
+            <li>Television news outlets</li>
+        </ul>
+        <h5>Internet / Social Media</h5>
+        <ul>
+            <li>Internet news</li>
+            <li>Facebook / Instagram</li>
+        </ul>
+        <h5>Nixle Mobile Emergency Alerts</h5>
+        <p><a href="sms://open?addresses=+888777">Text zip code to 888777</a>. For mobile alerts visit <a href="https://www.nixle.com/">www.nixle.com</a></p>
+        <h5>Weather Reports / Alerts</h5>
+        <h6>Weather Safety</h6>
+        <p class="indent"><a href="https://www.weather.gov/safety/">www.weather.gov/safety</a></p>
+        <h6>NOAA Weather Radio</h6>
+        <p class="indent"><a href="https://www.officedepot.com/a/products/686596/Midland-WR120B-Weather-Alert/">www.officedepot.com/a/products/686596/Midland-WR120B-Weather-Alert</a></p>
+        <h5>City of San Leandro Emergency Information</h5>
+        <h6>Email</h6>
+        <p class="indent"><a href="mailto:citycomments@sanleandro.org">citycomments@sanleandro.org</a></p>
+        <h6>Website</h6>
+        <p class="indent"><a href="https://www.sanleandro.org/services/emergency/emp.asp/">www.sanleandro.org/services/emergency/emp.asp</a></p>
+
+        <h6>Alameda County Office of the Emergency Services Alert System</h6>
+        <p class="indent"><a href="https://www.acgov.org/emergencysite/">www.acgov.org/emergencysite</a></p>
+
+        <h6>Alameda County Office of Emergency Services</h6>
+        <p class="indent"><a href="https://www.alamedacountysheriff.org/cws_oes.php/">www.alamedacountysheriff.org/cws_oes.php</a></p>
+
+        <h5>PG&E Outage Information</h5>
+        <p class="indent"><a href="https://www.pge.com/outagealerts/">www.pge.com/outagealerts</a></p>
+    </div>
+
+
+    <!-- Procedure Buttons -->
+    <div id="procedures-container" class="procedures-container">
+        <h2 class="procedures-title">Emergency Procedures</h2>
+        <hr>
+        <div class="grid-container">
+            <button id="evacuation" class="grid-item emerg-btn">Evacuation</button>
+            <button id="fire" class="grid-item emerg-btn">Fire</button>
+            <button id="earthquake" class="grid-item emerg-btn">Earthquake</button>
+            <button id="intruder" class="grid-item emerg-btn">Active Intruder</button>
+            <button id="bomb" class="grid-item emerg-btn">Bomb Threat</button>
+            <button id="dropCover" class="grid-item emerg-btn">Drop, Cover, Hold</button>
+            <button id="lockdown" class="grid-item emerg-btn">Lockdown</button>
+            <button id="crash" class="grid-item emerg-btn">Aircraft Crash</button>
+            <button id="weather" class="grid-item emerg-btn">Severe Weather</button>
+            <button id="shelter" class="grid-item emerg-btn">Shelter in Place</button>
         </div>
-
-        <!-- First Aid Team Info - Side menu -->
-        <div id="firstAid" class="addInfo">
-            <a href="javascript:void(0)" class="closebtn"><span id="firstAid-x_symbol" class="span_x">&times;</span></a>
-
-            <h5>First Aid Team</h5>
-            <p>Provide first aid support as needed and establish emergency supplies. Establish the First Aid treatment area, triage and emergency medical response/ first aid. Ensure that appropriate actions are taken using basic first aid. Coordinate with the Search and Site Assessment Team and inform Leadership when the situation requires health or medical services that staff cannot provide.</p>
-
-            <h5>First Aid Area Organization</h5>
-            <p>Locate triage (injury sorting area) at the entry of the First Aid area. This area is for the injured to be quickly evaluated for severity of injury and directed to the appropriate treatment area.</p>
-            <h6>Immediate Care</h6>
-            <p class="indent">For people with life and limb threatening injuries that require immediate attention, such as difficulty breathing, severe bleeding, major burns and shock.  Locate immediate care in an area out of sight of most students and staff but accessible to emergency vehicles.</p>
-            <h6>Delayed Care</h6>
-            <p class="indent">For injured individuals who do not require attention within the first hour.  Such people may have lacerations, broken bones or need medication.  Locate near the immediate care area, but shield from the sight of the injured in immediate care area.</p>
-            
-            <!-- First Aid Team Actions -->
-            <h5>Initial Actions</h5>
-            <ol>
-                <li>Set up First Aid area</li>
-                <li>Obtain and put on personal safety equipment including vests and non-latex or nitrile gloves</li>
-                <li>Secure First aid supplies</li>
-            </ol>
-            
-            <h5>During Emergency Event</h5>
-            <ol>
-                <li>Admit injured students/staff to First Aid area, listing name on master log</li>
-                <li>Administer appropriate first aid</li>
-                <li>Keep accurate records of care given</li>
-                <li>Continue to assess victims at regular intervals</li>
-                <li>If and when transport is available, do final assessment and document. Keep and file records for reference—do not send with victim. Determine where the injured will be transported to / location.</li>
-                <li>A copy of the Student’s and Staff Emergency Contact Information must accompany student removed from site to receive advanced medical attention</li>
-            </ol>
-        </div>
-
-
-        <!-- Gas Shut-Off Needed Here -->
-        <div id="gas" class="addInfo">
-            <a href="javascript:void(0)" class="closebtn"><span id="gas-x_symbol" class="span_x">&times;</span></a>
-
-            <h5>Gas Shut-Off</h5>
-            <ol>
-                <li>Gas shut-off is located within the fenced area of the front parking lot</li>
-                <div class="side-menu_img-container  flex-container flex-center">
-                    <img src="images/fenced-area.jpg" alt="Fenced area" class="side-menu_img"></img>
-                </div>
-                
-                <li>Unlock the combination padlock to access area (code is 3101). <br>
-                    After aligning the code on the padlock, push up on the padlock, then pull down to unlock it.</li>
-                <div class="side-menu_img-container flex-container flex-center">
-                    <img src="images/combo-lock.jpg" alt="Combination lock" class="side-menu_img"></img>
-                </div>
-
-                <li>Remove latch by opening clasp</li>
-                <div class="side-menu_img-container flex-container flex-column">
-                    <img src="images/opening-latch.jpg" alt="Opening clasp" class="side-menu_img"></img>
-                    <img src="images/open-latch.jpg" alt="Clasp opened" class="side-menu_img"></img>
-                </div>
-                
-                <li>Gas shut-off and tool are located in back right corner of fenced area</li>
-                <div class="side-menu_img-container flex-container flex-center">
-                    <img src="images/gas-tool.jpg" alt="Gas shut-off and tool" class="side-menu_img"></img>
-                </div>
-
-                <li>Gas shut-off valve is located on the backside of the pipe. When valve is in the vertical position, it is open</li>
-                <div class="side-menu_img-container flex-container flex-center">
-                    <img src="images/gas-valve.jpg" alt="Gas shut-off valve" class="side-menu_img"></img>
-                </div>
-                
-                <li>Attach tool to valve</li>
-                <div class="side-menu_img-container flex-container flex-column">
-                    <img src="images/tool1.jpg" alt="Tool attached to valve" class="side-menu_img"></img>
-                    <img src="images/tool2.jpg" alt="Tool attached to valve" class="side-menu_img"></img>
-                </div>
-
-                <li>Close gas shut-off by pulling up on the tool to turn valve ¼ turn to the left. Valve will be in the horizontal position when it is closed</li>
-                <div class="side-menu_img-container flex-container flex-center">
-                    <img src="images/closing-valve.jpg" alt="Closing valve" class="side-menu_img"></img>
-                </div>
-                
-            </ol>
-        </div>
-
-        <!-- Paging Procedure - Side menu -->
-        <div id="paging" class="addInfo">
-            <a href="javascript:void(0)" class="closebtn"><span id="paging-x_symbol" class="span_x">&times;</span></a>
-
-            <p>To perform an “All Call” on the PA System, follow the steps outlined below:</p>
-            <h5>Desktop Phone</h5>
-            <ol>
-                <li>Dial extension 115 and wait for the long tone after the initial ring</li>
-                <li>Press 0 * - After you hear three beeps from the overhead speakers, state your message</li>
-                <li>Upon completing message, hang up</li>
-            </ol>
-            <h5>Mobile Phone</h5>
-            <ol>
-                <li>Dial <a href="tel://+15105602032">(510) 560-2032</a> and press 3 for the Dial-By-Name directory</li>
-                <li>Enter “S-Y-S” on the keypad for the last name (System)</li>
-                <li>Wait for the long tone after the initial ring</li>
-                <li>Press 0 * - After you hear three beeps from the overhead speakers, state your message</li>
-                <li>Upon completing message, hang up</li>
-            </ol>
-        </div>
-
-
-        <!-- Parking gate manual operation -->
-        <div id="parking" class="addInfo">
-            <a href="javascript:void(0)" class="closebtn"><span id="parking-x_symbol" class="span_x">&times;</span></a>
-
-            <h5>Parking Gate Manual Operation</h5>
-            <ol>
-                <li>Locate switch at the base of the arm controller and switch it to the RESET / DISCONNECT position</li>
-                <div class="side-menu_img-container  flex-container flex-center">
-                    <img src="images/gate-switch.jpg" alt="Reset / Disconnect switch" class="side-menu_img"></img>
-                </div>
-                
-                <li>Remove screw securing cover to manual release lever</li>
-                <div class="side-menu_img-container flex-container flex-center">
-                    <img src="images/remove-screw.jpg" alt="Removing screw" class="side-menu_img"></img>
-                </div>
-
-                <li>Remove cover for the manual release lever</li>
-                <div class="side-menu_img-container flex-container flex-column">
-                    <img src="images/remove-cover.jpg" alt="Removing cover" class="side-menu_img"></img>
-                </div>
-                
-                <li>Pull lever 180 degrees to manually release the parking gate</li>
-                <div class="side-menu_img-container flex-container flex-center">
-                    <img src="images/lever.jpg" alt="Pulling lever" class="side-menu_img"></img>
-                </div>
-
-                <li>Pull open parking gate</li>
-                <div class="side-menu_img-container flex-container flex-center">
-                    <img src="images/open-gate.jpg" alt="Pulling open gate" class="side-menu_img"></img>
-                </div>
-            </ol>
-        </div>
-
-        <!-- Lockup Procedure - Side menu -->
-        <div id="lockup" class="addInfo">
-            <a href="javascript:void(0)" class="closebtn"><span id="lockup-x_symbol" class="span_x">&times;</span></a>
-
-            <h5>PA Announcement</h5>
-            <p>Announcements are pre-programmed to alert occupants that the building is closing and to exit.  The final announcement occurs 5 minutes prior to closing.  If for any reason the automated announcement does not occur, perform the following announcement using the paging system:</p>
-            <p class="announcement"><q>Attention please. We need to institute an EVACUATION of the building.  Staff is to take their students to their designated Assembly Area.  Students please remain with your Instructor.</q></p>
-            
-            <!-- Lockup Actions -->
-            <h5>Building Check</h5>
-            <ol>
-                <li>Power down equipment in classrooms/labs</li>
-                <li>Close all doors to offices, classrooms, and admin</li>
-                <li>Close doors accessing the second floor</li>
-                <li>Ensure all rooms (including bathrooms) are not occupied</li>
-                <li>Turn off televisions</li>
-                <li>Lower blinds in breakroom, lobby, and admin</li>
-                <li>Close doors accessing the second floor</li>
-                <li>Close and secure rear exit door and roll-up door</li>
-                <li>De-energize lobby sliding glass doors using key switch, then lock doors</li>
-                <li>Activate alarm and exit building during the 60-second delay</li>
-            </ol>
-        </div>
-
-        <!-- Information Gathering Resources - Side menu -->
-        <div id="infoResources" class="addInfo">
-            <a href="javascript:void(0)" class="closebtn"><span id="infoResources-x_symbol" class="span_x">&times;</span></a>
-
-            <h5>Television and Radio Stations</h5>
-            <ul>
-                <li>Portable battery-powered radios on each floor</li>
-                <li>Car radios</li>
-                <li>Television news outlets</li>
-            </ul>
-            <h5>Internet / Social Media</h5>
-            <ul>
-                <li>Internet news</li>
-                <li>Facebook / Instagram</li>
-            </ul>
-            <h5>Nixle Mobile Emergency Alerts</h5>
-            <p><a href="sms://open?addresses=+888777">Text zip code to 888777</a>. For mobile alerts visit <a href="https://www.nixle.com/">www.nixle.com</a></p>
-            <h5>Weather Reports / Alerts</h5>
-            <h6>Weather Safety</h6>
-            <p class="indent"><a href="https://www.weather.gov/safety/">www.weather.gov/safety</a></p>
-            <h6>NOAA Weather Radio</h6>
-            <p class="indent"><a href="https://www.officedepot.com/a/products/686596/Midland-WR120B-Weather-Alert/">www.officedepot.com/a/products/686596/Midland-WR120B-Weather-Alert</a></p>
-            <h5>City of San Leandro Emergency Information</h5>
-            <h6>Email</h6>
-            <p class="indent"><a href="mailto:citycomments@sanleandro.org">citycomments@sanleandro.org</a></p>
-            <h6>Website</h6>
-            <p class="indent"><a href="https://www.sanleandro.org/services/emergency/emp.asp/">www.sanleandro.org/services/emergency/emp.asp</a></p>
-
-            <h6>Alameda County Office of the Emergency Services Alert System</h6>
-            <p class="indent"><a href="https://www.acgov.org/emergencysite/">www.acgov.org/emergencysite</a></p>
-
-            <h6>Alameda County Office of Emergency Services</h6>
-            <p class="indent"><a href="https://www.alamedacountysheriff.org/cws_oes.php/">www.alamedacountysheriff.org/cws_oes.php</a></p>
-
-            <h5>PG&E Outage Information</h5>
-            <p class="indent"><a href="https://www.pge.com/outagealerts/">www.pge.com/outagealerts</a></p>
-        </div>
-
-
-        <!-- Procedure Buttons -->
-        <div id="procedures-container" class="procedures-container">
-            <h2 class="procedures-title">Emergency Procedures</h2>
+    </div>
+    <div class="flex-container flex-footer call-icon-container">
+        <a href="tel://+15105602032"><img src="images/fire.png" alt="Fire Icon" class="emerg-call-icon"></a>
+        <a href="tel://+15105602032"><img src="images/pge-icon.png" alt="PG&E Icon" class="emerg-call-icon"></a>
+        <a href="tel://+15105602032"><img src="images/police-badge.png" alt="Police Icon" class="emerg-call-icon"></a>
+    </div>
+    <!-- Procedure Info's -->
+    <div id="procedure-info_dispay" class="flex-container  flex-procedures-info" >
+        <!-- Evac Info -->
+        <div id="evacuation-info" class="procedures-info-container hideInfo">
+            <div class="flex-container flex-text">
+                <h3 class="procedure-info_title">Evacuation</h3>
+                <button id="evacText" class="btn btn-outline-success text-btn" onclick="sendEvacText()">
+                    Send Evacuation Text
+                </button>
+            </div>
             <hr>
-            <div class="grid-container">
-                <button id="evacuation" class="grid-item emerg-btn">Evacuation</button>
-                <button id="fire" class="grid-item emerg-btn">Fire</button>
-                <button id="earthquake" class="grid-item emerg-btn">Earthquake</button>
-                <button id="intruder" class="grid-item emerg-btn">Active Intruder</button>
-                <button id="bomb" class="grid-item emerg-btn">Bomb Threat</button>
-                <button id="dropCover" class="grid-item emerg-btn">Drop, Cover, Hold</button>
-                <button id="lockdown" class="grid-item emerg-btn">Lockdown</button>
-                <button id="crash" class="grid-item emerg-btn">Aircraft Crash</button>
-                <button id="weather" class="grid-item emerg-btn">Severe Weather</button>
-                <button id="shelter" class="grid-item emerg-btn">Shelter in Place</button>
-            </div>
-        </div>
-        <div class="flex-container flex-footer call-icon-container">
-            <a href="tel://+15105602032"><img src="images/fire.png" alt="Fire Icon" class="emerg-call-icon"></a>
-            <a href="tel://+15105602032"><img src="images/pge-icon.png" alt="PG&E Icon" class="emerg-call-icon"></a>
-            <a href="tel://+15105602032"><img src="images/police-badge.png" alt="Police Icon" class="emerg-call-icon"></a>
-        </div>
-      <!-- Procedure Info's -->
-        <div id="procedure-info_dispay" class="flex-container  flex-procedures-info" >
-            <!-- Evac Info -->
-            <div id="evacuation-info" class="procedures-info-container hideInfo">
-                <div class="flex-container flex-text">
-                    <h3 class="procedure-info_title">Evacuation</h3>
-                    <button id="evacText" class="btn btn-outline-success text-btn" onclick="sendEvacText()">
-                        Send Evacuation Text
-                    </button>
-                </div>
-                <hr>
-                <h4>Primary (on-site) Location</h4>
-                <ol>
-                    <li>Initiate evacuation announcement</li>
-                    <li>Notify appropriate first responders</li>
-                    <li>Acquire JATC Response Tool Box and student rosters</li>
-                    <li>Using evacuation routes, escort building occupants to assembly location</li>
-                    <li>Take attendance and report to site administrator</li>
-                    <li>Remain in assembly area until further instructions are received</li>
-                    <li>Do not re-enter building until "All Clear" is provided</li>
-                    <li>Take additional action as needed</li>
-                </ol>
-                <h4>Secondary (off-site) Location</h4>
-                <ol>
-                    <li>Initiate off-site evacuation announcement</li>
-                    <li>Notify appropriate first responders</li>
-                    <li>Acquire JATC Response Tool Box and student rosters</li>
-                    <li>Using evacuation routes, escort building occupants to assembly location</li>
-                    <li>Take attendance and prior to leaving the site</li>
-                    <li>Proceed to secondary (off-site) location</li>
-                    <li>Take attendance and report to site administrator</li>
-                    <li>Remain in assembly area until further instructions are received</li>
-                    <li>Do not re-enter building until "All Clear" is provided</li>
-                </ol>
-                <div class="flex-container flex-center">
-                    <button id="evacAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
-                </div>
-                
-            </div>
-            <!-- Evacuation Addition Info - Side menu -->
-            <div id="evacAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="evacAddInfo-x_symbol" class="span_x">&times;</span></a>
-                
-                <!-- ADDITIONAL INFO - Evacuation off-site -->
-                <h5>Evacuation – On-site</h5>
-                <p>This action provides for the orderly movement of students and staff along prescribed routes from inside the facility to a designated outside area of safety.  Evacuation is considered appropriate for, but is not limited to, the following events:</p> 
-                <ul>
-                    <li>Fire</li>
-                    <li>Post-earthquake</li>
-                    <li>Post-lockdown</li>
-                    <li>Bomb threat</li>
-                    <li>Gas leak</li>
-                </ul>
-                <h5>Announcement</h5>
-                <p>An announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p> 
-                <p class="announcement"><q>Attention please. We need to institute an EVACUATION of the building.  Staff is to take their students to their designated Assembly Area.  Students please remain with your Instructor.</q></p> 
-                <h5>Assisting Those With Disabilities</h5>
-                <p>The needs and preferences of non-ambulatory individuals will vary.  Those at ground floor locations may be able to exit without help.  Others may have minimal ability to move and lifting may be dangerous.  Some non-ambulatory people also have respiratory complications.  Remove them from smoke and vapors immediately.</p> 
-                <h6>Visually-impaired</h6>
-                <ul>
-                    <li>Announce the type of emergency</li>
-                    <li>Offer your arm for guidance</li>
-                    <li>Tell person where you are going, obstacles you encounter</li>
-                    <li>When you reach safety, ask if further help is needed</li>
-                </ul>
-                <h6>Hearing-impaired</h6>
-                <ul>
-                    <li>Turn lights on/off to gain person’s attention -OR-</li>
-                    <li>Indicate directions with gestures –OR-</li>
-                    <li>Write a note with evacuation directions</li>
-                </ul>
-                <h6>Crutches, Canes, or Walkers</h6>
-                <ul>
-                    <li>Evacuate these individuals as injured persons</li>
-                    <li>Assist and accompany to evacuation site, if possible -OR-</li>
-                    <li>Use a sturdy chair (or one with wheels) to move person -OR-</li>
-                    <li>Help carry individual to safety</li>
-                </ul>
-                <h6>Wheelchairs</h6>
-                <ul>
-                    <li>Give priority assistance to wheelchair users with electrical respirators</li>
-                    <li>If wheelchair is too heavy to take downstairs, determine the best carry options</li>
-                    <li>Reunite person with the wheelchair as soon as it is safe to do so</li>
-                    <li>Use evacuation chair if available and needed</li>
-                </ul>
-                <!-- ADDITIONAL INFO - Evacuation off-site -->
-                <h5>Evacuation – Off-site</h5>
-                <p>Off-site evacuation is implemented when it is unsafe to remain on the site and evacuation to an off-site assembly area is required.  This action provides for the orderly movement of students and staff along prescribed routes from inside the buildings to a designated area of safety. Off-site evacuation is considered appropriate for, but is not limited to, the following events:</p> 
-                <ul>
-                    <li>Fire</li>
-                    <li>Post-earthquake</li>
-                    <li>Post-lockdown</li>
-                    <li>Bomb threat</li>
-                    <li>Gas leak</li>
-                </ul>
-                <h5>Announcement</h5>
-                <p>An announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p> 
-                <p class="announcement"><q>Attention please. We need to institute an EVACUATION of the building.  Staff is to take their students to their designated Assembly Area.  Students please remain with your Instructor.</q></p>
-            </div>
-
-            <!-- Fire Info -->
-            <div id="fire-info" class="procedures-info-container hideInfo">
-                <div class="flex-container flex-text">
-                    <h3 class="procedure-info_title">Fire</h3>
-                    <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
-                </div>
-                <hr>
-                <h4>Inside Building</h4>
-                <ol>
-                    <li>Activate fire alarm / emergency communications system</li>
-                    <li>Evacuate building</li>
-                    <li>Shut off gas to building</li>
-                    <li>Prevent re-entry into building</li>
-                    <li>Evaluate the situation</li>
-                    <li>Take additional action as needed</li>
-                </ol>
-                <h4>Outside / Adjacent Building</h4>
-                <ol>
-                    <li>Determine if evacuation is necessary</li>
-                    <li>If necessary, evacuate to secondary (off-site) location</li>
-                    <li>Ensure all occupants have left the building</li>
-                    <li>Post a notice stating "Building closed due to local emergency"</li>
-                    <li>Follow guidance provided by first responders</li>
-                </ol>
-                <div class="flex-container flex-center">
-                    <button id="fireAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
-                </div>
-            </div> 
-
-            <!-- Fire Addition Info - Side menu -->
-            <div id="fireAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="fireAddInfo-x_symbol" class="span_x">&times;</span></a>
-                
-                <!-- ADDITIONAL INFO - Fire inside building -->
-                <h5>Fire – Inside Building</h5>
-                <p>Should any fire endanger the occupants or staff, it is important to act quickly and decisively to prevent injuries and contain the spread of the fire. In the event of a fire, the following guidelines should be followed:</p> 
-                <ul>
-                    <li>Elevator should not be used</li>
-                    <li>Close all doors leading to the fire</li>
-                    <li>If area is full of smoke, crawl along the floor close to the walls</li>
-                    <li>Before opening a door, check it for heat by placing hand one inch from the door near the top</li>
-                </ul>
-                <p>If a fire of any size is extinguished by onsite personnel, the fire department MUST be called to confirm that the fire is out.</p>
-                
-                <!-- ADDITIONAL INFO - Fire outside / adjacent building -->
-                <h5>Fire – Outside / Adjacent Building</h5>
-                <p>A fire in an adjoining building or area can threaten the site/building and endanger occupants and staff. Response actions will be determined by the location, size, proximity to building, and the likelihood that it may endanger the health and safety of occupants.</p> 
-                <p>If building is evacuated:</p>
-                <ul>
-                    <li>Monitor radio for information</li>
-                    <li>If fire reached the building, do not return to the building until it has been inspected and determined safe by proper authorities</li>
-                </ul>
-            </div>
-
-            <!-- Earthquake Info -->
-            <div id="earthquake-info" class="procedures-info-container procedure-info_animate hideInfo">
-                <div class="flex-container flex-text">
-                    <h3 class="procedure-info_title">Earthquake</h3>
-                    <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
-                </div>
-                <hr>
-                <ol>
-                    <li>Drop, Cover, and Hold On</li>
-                    <li>When shaking stops, remain in place for 20 seconds</li>
-                    <li>Evacuate Building</li>
-                    <li>Shut off gas to building</li>
-                    <li>Prevent re-entry to building</li>
-                    <li>Evaluate the situation</li>
-                    <li>Take additional action as needed</li>
-                </ol>
-                <div class="flex-container flex-center">
-                    <button id="quakeAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
-                </div>
-            </div>
-
-            <!-- Earthquake Addition Info - Side menu -->
-            <div id="quakeAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="quakeAddInfo-x_symbol"  class="span_x">&times;</span></a>
-                
-                <!-- ADDITIONAL INFO - Earthquake -->
-                <h5>Hazards and Cautions</h5>
-                <p>The major threat of injury during an earthquake is from falling objects, glass shards and debris. Many injuries are sustained while entering or leaving buildings. Therefore, it is important to quickly move away from windows, free-standing partitions and shelves and take the best available cover under a sturdy desk or table, in a doorway or against an inside wall.   All other actions must wait until the shaking stops.  If persons are protected from falling objects, the rolling motion of the earth may be frightening but not necessarily dangerous.</p> 
-                <ul>
-                    <li>Elevator should not be used</li>
-                    <li>Fire alarms or sprinkler systems may be activated by the shaking</li>
-                    <li>Stairways will need to be inspected for damage before they can be used</li>
-                    <li>The major shock is usually followed by numerous aftershocks, which may last for weeks</li>
-                </ul>
-                <h5>Announcement (if possible)</h5>
-                <p>If possible, an announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p>
-                <p class="announcement"><q>Attention please. We are experiencing an earthquake. For your protection, follow DROP, COVER and HOLD ON procedures. Get under a table or desk, away from windows and anything that could fall and hurt you. Hold that position until the shaking stops or until you receive further instructions.</q></p>
-
-                <h5>Outside Building - Actions and Precautions</h5>
-                <p>If outside the building when an earthquake occurs, follow the steps and precautions below:</p> 
-                <h6>During the earthquake</h6>
-                <ul>
-                    <li>Move students away from buildings, trees, overhead wires and poles</li>
-                    <li>Make body as small as possible by</li>
-                    <ul>
-                        <li>Dropping to knees</li>
-                        <li>Clasp both hands behind neck</li>
-                        <li>Bury face in arms, covering ears with forearms</li>
-                    </ul>
-                    <li>Maintain position until shaking stops</li>
-                </ul>
-                <h6>After the shaking stops</h6>
-                <ul>
-                    <li>Remain in place for at least 20 seconds</li>
-                    <li>Relocate to the proper evacuation assembly area</li>
-                </ul>
-                <p>Evaluate the situation and take further action in accordance with the Evacuation Procedure</p>
-                <h5>During Non-Operational Hours</h5>
-                <ul>
-                    <li>Inspect building to assess damage and determine corrective actions</li>
-                    <li>Notify fire department and utility company of suspected breaks in utility lines or pipes</li>
-                    <li>If site must be closed, notify staff and students</li>
-                    <li>Arrange for alternative learning if necessary</li>
-                </ul>
-            </div>
-
-            <!-- Active Intruder Info -->
-            <div id="intruder-info" class="procedures-info-container hideInfo">
-                <div class="flex-container flex-text">
-                    <h3 class="procedure-info_title">Active Intruder</h3>
-                    <button class="btn btn-outline-success text-btn" onclick="sendLockdownText()">Send Lockdown Text</button>
-                </div>
-                <hr>
-                <h4>Initial Actions</h4>
-                <ol>
-                    <li>If appropriate, initiate lockdown (extreme act of violence)</li>
-                    <li>Call 911 - provide details of situation (i.e. lockdown)</li>
-                    <li>If safe, clear hallways and open areas to direct occupants to safety</li>
-                    <li>Shut off gas to building</li>
-                    <li>Prevent re-entry into building</li>
-                    <li>Evaluate the situation</li>
-                    <li>Take additional action as needed</li>
-                </ol>
-                <h4>During Active Intruder Event</h4>
-                <ol>
-                    <li>Remain calm and quiet in a secured area away from doors and windows</li>
-                    <li>If lockdown is initiated, do not open doors once they are locked</li>
-                    <li>If safe, clear hallways and open areas to direct occupants to safety</li>
-                </ol>
-                <h4>After Active Intruder Event</h4>
-                <ol>
-                    <li>Evacuate to secondary (off-site) location</li>
-                    <li>Provide liaison for family members of injured occupants and staff</li>
-                    <li>Assist law enforcement - provide information about incident</li>
-                    <li>Arrange crisis counseling for occcupants and staff</li>
-                </ol>
-                <div class="flex-container flex-center">
-                    <button id="intruderAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
-                </div>
-            </div>
-
-            <!-- Active Intruder Addition Info - Side menu -->
-            <div id="intruderAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="intruderAddInfo-x_symbol" class="span_x">&times;</span></a>
-                
-                <!-- ADDITIONAL INFO - Fire inside building -->
-                <h5>Active Intruder Initiation</h5>
-                <p>Active Intruder is initiated when an intruder within the building poses an immediate threat to the occupants. This action promotes the safety and survival of occupants when under threat by an intruder. The Active Intruder procedure may be initiated by, but not limited to, the following events:</p> 
-                <ul>
-                    <li>Assault on building occupants</li>
-                    <li>Use of a weapon to threaten or harm occupants</li>
-                </ul>
-                
-                <h5>Active Intruder Execution</h5>
-                <p>During execution of an Active Intruder procedure, the JATC staff is to make efforts to minimize the likelihood of injury to themselves and occupants of the building. The following guidelines should be following during Active Intruder:</p> 
-                <h6>Run</h6>
-                <ul>
-                    <li>If occupant can safely do so, run away from the threat to safety</li>
-                    <li>Tell others to do the same, but don’t force them to</li>
-                    <li>Once safe, call 911 and report any information that may be helpful</li>
-                </ul>
-                <h6>Hide</h6>
-                <ul>
-                    <li>If it is not safe to run, hide in the most secure/safe location possible</li>
-                    <li>Close, lock, and barricade doors</li>
-                    <li>Close blinds and/or shades and turn off lights</li>
-                    <li>Identify items that may be used as a weapon if necessary</li>
-                    <li>Remain quiet and calm</li>
-                </ul>
-                <h6>Fight</h6>
-                <ul>
-                    <li>Never seek out the intruder – fighting the intruder off should only be done if it is the only option</li>
-                    <li>Use any item possible as a weapon</li>
-                    <li>Work together in numbers if possible</li>
-                </ul>
-            </div>
-
-            <!-- Bomb Info -->
-            <div id="bomb-info" class="procedures-info-container hideInfo">
-                <div class="flex-container flex-text">
-                    <h3 class="procedure-info_title">Bomb Threat</h3>
-                    <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
-                </div>
-                <hr>
-                <ol>
-                    <li>Call 911</li>
-                    <li>Turn off cellular phones and 2-way radios</li>
-                    <li>Do not examine or investigate suspicious objects</li>
-                    <li>If necessary, evacuate to secondary (off-site) location</li>
-                    <li>Account for building occupants</li>
-                    <li>Do not re-enter building until authorities provide clearance</li>
-                </ol>
-                <div class="flex-container flex-center">
-                    <button id="bombAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
-                </div>
-            </div>
-
-            <!-- Bomb Addition Info - Side menu -->
-            <div id="bombAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="bombAddInfo-x_symbol" class="span_x">&times;</span></a>
-                
-                <!-- ADDITIONAL INFO - Bomb -->
-                <h5>Bomb Threat</h5>
-                <p>In the event that the site receives a bomb threat by telephone follow the Bomb Threat Checklist to document information about the threat. Keep the caller on the telephone as long as possible and listen carefully to all information the caller provides. Make a note of any voice characteristics, accents, or background noises and complete the Bomb Threat Report as soon as possible.</p> 
-                
-                <h5>Person Receiving Threat by Telephone</h5>
-                <ul>
-                    <li>Listen. Do not interrupt caller</li>
-                    <li>Keep the caller on the line with statements such as <q>I am sorry, I did not understand you. What did you say?</q></li>
-                    <li>Alert someone else by prearranged signal to call 911</li>
-                    <li>Notify site administrator immediately after completing the call</li>
-                    <li>Complete the Bomb Threat Checklist</li>
-                </ul>
-
-                <h5>Person Receiving Threat by Mail</h5>
-                <ul>
-                    <li>Note the manner in which the threat was delivered, where it was found and who found it</li>
-                    <li>Limit handling of item by immediately placing it in an envelope so that fingerprints may be detected</li>
-                    <li>Notify law enforcement as soon as possible</li>
-                    <li>Notify site administrator</li>
-                    <li>Caution students against picking up or touching any strange objects or packages</li>
-                </ul>
-            </div>
-
-            <!-- Drop, Cover, Hold Info -->
-            <div id="dropCover-info" class="procedures-info-container hideInfo">
-                <div class="flex-container flex-text">
-                    <h3 class="procedure-info_title">Drop, Cover, Hold</h3>
-                    <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
-                </div>
-                <hr>
-                <ol>
-                    <li>Drop to floor under desks, chairs, or tables</li>
-                    <li>Put your back towards windows</li>
-                    <li>Place head between knees</li>
-                    <li>Hold onto table leg with one hand, cover back of neck with the other</li>
-                    <li>When shaking stops, remain in place for 20 seconds</li>
-                    <li>Evaluate the situation</li>
-                    <li>Take additional action as needed</li>
-                </ol>
-                <div class="flex-container flex-center">
-                    <button id="drop-coverAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
-                </div>
-            </div>
-
-            <!-- Drop, Cover, Hold Addition Info - Side menu -->
-            <div id="drop-coverAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="drop-coverAddInfo-x_symbol" class="span_x">&times;</span></a>
-                
-                <!-- ADDITIONAL INFO - Drop,Cover,Hold -->
-                <h5>Drop, Cover, and Hold On</h5>
-                <p>The action taken during an earthquake to protect students and staff from flying and falling debris.  This is the appropriate action for the following events:</p> 
-                <ul>
-                    <li>Earthquake</li>
-                    <li>Explosion</li>
-                </ul>
-
-                <h5>Announcement (if possible)</h5>
-                <p>If possible, an announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p>
-                <p class="announcement"><q>Attention please. We are experiencing an earthquake. For your protection, follow DROP, COVER and HOLD ON procedures. Get under a table or desk, away from windows and anything that could fall and hurt you. Hold that position until the shaking stops or until you receive further instructions.</q></p>
-
-                <h5>Outside Building – Actions and Precautions</h5>
-                <p>If outside the building when an earthquake occurs, follow the steps and precautions below.</p>
-                <h6>During the earthquake</h6>
-                <ul>
-                    <li>Move students away from buildings, trees, overhead wires and poles</li>
-                    <li>Make body as small as possible by</li>
-                    <ul>
-                        <li>Dropping to knees</li>
-                        <li>Clasp both hands behind neck</li>
-                        <li>Bury face in arms</li>
-                        <li>Close eyes</li>
-                        <li>Cover ears with forearms</li>
-                    </ul>
-                    <li>Maintain position until shaking stops</li>
-                </ul>
-                <h6>After the shaking stops</h6>
-                <ul>
-                    <li>Remain in place for at least 20 seconds</li>
-                    <li>Relocate to the proper evacuation assembly area</li>
-                </ul>
-                <p>Evaluate the situation and take further action in accordance with the Evacuation Procedure</p>
-            </div>
-
-
-            <!-- Lockdown Info -->
-            <div id="lockdown-info" class="procedures-info-container hideInfo">
-                <div class="flex-container flex-text">
-                    <h3 class="procedure-info_title">Lockdown</h3>
-                    <button class="btn btn-outline-success text-btn" onclick="sendLockdownText()">Send Lockdown Text</button>
-                </div>
-                <hr>
-                <ol>
-                    <li>Initiate lockdown announcement</li>
-                    <li>Move quickly and quietly to closest safe office or classroom</li>
-                    <li>Lock doors and remain in office or classroom</li>
-                    <li>Close blinds or shades in room and turn off lights</li>
-                    <li>Call 911</li>
-                    <li>Remain quiet and calm</li>
-                    <li>Wait for authorized staff or law enforcement to open the door</li>
-                </ol>
-                <div class="flex-container flex-center">
-                    <button id="lockdownAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
-                </div>
-            </div>
-
-            <!-- Lockdown Addition Info - Side menu -->
-            <div id="lockdownAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="lockdownAddInfo-x_symbol" class="span_x">&times;</span></a>
-                
-                <!-- ADDITIONAL INFO - Lockdown -->
-                <h5>Lockdown</h5>
-                <p>Initiated to isolate students and staff from danger when there is a crisis on site and movement within the site might put students and staff in jeopardy.  Lockdown is used to prevent intruders from entering occupied areas of the building. The concept of Lockdown is no one in, no one out.  All exterior doors are locked and students and staff must remain in the classrooms or designated locations at all times. Staff and Instructors are responsible for accounting for occupants and ensuring that no one leaves the safe area.  Lockdown is not normally preceded with an announcement. It is appropriate to initiate Lockdown for, but not limited to, the following events:</p> 
-                <ul>
-                    <li>Gunfire</li>
-                    <li>Act of extreme violence</li>
-                </ul>
-
-                <h5>Announcement</h5>
-                <p>An announcement may be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p>
-                <p class="announcement"><q>Attention please. LOCKDOWN…LOCKDOWN…LOCKDOWN.  Additional information will follow.</q></p>
-                <p><strong>Never evacuate from a Lockdown based upon an announcement or fire alarm sounding…this could a distraction used by the intruder!</strong></p>
-
-                <h5>Safe Locations</h5>
-                <p>If rooms are locked, immediately hide in the closest safe zone: bathroom, janitorial closet, or office area.  Lock the door or move furniture or trash can to bar access to the room. <strong>Remain quiet until the site leadership or the police provide further instruction.</strong></p>
+            <h4>Primary (on-site) Location</h4>
+            <ol>
+                <li>Initiate evacuation announcement</li>
+                <li>Notify appropriate first responders</li>
+                <li>Acquire JATC Response Tool Box and student rosters</li>
+                <li>Using evacuation routes, escort building occupants to assembly location</li>
+                <li>Take attendance and report to site administrator</li>
+                <li>Remain in assembly area until further instructions are received</li>
+                <li>Do not re-enter building until "All Clear" is provided</li>
+                <li>Take additional action as needed</li>
+            </ol>
+            <h4>Secondary (off-site) Location</h4>
+            <ol>
+                <li>Initiate off-site evacuation announcement</li>
+                <li>Notify appropriate first responders</li>
+                <li>Acquire JATC Response Tool Box and student rosters</li>
+                <li>Using evacuation routes, escort building occupants to assembly location</li>
+                <li>Take attendance and prior to leaving the site</li>
+                <li>Proceed to secondary (off-site) location</li>
+                <li>Take attendance and report to site administrator</li>
+                <li>Remain in assembly area until further instructions are received</li>
+                <li>Do not re-enter building until "All Clear" is provided</li>
+            </ol>
+            <div class="flex-container flex-center">
+                <button id="evacAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
             </div>
             
-            <!-- Aircraft Crash Info -->
-            <div id="crash-info" class="procedures-info-container hideInfo">
-                <div class="flex-container flex-text">
-                    <h3 class="procedure-info_title">Aircraft Crash</h3>
-                    <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
-                </div>
-                <hr>
-                <ol>
-                    <li>Call 911</li>
-                    <li>If necessary, evacuate building</li>
-                    <li>If necessary administer first aid and removal of injured from building</li>
-                    <li>Ensure students and staff remain at a safe distance</li>
-                    <li>Account for building occupants</li>
-                    <li>Do not re-enter building until authorities provide clearance</li>
-                </ol>
-                <div class="flex-container flex-center">
-                    <button id="crashAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
-                </div>
+        </div>
+        <!-- Evacuation Addition Info - Side menu -->
+        <div id="evacAddInfo" class="addInfo">
+            <a href="javascript:void(0)" class="closebtn"><span id="evacAddInfo-x_symbol" class="span_x">&times;</span></a>
+            
+            <!-- ADDITIONAL INFO - Evacuation off-site -->
+            <h5>Evacuation – On-site</h5>
+            <p>This action provides for the orderly movement of students and staff along prescribed routes from inside the facility to a designated outside area of safety.  Evacuation is considered appropriate for, but is not limited to, the following events:</p> 
+            <ul>
+                <li>Fire</li>
+                <li>Post-earthquake</li>
+                <li>Post-lockdown</li>
+                <li>Bomb threat</li>
+                <li>Gas leak</li>
+            </ul>
+            <h5>Announcement</h5>
+            <p>An announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p> 
+            <p class="announcement"><q>Attention please. We need to institute an EVACUATION of the building.  Staff is to take their students to their designated Assembly Area.  Students please remain with your Instructor.</q></p> 
+            <h5>Assisting Those With Disabilities</h5>
+            <p>The needs and preferences of non-ambulatory individuals will vary.  Those at ground floor locations may be able to exit without help.  Others may have minimal ability to move and lifting may be dangerous.  Some non-ambulatory people also have respiratory complications.  Remove them from smoke and vapors immediately.</p> 
+            <h6>Visually-impaired</h6>
+            <ul>
+                <li>Announce the type of emergency</li>
+                <li>Offer your arm for guidance</li>
+                <li>Tell person where you are going, obstacles you encounter</li>
+                <li>When you reach safety, ask if further help is needed</li>
+            </ul>
+            <h6>Hearing-impaired</h6>
+            <ul>
+                <li>Turn lights on/off to gain person’s attention -OR-</li>
+                <li>Indicate directions with gestures –OR-</li>
+                <li>Write a note with evacuation directions</li>
+            </ul>
+            <h6>Crutches, Canes, or Walkers</h6>
+            <ul>
+                <li>Evacuate these individuals as injured persons</li>
+                <li>Assist and accompany to evacuation site, if possible -OR-</li>
+                <li>Use a sturdy chair (or one with wheels) to move person -OR-</li>
+                <li>Help carry individual to safety</li>
+            </ul>
+            <h6>Wheelchairs</h6>
+            <ul>
+                <li>Give priority assistance to wheelchair users with electrical respirators</li>
+                <li>If wheelchair is too heavy to take downstairs, determine the best carry options</li>
+                <li>Reunite person with the wheelchair as soon as it is safe to do so</li>
+                <li>Use evacuation chair if available and needed</li>
+            </ul>
+            <!-- ADDITIONAL INFO - Evacuation off-site -->
+            <h5>Evacuation – Off-site</h5>
+            <p>Off-site evacuation is implemented when it is unsafe to remain on the site and evacuation to an off-site assembly area is required.  This action provides for the orderly movement of students and staff along prescribed routes from inside the buildings to a designated area of safety. Off-site evacuation is considered appropriate for, but is not limited to, the following events:</p> 
+            <ul>
+                <li>Fire</li>
+                <li>Post-earthquake</li>
+                <li>Post-lockdown</li>
+                <li>Bomb threat</li>
+                <li>Gas leak</li>
+            </ul>
+            <h5>Announcement</h5>
+            <p>An announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p> 
+            <p class="announcement"><q>Attention please. We need to institute an EVACUATION of the building.  Staff is to take their students to their designated Assembly Area.  Students please remain with your Instructor.</q></p>
+        </div>
+
+        <!-- Fire Info -->
+        <div id="fire-info" class="procedures-info-container hideInfo">
+            <div class="flex-container flex-text">
+                <h3 class="procedure-info_title">Fire</h3>
+                <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
             </div>
-
-            <!-- Aircraft Crash Addition Info - Side menu -->
-            <div id="crashAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="crashAddInfo-x_symbol" class="span_x">&times;</span></a>
-                
-                <!-- ADDITIONAL INFO - Aircraft crash -->
-                <h5>Aircraft Crash – Near or Into Facility</h5>
-                <p>Emergency protocol will depend on the size of the aircraft, nature of the crash, and proximity to the facility.  If it is safe to remain inside the building, all students should be kept in the building under supervision.  The crash may also result in an explosion, chemical spill or utility interruption.</p> 
-                <h5>Evacuation</h5>
-                <ul>
-                    <li>Move students away from immediate vicinity of the crash</li>
-                    <li>Evacuate students from the building using primary and /or alternate fire routes to a safe assembly area away from the crash scene</li>
-                    <li>Take class roster/nametags and emergency backpack from storage area located in the break room</li>
-                    <li>Check site to assure that all students have evacuated</li>
-                    <li>Take attendance at the designated assembly area</li>
-                    <li>Report missing students to the administration/designee and emergency response personnel</li>
-                    <li>Maintain control of the students a safe distance from the crash site</li>
-                </ul>
+            <hr>
+            <h4>Inside Building</h4>
+            <ol>
+                <li>Activate fire alarm / emergency communications system</li>
+                <li>Evacuate building</li>
+                <li>Shut off gas to building</li>
+                <li>Prevent re-entry into building</li>
+                <li>Evaluate the situation</li>
+                <li>Take additional action as needed</li>
+            </ol>
+            <h4>Outside / Adjacent Building</h4>
+            <ol>
+                <li>Determine if evacuation is necessary</li>
+                <li>If necessary, evacuate to secondary (off-site) location</li>
+                <li>Ensure all occupants have left the building</li>
+                <li>Post a notice stating "Building closed due to local emergency"</li>
+                <li>Follow guidance provided by first responders</li>
+            </ol>
+            <div class="flex-container flex-center">
+                <button id="fireAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
             </div>
+        </div> 
 
-            <!-- Severe Weather/Storm Info -->
-            <div id="weather-info" class="procedures-info-container hideInfo">
-                <div class="flex-container flex-text">
-                    <h3 class="procedure-info_title">Severe Weather</h3>
-                </div>
-                <hr>
-                <ol>
-                    <li>Monitor weather forecasts and storm information</li>
-                    <li>Report to site by 6 a.m. to check for power outages, flooding, etc.</li>
-                    <li>Notify utility companies of suspected breaks in utilities</li>
-                    <li>Determine if site will be closed or remain open</li>
-                    <li>Contact staff and students if site will be closed</li>
-                    <li>Post site status on website</li>
-                    <li>Take appropriate action to safeguard site property</li>
-                </ol>
-                <h4>Windstorm</h4>
-                <ol>
-                    <li>Evacuate to 1st floor away from spaces bearing full force of wind</li>
-                    <li>Initiate TAKE COVER and stay away from windows</li>
-                    <li>Close all blinds and curtains</li>
-                    <li>Take attendance and report to Site Administrator</li>
-                </ol>
-                <div class="flex-container flex-center">
-                    <button id="weatherAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
-                </div>
+        <!-- Fire Addition Info - Side menu -->
+        <div id="fireAddInfo" class="addInfo">
+            <a href="javascript:void(0)" class="closebtn"><span id="fireAddInfo-x_symbol" class="span_x">&times;</span></a>
+            
+            <!-- ADDITIONAL INFO - Fire inside building -->
+            <h5>Fire – Inside Building</h5>
+            <p>Should any fire endanger the occupants or staff, it is important to act quickly and decisively to prevent injuries and contain the spread of the fire. In the event of a fire, the following guidelines should be followed:</p> 
+            <ul>
+                <li>Elevator should not be used</li>
+                <li>Close all doors leading to the fire</li>
+                <li>If area is full of smoke, crawl along the floor close to the walls</li>
+                <li>Before opening a door, check it for heat by placing hand one inch from the door near the top</li>
+            </ul>
+            <p>If a fire of any size is extinguished by onsite personnel, the fire department MUST be called to confirm that the fire is out.</p>
+            
+            <!-- ADDITIONAL INFO - Fire outside / adjacent building -->
+            <h5>Fire – Outside / Adjacent Building</h5>
+            <p>A fire in an adjoining building or area can threaten the site/building and endanger occupants and staff. Response actions will be determined by the location, size, proximity to building, and the likelihood that it may endanger the health and safety of occupants.</p> 
+            <p>If building is evacuated:</p>
+            <ul>
+                <li>Monitor radio for information</li>
+                <li>If fire reached the building, do not return to the building until it has been inspected and determined safe by proper authorities</li>
+            </ul>
+        </div>
+
+        <!-- Earthquake Info -->
+        <div id="earthquake-info" class="procedures-info-container procedure-info_animate hideInfo">
+            <div class="flex-container flex-text">
+                <h3 class="procedure-info_title">Earthquake</h3>
+                <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
             </div>
-
-            <!-- Severe Weather Addition Info - Side menu -->
-            <div id="weatherAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="weatherAddInfo-x_symbol" class="span_x">&times;</span></a>
-                
-                <!-- ADDITIONAL INFO - Severe Weather -->
-                <h5>Storm / Severe Weather</h5>
-                <p>Severe weather can be accompanied by high winds, downed trees and swollen creeks.  An emergency response is required when this type of weather poses any risk to the staff and students.  Assure that each student’s method of returning home is safe and reliable.</p> 
-            </div>
-
-            <!-- Shelter in Place Info -->
-            <div id="shelter-info" class="procedures-info-container hideInfo">
-                <div class="flex-container flex-text">
-                    <h3 class="procedure-info_title">Shelter in Place</h3>
-                </div>
-                <hr>
-                <ol>
-                    <li>Initiate shelter in place announcement</li>
-                    <li>If necessary, shut down HVAC</li>
-                    <li>Clear occupants from halls and open areas</li>
-                    <li>Secure offices and classrooms</li>
-                    <li>Report attendance</li>
-                    <li>Utilize information gathering resources</li>
-                    <li>When safe, initiate "All clear" announcement</li>
-                </ol>
-                <div class="flex-container flex-center">
-                    <button id="shelterAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
-                </div>
-            </div>
-
-            <!-- Shelter in Place Addition Info - Side menu -->
-            <div id="shelterAddInfo" class="addInfo">
-                <a href="javascript:void(0)" class="closebtn"><span id="shelterAddInfo-x_symbol" class="span_x">&times;</span></a>
-                
-                <!-- ADDITIONAL INFO - Shelter in Place -->
-                <h5>Shelter in Place</h5>
-                <p>A short-term measure implemented when there is a need to isolate students and staff from the outdoor environment to prevent exposure to airborne contaminants. The procedures includes taking actions to prevent exposure to the outside air.  Free movement of staff and students within the building is permitted, although one should not leave the room until further instructions are received. It is appropriate to initiate Shelter in Place for, but not limited to, the following events:</p> 
-                <ul>
-                    <li>Gas leaks</li>
-                    <li>External chemical release</li>
-                    <li>Dirty bombs</li>
-                    <li>Hazardous material spills</li>
-                </ul>
-
-                <h5>Announcement</h5>
-                <p>An announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p>
-                <p class="announcement"><q>Attention please. We have a hazard in the community and are instituting SHELTER IN PLACE procedures.  Students and staff should remain inside with windows and doors securely closed and air conditioning units turned off.  Those who are outside should immediately move to the protection of an inside room.  Do not go outdoors until you receive further instructions.</q></p>
-                <p>Give clear instructions, remain calm, and convey reassurance that the situation is under control.</p>
-
-                <h5>Securing Offices and Classrooms</h5>
-                <ul>
-                    <li>Close and lock doors and windows</li>
-                    <li>Shut down office / classroom HVAC</li>
-                    <li>Turn off local fans</li>
-                    <li>Seal gaps under doors and windows using wet towels or duct tape</li>
-                    <li>Seal vents with aluminum foil or plastic wrap</li>
-                    <li>Turn off sources of ignition such as pilot lights</li>
-                </ul>
+            <hr>
+            <ol>
+                <li>Drop, Cover, and Hold On</li>
+                <li>When shaking stops, remain in place for 20 seconds</li>
+                <li>Evacuate Building</li>
+                <li>Shut off gas to building</li>
+                <li>Prevent re-entry to building</li>
+                <li>Evaluate the situation</li>
+                <li>Take additional action as needed</li>
+            </ol>
+            <div class="flex-container flex-center">
+                <button id="quakeAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
             </div>
         </div>
-    </body>
+
+        <!-- Earthquake Addition Info - Side menu -->
+        <div id="quakeAddInfo" class="addInfo">
+            <a href="javascript:void(0)" class="closebtn"><span id="quakeAddInfo-x_symbol"  class="span_x">&times;</span></a>
+            
+            <!-- ADDITIONAL INFO - Earthquake -->
+            <h5>Hazards and Cautions</h5>
+            <p>The major threat of injury during an earthquake is from falling objects, glass shards and debris. Many injuries are sustained while entering or leaving buildings. Therefore, it is important to quickly move away from windows, free-standing partitions and shelves and take the best available cover under a sturdy desk or table, in a doorway or against an inside wall.   All other actions must wait until the shaking stops.  If persons are protected from falling objects, the rolling motion of the earth may be frightening but not necessarily dangerous.</p> 
+            <ul>
+                <li>Elevator should not be used</li>
+                <li>Fire alarms or sprinkler systems may be activated by the shaking</li>
+                <li>Stairways will need to be inspected for damage before they can be used</li>
+                <li>The major shock is usually followed by numerous aftershocks, which may last for weeks</li>
+            </ul>
+            <h5>Announcement (if possible)</h5>
+            <p>If possible, an announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p>
+            <p class="announcement"><q>Attention please. We are experiencing an earthquake. For your protection, follow DROP, COVER and HOLD ON procedures. Get under a table or desk, away from windows and anything that could fall and hurt you. Hold that position until the shaking stops or until you receive further instructions.</q></p>
+
+            <h5>Outside Building - Actions and Precautions</h5>
+            <p>If outside the building when an earthquake occurs, follow the steps and precautions below:</p> 
+            <h6>During the earthquake</h6>
+            <ul>
+                <li>Move students away from buildings, trees, overhead wires and poles</li>
+                <li>Make body as small as possible by</li>
+                <ul>
+                    <li>Dropping to knees</li>
+                    <li>Clasp both hands behind neck</li>
+                    <li>Bury face in arms, covering ears with forearms</li>
+                </ul>
+                <li>Maintain position until shaking stops</li>
+            </ul>
+            <h6>After the shaking stops</h6>
+            <ul>
+                <li>Remain in place for at least 20 seconds</li>
+                <li>Relocate to the proper evacuation assembly area</li>
+            </ul>
+            <p>Evaluate the situation and take further action in accordance with the Evacuation Procedure</p>
+            <h5>During Non-Operational Hours</h5>
+            <ul>
+                <li>Inspect building to assess damage and determine corrective actions</li>
+                <li>Notify fire department and utility company of suspected breaks in utility lines or pipes</li>
+                <li>If site must be closed, notify staff and students</li>
+                <li>Arrange for alternative learning if necessary</li>
+            </ul>
+        </div>
+
+        <!-- Active Intruder Info -->
+        <div id="intruder-info" class="procedures-info-container hideInfo">
+            <div class="flex-container flex-text">
+                <h3 class="procedure-info_title">Active Intruder</h3>
+                <button class="btn btn-outline-success text-btn" onclick="sendLockdownText()">Send Lockdown Text</button>
+            </div>
+            <hr>
+            <h4>Initial Actions</h4>
+            <ol>
+                <li>If appropriate, initiate lockdown (extreme act of violence)</li>
+                <li>Call 911 - provide details of situation (i.e. lockdown)</li>
+                <li>If safe, clear hallways and open areas to direct occupants to safety</li>
+                <li>Shut off gas to building</li>
+                <li>Prevent re-entry into building</li>
+                <li>Evaluate the situation</li>
+                <li>Take additional action as needed</li>
+            </ol>
+            <h4>During Active Intruder Event</h4>
+            <ol>
+                <li>Remain calm and quiet in a secured area away from doors and windows</li>
+                <li>If lockdown is initiated, do not open doors once they are locked</li>
+                <li>If safe, clear hallways and open areas to direct occupants to safety</li>
+            </ol>
+            <h4>After Active Intruder Event</h4>
+            <ol>
+                <li>Evacuate to secondary (off-site) location</li>
+                <li>Provide liaison for family members of injured occupants and staff</li>
+                <li>Assist law enforcement - provide information about incident</li>
+                <li>Arrange crisis counseling for occcupants and staff</li>
+            </ol>
+            <div class="flex-container flex-center">
+                <button id="intruderAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+            </div>
+        </div>
+
+        <!-- Active Intruder Addition Info - Side menu -->
+        <div id="intruderAddInfo" class="addInfo">
+            <a href="javascript:void(0)" class="closebtn"><span id="intruderAddInfo-x_symbol" class="span_x">&times;</span></a>
+            
+            <!-- ADDITIONAL INFO - Fire inside building -->
+            <h5>Active Intruder Initiation</h5>
+            <p>Active Intruder is initiated when an intruder within the building poses an immediate threat to the occupants. This action promotes the safety and survival of occupants when under threat by an intruder. The Active Intruder procedure may be initiated by, but not limited to, the following events:</p> 
+            <ul>
+                <li>Assault on building occupants</li>
+                <li>Use of a weapon to threaten or harm occupants</li>
+            </ul>
+            
+            <h5>Active Intruder Execution</h5>
+            <p>During execution of an Active Intruder procedure, the JATC staff is to make efforts to minimize the likelihood of injury to themselves and occupants of the building. The following guidelines should be following during Active Intruder:</p> 
+            <h6>Run</h6>
+            <ul>
+                <li>If occupant can safely do so, run away from the threat to safety</li>
+                <li>Tell others to do the same, but don’t force them to</li>
+                <li>Once safe, call 911 and report any information that may be helpful</li>
+            </ul>
+            <h6>Hide</h6>
+            <ul>
+                <li>If it is not safe to run, hide in the most secure/safe location possible</li>
+                <li>Close, lock, and barricade doors</li>
+                <li>Close blinds and/or shades and turn off lights</li>
+                <li>Identify items that may be used as a weapon if necessary</li>
+                <li>Remain quiet and calm</li>
+            </ul>
+            <h6>Fight</h6>
+            <ul>
+                <li>Never seek out the intruder – fighting the intruder off should only be done if it is the only option</li>
+                <li>Use any item possible as a weapon</li>
+                <li>Work together in numbers if possible</li>
+            </ul>
+        </div>
+
+        <!-- Bomb Info -->
+        <div id="bomb-info" class="procedures-info-container hideInfo">
+            <div class="flex-container flex-text">
+                <h3 class="procedure-info_title">Bomb Threat</h3>
+                <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
+            </div>
+            <hr>
+            <ol>
+                <li>Call 911</li>
+                <li>Turn off cellular phones and 2-way radios</li>
+                <li>Do not examine or investigate suspicious objects</li>
+                <li>If necessary, evacuate to secondary (off-site) location</li>
+                <li>Account for building occupants</li>
+                <li>Do not re-enter building until authorities provide clearance</li>
+            </ol>
+            <div class="flex-container flex-center">
+                <button id="bombAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+            </div>
+        </div>
+
+        <!-- Bomb Addition Info - Side menu -->
+        <div id="bombAddInfo" class="addInfo">
+            <a href="javascript:void(0)" class="closebtn"><span id="bombAddInfo-x_symbol" class="span_x">&times;</span></a>
+            
+            <!-- ADDITIONAL INFO - Bomb -->
+            <h5>Bomb Threat</h5>
+            <p>In the event that the site receives a bomb threat by telephone follow the Bomb Threat Checklist to document information about the threat. Keep the caller on the telephone as long as possible and listen carefully to all information the caller provides. Make a note of any voice characteristics, accents, or background noises and complete the Bomb Threat Report as soon as possible.</p> 
+            
+            <h5>Person Receiving Threat by Telephone</h5>
+            <ul>
+                <li>Listen. Do not interrupt caller</li>
+                <li>Keep the caller on the line with statements such as <q>I am sorry, I did not understand you. What did you say?</q></li>
+                <li>Alert someone else by prearranged signal to call 911</li>
+                <li>Notify site administrator immediately after completing the call</li>
+                <li>Complete the Bomb Threat Checklist</li>
+            </ul>
+
+            <h5>Person Receiving Threat by Mail</h5>
+            <ul>
+                <li>Note the manner in which the threat was delivered, where it was found and who found it</li>
+                <li>Limit handling of item by immediately placing it in an envelope so that fingerprints may be detected</li>
+                <li>Notify law enforcement as soon as possible</li>
+                <li>Notify site administrator</li>
+                <li>Caution students against picking up or touching any strange objects or packages</li>
+            </ul>
+        </div>
+
+        <!-- Drop, Cover, Hold Info -->
+        <div id="dropCover-info" class="procedures-info-container hideInfo">
+            <div class="flex-container flex-text">
+                <h3 class="procedure-info_title">Drop, Cover, Hold</h3>
+                <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
+            </div>
+            <hr>
+            <ol>
+                <li>Drop to floor under desks, chairs, or tables</li>
+                <li>Put your back towards windows</li>
+                <li>Place head between knees</li>
+                <li>Hold onto table leg with one hand, cover back of neck with the other</li>
+                <li>When shaking stops, remain in place for 20 seconds</li>
+                <li>Evaluate the situation</li>
+                <li>Take additional action as needed</li>
+            </ol>
+            <div class="flex-container flex-center">
+                <button id="drop-coverAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+            </div>
+        </div>
+
+        <!-- Drop, Cover, Hold Addition Info - Side menu -->
+        <div id="drop-coverAddInfo" class="addInfo">
+            <a href="javascript:void(0)" class="closebtn"><span id="drop-coverAddInfo-x_symbol" class="span_x">&times;</span></a>
+            
+            <!-- ADDITIONAL INFO - Drop,Cover,Hold -->
+            <h5>Drop, Cover, and Hold On</h5>
+            <p>The action taken during an earthquake to protect students and staff from flying and falling debris.  This is the appropriate action for the following events:</p> 
+            <ul>
+                <li>Earthquake</li>
+                <li>Explosion</li>
+            </ul>
+
+            <h5>Announcement (if possible)</h5>
+            <p>If possible, an announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p>
+            <p class="announcement"><q>Attention please. We are experiencing an earthquake. For your protection, follow DROP, COVER and HOLD ON procedures. Get under a table or desk, away from windows and anything that could fall and hurt you. Hold that position until the shaking stops or until you receive further instructions.</q></p>
+
+            <h5>Outside Building – Actions and Precautions</h5>
+            <p>If outside the building when an earthquake occurs, follow the steps and precautions below.</p>
+            <h6>During the earthquake</h6>
+            <ul>
+                <li>Move students away from buildings, trees, overhead wires and poles</li>
+                <li>Make body as small as possible by</li>
+                <ul>
+                    <li>Dropping to knees</li>
+                    <li>Clasp both hands behind neck</li>
+                    <li>Bury face in arms</li>
+                    <li>Close eyes</li>
+                    <li>Cover ears with forearms</li>
+                </ul>
+                <li>Maintain position until shaking stops</li>
+            </ul>
+            <h6>After the shaking stops</h6>
+            <ul>
+                <li>Remain in place for at least 20 seconds</li>
+                <li>Relocate to the proper evacuation assembly area</li>
+            </ul>
+            <p>Evaluate the situation and take further action in accordance with the Evacuation Procedure</p>
+        </div>
+
+
+        <!-- Lockdown Info -->
+        <div id="lockdown-info" class="procedures-info-container hideInfo">
+            <div class="flex-container flex-text">
+                <h3 class="procedure-info_title">Lockdown</h3>
+                <button class="btn btn-outline-success text-btn" onclick="sendLockdownText()">Send Lockdown Text</button>
+            </div>
+            <hr>
+            <ol>
+                <li>Initiate lockdown announcement</li>
+                <li>Move quickly and quietly to closest safe office or classroom</li>
+                <li>Lock doors and remain in office or classroom</li>
+                <li>Close blinds or shades in room and turn off lights</li>
+                <li>Call 911</li>
+                <li>Remain quiet and calm</li>
+                <li>Wait for authorized staff or law enforcement to open the door</li>
+            </ol>
+            <div class="flex-container flex-center">
+                <button id="lockdownAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+            </div>
+        </div>
+
+        <!-- Lockdown Addition Info - Side menu -->
+        <div id="lockdownAddInfo" class="addInfo">
+            <a href="javascript:void(0)" class="closebtn"><span id="lockdownAddInfo-x_symbol" class="span_x">&times;</span></a>
+            
+            <!-- ADDITIONAL INFO - Lockdown -->
+            <h5>Lockdown</h5>
+            <p>Initiated to isolate students and staff from danger when there is a crisis on site and movement within the site might put students and staff in jeopardy.  Lockdown is used to prevent intruders from entering occupied areas of the building. The concept of Lockdown is no one in, no one out.  All exterior doors are locked and students and staff must remain in the classrooms or designated locations at all times. Staff and Instructors are responsible for accounting for occupants and ensuring that no one leaves the safe area.  Lockdown is not normally preceded with an announcement. It is appropriate to initiate Lockdown for, but not limited to, the following events:</p> 
+            <ul>
+                <li>Gunfire</li>
+                <li>Act of extreme violence</li>
+            </ul>
+
+            <h5>Announcement</h5>
+            <p>An announcement may be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p>
+            <p class="announcement"><q>Attention please. LOCKDOWN…LOCKDOWN…LOCKDOWN.  Additional information will follow.</q></p>
+            <p><strong>Never evacuate from a Lockdown based upon an announcement or fire alarm sounding…this could a distraction used by the intruder!</strong></p>
+
+            <h5>Safe Locations</h5>
+            <p>If rooms are locked, immediately hide in the closest safe zone: bathroom, janitorial closet, or office area.  Lock the door or move furniture or trash can to bar access to the room. <strong>Remain quiet until the site leadership or the police provide further instruction.</strong></p>
+        </div>
+        
+        <!-- Aircraft Crash Info -->
+        <div id="crash-info" class="procedures-info-container hideInfo">
+            <div class="flex-container flex-text">
+                <h3 class="procedure-info_title">Aircraft Crash</h3>
+                <button class="btn btn-outline-success text-btn" onclick="sendEvacText()">Send Evacuation Text</button>
+            </div>
+            <hr>
+            <ol>
+                <li>Call 911</li>
+                <li>If necessary, evacuate building</li>
+                <li>If necessary administer first aid and removal of injured from building</li>
+                <li>Ensure students and staff remain at a safe distance</li>
+                <li>Account for building occupants</li>
+                <li>Do not re-enter building until authorities provide clearance</li>
+            </ol>
+            <div class="flex-container flex-center">
+                <button id="crashAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+            </div>
+        </div>
+
+        <!-- Aircraft Crash Addition Info - Side menu -->
+        <div id="crashAddInfo" class="addInfo">
+            <a href="javascript:void(0)" class="closebtn"><span id="crashAddInfo-x_symbol" class="span_x">&times;</span></a>
+            
+            <!-- ADDITIONAL INFO - Aircraft crash -->
+            <h5>Aircraft Crash – Near or Into Facility</h5>
+            <p>Emergency protocol will depend on the size of the aircraft, nature of the crash, and proximity to the facility.  If it is safe to remain inside the building, all students should be kept in the building under supervision.  The crash may also result in an explosion, chemical spill or utility interruption.</p> 
+            <h5>Evacuation</h5>
+            <ul>
+                <li>Move students away from immediate vicinity of the crash</li>
+                <li>Evacuate students from the building using primary and /or alternate fire routes to a safe assembly area away from the crash scene</li>
+                <li>Take class roster/nametags and emergency backpack from storage area located in the break room</li>
+                <li>Check site to assure that all students have evacuated</li>
+                <li>Take attendance at the designated assembly area</li>
+                <li>Report missing students to the administration/designee and emergency response personnel</li>
+                <li>Maintain control of the students a safe distance from the crash site</li>
+            </ul>
+        </div>
+
+        <!-- Severe Weather/Storm Info -->
+        <div id="weather-info" class="procedures-info-container hideInfo">
+            <div class="flex-container flex-text">
+                <h3 class="procedure-info_title">Severe Weather</h3>
+            </div>
+            <hr>
+            <ol>
+                <li>Monitor weather forecasts and storm information</li>
+                <li>Report to site by 6 a.m. to check for power outages, flooding, etc.</li>
+                <li>Notify utility companies of suspected breaks in utilities</li>
+                <li>Determine if site will be closed or remain open</li>
+                <li>Contact staff and students if site will be closed</li>
+                <li>Post site status on website</li>
+                <li>Take appropriate action to safeguard site property</li>
+            </ol>
+            <h4>Windstorm</h4>
+            <ol>
+                <li>Evacuate to 1st floor away from spaces bearing full force of wind</li>
+                <li>Initiate TAKE COVER and stay away from windows</li>
+                <li>Close all blinds and curtains</li>
+                <li>Take attendance and report to Site Administrator</li>
+            </ol>
+            <div class="flex-container flex-center">
+                <button id="weatherAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+            </div>
+        </div>
+
+        <!-- Severe Weather Addition Info - Side menu -->
+        <div id="weatherAddInfo" class="addInfo">
+            <a href="javascript:void(0)" class="closebtn"><span id="weatherAddInfo-x_symbol" class="span_x">&times;</span></a>
+            
+            <!-- ADDITIONAL INFO - Severe Weather -->
+            <h5>Storm / Severe Weather</h5>
+            <p>Severe weather can be accompanied by high winds, downed trees and swollen creeks.  An emergency response is required when this type of weather poses any risk to the staff and students.  Assure that each student’s method of returning home is safe and reliable.</p> 
+        </div>
+
+        <!-- Shelter in Place Info -->
+        <div id="shelter-info" class="procedures-info-container hideInfo">
+            <div class="flex-container flex-text">
+                <h3 class="procedure-info_title">Shelter in Place</h3>
+            </div>
+            <hr>
+            <ol>
+                <li>Initiate shelter in place announcement</li>
+                <li>If necessary, shut down HVAC</li>
+                <li>Clear occupants from halls and open areas</li>
+                <li>Secure offices and classrooms</li>
+                <li>Report attendance</li>
+                <li>Utilize information gathering resources</li>
+                <li>When safe, initiate "All clear" announcement</li>
+            </ol>
+            <div class="flex-container flex-center">
+                <button id="shelterAddInfo_btn" class="btn btn-secondary addInfo-btn">Additional Information</button>
+            </div>
+        </div>
+
+        <!-- Shelter in Place Addition Info - Side menu -->
+        <div id="shelterAddInfo" class="addInfo">
+            <a href="javascript:void(0)" class="closebtn"><span id="shelterAddInfo-x_symbol" class="span_x">&times;</span></a>
+            
+            <!-- ADDITIONAL INFO - Shelter in Place -->
+            <h5>Shelter in Place</h5>
+            <p>A short-term measure implemented when there is a need to isolate students and staff from the outdoor environment to prevent exposure to airborne contaminants. The procedures includes taking actions to prevent exposure to the outside air.  Free movement of staff and students within the building is permitted, although one should not leave the room until further instructions are received. It is appropriate to initiate Shelter in Place for, but not limited to, the following events:</p> 
+            <ul>
+                <li>Gas leaks</li>
+                <li>External chemical release</li>
+                <li>Dirty bombs</li>
+                <li>Hazardous material spills</li>
+            </ul>
+
+            <h5>Announcement</h5>
+            <p>An announcement should be made over the public address system and by staff in classrooms. This announcement should be similar to the following:</p>
+            <p class="announcement"><q>Attention please. We have a hazard in the community and are instituting SHELTER IN PLACE procedures.  Students and staff should remain inside with windows and doors securely closed and air conditioning units turned off.  Those who are outside should immediately move to the protection of an inside room.  Do not go outdoors until you receive further instructions.</q></p>
+            <p>Give clear instructions, remain calm, and convey reassurance that the situation is under control.</p>
+
+            <h5>Securing Offices and Classrooms</h5>
+            <ul>
+                <li>Close and lock doors and windows</li>
+                <li>Shut down office / classroom HVAC</li>
+                <li>Turn off local fans</li>
+                <li>Seal gaps under doors and windows using wet towels or duct tape</li>
+                <li>Seal vents with aluminum foil or plastic wrap</li>
+                <li>Turn off sources of ignition such as pilot lights</li>
+            </ul>
+        </div>
+    </div>
+
 
     <footer>
         <div class="flex-container flex-center">
