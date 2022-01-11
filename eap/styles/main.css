@@ -356,6 +356,10 @@ h6 {
 }
 
 /** Full Plan Styling **/
+.full-plan_body {
+  width: 100vw;
+}
+
 .section_header {
   background-color: #eb202e;
   color: white;

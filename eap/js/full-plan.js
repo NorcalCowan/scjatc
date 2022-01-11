@@ -14,8 +14,8 @@ document.getElementById("Sidenav").style.width = "0";
 }
 x_symbol.addEventListener('click', closeNav);
 
-const fullPlanBtn = document.getElementById('fullPlan_btn');
-function showFullPlan(){
-    window.location.href = 'views/eap_full-plan.html';
+const homeBtn = document.getElementById('homeBtn');
+function goHome(){
+    window.location.href = '../';
 }
-fullPlanBtn.addEventListener('click', showFullPlan);
+homeBtn.addEventListener('click', goHome);
