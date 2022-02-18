@@ -66,7 +66,7 @@ header{
     background-color: $header-bg-color;
     padding: 2vw;
     margin-bottom: 5vw;
-    z-index: 1;
+    z-index: 1; // stay on top of content
 }
 
 .logo{
@@ -195,7 +195,7 @@ h5{
 .sidenav {
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 2; /* Stay on top */
+    z-index: 2; /* Stay on top of header*/
     top: 0;
     right: -10px;
     background-color: black;
@@ -249,7 +249,7 @@ h5{
     width: 0; /* 0 width - change this with JavaScript */
     height: 90vh;
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 3; /* Stay on top of side-nav*/
     top: 0;
     right: -10px;
     background-color: black;

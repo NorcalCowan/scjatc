@@ -175,7 +175,7 @@ h5 {
   position: fixed;
   /* Stay in place */
   z-index: 2;
-  /* Stay on top */
+  /* Stay on top of header*/
   top: 0;
   right: -10px;
   background-color: black;
@@ -231,8 +231,8 @@ h5 {
   height: 90vh;
   position: fixed;
   /* Stay in place */
-  z-index: 1;
-  /* Stay on top */
+  z-index: 3;
+  /* Stay on top of side-nav*/
   top: 0;
   right: -10px;
   background-color: black;
