@@ -66,7 +66,7 @@ header{
     background-color: $header-bg-color;
     padding: 2vw;
     margin-bottom: 5vw;
-    z-index: 2;
+    z-index: 1;
 }
 
 .logo{
@@ -195,7 +195,7 @@ h5{
 .sidenav {
     width: 0; /* 0 width - change this with JavaScript */
     position: fixed; /* Stay in place */
-    z-index: 1; /* Stay on top */
+    z-index: 2; /* Stay on top */
     top: 0;
     right: -10px;
     background-color: black;
