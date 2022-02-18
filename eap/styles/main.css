@@ -49,6 +49,9 @@ body {
 }
 
 header {
+  position: fixed;
+  top: 0;
+  width: 100vw;
   background-color: black;
   padding: 2vw;
   margin-bottom: 5vw;
@@ -368,6 +371,7 @@ h6 {
   position: relative;
   left: 0;
   font-size: 0.75rem;
+  margin-top: 20%;
 }
 
 .full-plan_section {

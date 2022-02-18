@@ -12,7 +12,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js"></script>
 </head>
 
-<header class="flex-container flex-header">
+<header class="full-plan_header flex-container flex-header">
     <img src="../images/tranparent-logo.png" alt="JATC Logo" class="logo">
     <svg id="hamIcon" height="50" width="50">
         <line x1="0" y1="10" x2="50" y2="10" class="menu-icon_line"/>
@@ -35,7 +35,7 @@
         <a  href="#" id="introduction_link" class="menuLink">Introduction</a>
         <a  href="#" id="general-info_link" class="menuLink">General Information</a>
         <a  href="#" id="hazard-review_link" class="menuLink">Hazard Review</a>
-        <a  href="#" id="plan-management_link" class="menuLink">Plan Management</a>
+        <a  href="#section_plan-management" onclick="closeNav()" id="plan-management_link" class="menuLink">Plan Management</a>
         <a  href="#" id="staff-responsibilities_link" class="menuLink">Staff Responsibilities</a>
         <a  href="#" id="mitigation" class="menuLink">Mitigation</a>
         <a  href="#" id="communication" class="menuLink">Communication</a>
@@ -168,10 +168,10 @@
     </section>
 
     <!-- PLAN MANAGEMENT SECTION -->
-    <div class="flex-container flex-right">
+    <div id="section_plan-management" class="flex-container flex-right">
         <h1 class="section_header">Plan Management</h1>
     </div>
-    <section id="section_plan-management" class="full-plan_section">
+    <section class="full-plan_section">
         
         <h1 class="section_h1">Plan Management</h1>
 

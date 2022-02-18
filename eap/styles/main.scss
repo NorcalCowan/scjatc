@@ -60,6 +60,9 @@ body{
 
 
 header{
+    position: fixed;
+    top: 0;
+    width: 100vw;
     background-color: $header-bg-color;
     padding: 2vw;
     margin-bottom: 5vw;
@@ -370,6 +373,12 @@ h6{
 .full-plan_body{
     width: 100vw;
 }
+
+// .full-plan_header{
+//     position: fixed;
+//     top: 0;
+//     width: 100vw;
+// }
 .section_header{
     background-color: rgb(235, 32, 46);
     color: white;
@@ -378,6 +387,7 @@ h6{
     position: relative;
     left: 0;
     font-size: .75rem;
+    margin-top: 20%;
 }
 .full-plan_section{
     margin: 0 2vw 10vw 2vw;
