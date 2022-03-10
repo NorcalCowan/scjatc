@@ -16,6 +16,6 @@ x_symbol.addEventListener('click', closeNav);
 
 const homeBtn = document.getElementById('homeBtn');
 function goHome(){
-    window.location.href = '../';
+    window.location.href = 'file:///Applications/XAMPP/xamppfiles/htdocs/scjatc/eap/index.html';
 }
 homeBtn.addEventListener('click', goHome);

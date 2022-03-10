@@ -223,6 +223,10 @@ h5{
   .sidenav a:hover {
     color: rgb(218,56,73);
   }
+
+  .sidenav a:active{
+    color: rgb(218,56,73);;
+  }
   
   /* Position and style the close button (top right corner) */
   .closebtn {
@@ -427,3 +431,4 @@ h6{
 .table-container{
     margin-bottom: 5vw;
 }
+

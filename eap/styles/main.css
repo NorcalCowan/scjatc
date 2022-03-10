@@ -206,6 +206,10 @@ h5 {
   color: #da3849;
 }
 
+.sidenav a:active {
+  color: #da3849;
+}
+
 /* Position and style the close button (top right corner) */
 .closebtn {
   position: absolute;

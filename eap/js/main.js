@@ -106,6 +106,10 @@ const jatc = '15105602032';
 const hamIcon = document.getElementById("hamIcon");
 
 function openNav() {
+    let screenWidth = screen.width;
+    if(screenWidth > 800){
+        document.getElementById("Sidenav").style.width = "30%";
+    }
     document.getElementById("Sidenav").style.width = "70%";
 }
 hamIcon.addEventListener('click', openNav);
